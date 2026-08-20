@@ -1,14 +1,20 @@
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-// UP bounds - zoomed to UP only
-const UP_BOUNDS = [[23.8, 77.5], [30.8, 84.7]];
+// UP bounds - locked to UP only
+const UP_BOUNDS = [[23.6, 77.2], [30.8, 84.7]];
 
 const map = L.map('map', {
   zoomSnap: 0.5,
-  maxBounds: [[22.5,76],[32,86]],
-  maxBoundsViscosity: 0.7
+  maxBounds: UP_BOUNDS,
+  maxBoundsViscosity: 1.0,
+  minZoom: 6,
+  maxZoom: 11,
+  worldCopyJump: false
 }).fitBounds(UP_BOUNDS);
+
+map.setMinZoom(map.getBoundsZoom(UP_BOUNDS));
+map.on('drag', () => map.panInsideBounds(UP_BOUNDS, { animate: false }));
 
 const street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution: '&copy; OpenStreetMap',
@@ -37,7 +43,7 @@ const redIcon = L.divIcon({
 function popupHtml(p){
   return `
     <div style="min-width:220px">
-      <b>${p.district} — ${p.area_name}</b><br/>
+      <b>${p.district} - ${p.area_name}</b><br/>
       <span style="font-size:12px;color:#555">${p.type}</span><br/>
       <div style="margin:6px 0;font-size:12px">Source: <a href="${p.source_url}" target="_blank" rel="noopener">${p.source}</a></div>
       <div style="font-size:11px;color:#666">Reliability: <b>${p.reliability}</b> • Updated: ${p.last_updated}</div>
@@ -53,7 +59,7 @@ fetch('/data/up-points.geojson')
     L.geoJSON(data, {
       pointToLayer: (f, latlng) => L.marker(latlng, {icon: redIcon}),
       onEachFeature: (f, layer) => {
-        layer.bindTooltip(`${f.properties.district} — ${f.properties.area_name}`, {direction:'top', offset:[0,-8]});
+        layer.bindTooltip(`${f.properties.district} - ${f.properties.area_name}`, {direction:'top', offset:[0,-8]});
         layer.bindPopup(popupHtml(f.properties), {maxWidth: 320});
       }
     }).addTo(map);
