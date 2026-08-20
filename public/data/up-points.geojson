@@ -3,7 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [81.8556, 25.4618]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8556,
+          25.4618
+        ]
+      },
       "properties": {
         "district": "Prayagraj (Allahabad)",
         "area_name": "Meerganj",
@@ -17,7 +23,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [82.9876, 25.3176]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.9876,
+          25.3176
+        ]
+      },
       "properties": {
         "district": "Varanasi",
         "area_name": "Shivdaspur (ex-Dalmandi)",
@@ -31,7 +43,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [77.7064, 28.9845]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7064,
+          28.9845
+        ]
+      },
       "properties": {
         "district": "Meerut",
         "area_name": "Kabadi Bazar / Kabari Bazar",
@@ -45,7 +63,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [80.0500, 27.3800]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.05,
+          27.38
+        ]
+      },
       "properties": {
         "district": "Hardoi",
         "area_name": "Natpurwa village, Madhoganj Block",
@@ -59,7 +83,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [80.9462, 26.8467]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9462,
+          26.8467
+        ]
+      },
       "properties": {
         "district": "Lucknow",
         "area_name": "Chawal wali gali (old city) + dispersed Charbagh/Hazratganj/Chowk/Daliganj",
@@ -73,7 +103,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [80.3319, 26.4499]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3319,
+          26.4499
+        ]
+      },
       "properties": {
         "district": "Kanpur Nagar",
         "area_name": "Becon Ganj / Bada Bazaar (historic core) + Nayaganj area",
