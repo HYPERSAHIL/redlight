@@ -87,9 +87,11 @@ document.getElementById('btn-heat').onclick = (e)=>{
   } else { if(heatLayer) map.removeLayer(heatLayer); }
 };
 
-// Story auto-tour
-let storyIdx=0, storyData=[];
+// Story auto-tour - polished: toggle hidden
+let storyIdx=-1, storyData=[];
 document.getElementById('btn-story').onclick = ()=>{
+  storyEl.classList.toggle('hidden');
+  if(storyEl.classList.contains('hidden')) return;
   if(!storyData.length) return;
   storyIdx=(storyIdx+1)%storyData.length;
   const f=storyData[storyIdx];
