@@ -3,42 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>UP Red Light Areas Map - Verified Only</title>
+  <title>UP Red Light Areas Map</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
-    html,body{height:100%;margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;background:#0a0a0a}
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;background:#050507;color:#eee;overflow:hidden}
     #map{height:100vh;width:100vw}
-    .topbar{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:1000;background:rgba(17,17,17,.92);color:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.3);backdrop-filter:blur(8px);max-width:860px;width:calc(100% - 24px);box-sizing:border-box}
-    .topbar h1{font-size:14px;margin:0;font-weight:600;letter-spacing:.3px}
-    .topbar p{font-size:11px;margin:3px 0 0;opacity:.7;max-width:640px;line-height:1.4}
-    .badge{font-size:10px;padding:5px 10px;border-radius:999px;background:#1e1e1e;border:1px solid #2a2a2a;white-space:nowrap}
-    .legend{position:absolute;bottom:20px;left:16px;z-index:1000;background:rgba(255,255,255,.96);padding:12px 14px;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.2);font-size:12px;max-width:300px;backdrop-filter:blur(8px)}
-    .legend h3{margin:0 0 8px;font-size:12px;letter-spacing:.2px}
-    .legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:7px;vertical-align:middle}
-    .disclaimer{position:absolute;bottom:20px;right:16px;z-index:1000;background:rgba(255,255,255,.96);padding:10px 12px;border-radius:10px;box-shadow:0 8px 32px rgba(0,0,0,.2);font-size:10.5px;max-width:340px;line-height:1.5;backdrop-filter:blur(8px)}
-    .leaflet-top.leaflet-right{margin-top:78px}
-    .leaflet-control-layers{border-radius:10px;box-shadow:0 8px 32px rgba(0,0,0,.18);font-size:13px}
-    @media(max-width:700px){.topbar{flex-direction:column;align-items:flex-start;top:8px} .leaflet-top.leaflet-right{margin-top:110px} .legend,.disclaimer{position:static;margin:10px} #map{height:70vh}}
+    /* topbar */
+    .topbar{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:1000;background:rgba(16,16,18,.88);color:#fff;padding:10px 16px;display:flex;align-items:center;gap:16px;border-radius:14px;box-shadow:0 10px 40px rgba(0,0,0,.45);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);max-width:920px;width:calc(100% - 20px)}
+    .topbar h1{font-size:14px;margin:0;font-weight:700;letter-spacing:.2px}
+    .topbar p{font-size:11px;margin:3px 0 0;opacity:.65;line-height:1.4}
+    .topbar-right{display:flex;gap:8px;align-items:center}
+    .btn{appearance:none;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);color:#fff;padding:7px 12px;border-radius:999px;font-size:11px;cursor:pointer;backdrop-filter:blur(6px);transition:.15s}
+    .btn:hover{background:rgba(255,255,255,.14)}
+    .btn.primary{background:#d93025;border-color:#d93025}
+    .btn.primary:hover{background:#b9291f}
+    /* controls */
+    .subbar{position:absolute;top:78px;left:50%;transform:translateX(-50%);z-index:999;display:flex;gap:8px;background:rgba(20,20,22,.7);padding:6px;border-radius:999px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 32px rgba(0,0,0,.3)}
+    .subbar button{border:0;background:transparent;color:#fff;padding:6px 12px;border-radius:999px;font-size:11.5px;cursor:pointer}
+    .subbar button.active{background:#fff;color:#111;font-weight:600}
+    /* legend */
+    .legend{position:absolute;bottom:18px;left:16px;z-index:900;background:rgba(255,255,255,.96);color:#111;padding:12px 14px;border-radius:14px;box-shadow:0 12px 40px rgba(0,0,0,.25);font-size:11.5px;max-width:300px}
+    .legend h3{margin:0 0 8px;font-size:11px;letter-spacing:.4px;text-transform:uppercase;opacity:.6}
+    .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:8px;vertical-align:middle}
+    /* drawer */
+    .drawer{position:absolute;top:0;right:0;height:100%;width:380px;max-width:88vw;background:rgba(14,14,16,.96);backdrop-filter:blur(14px);border-left:1px solid rgba(255,255,255,.08);z-index:1100;transform:translateX(100%);transition:.28s cubic-bezier(.32,.72,0,1);box-shadow:-20px 0 60px rgba(0,0,0,.4);display:flex;flex-direction:column}
+    .drawer.open{transform:translateX(0)}
+    .drawer-head{padding:18px 18px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
+    .drawer-head h2{margin:0;font-size:16px;line-height:1.2}
+    .drawer-head p{margin:6px 0 0;font-size:12px;opacity:.65;line-height:1.5}
+    .drawer-body{padding:16px 18px;overflow:auto}
+    .drawer-body a{color:#ff8a7a}
+    .drawer-actions{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
+    .story{position:absolute;bottom:18px;left:50%;transform:translateX(-50%);z-index:950;display:flex;gap:8px;overflow:auto;max-width:92vw;padding:6px;background:rgba(10,10,12,.6);border-radius:14px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08)}
+    .story-card{min-width:140px;padding:10px 12px;background:rgba(255,255,255,.08);border-radius:10px;cursor:pointer;border:1px solid transparent;transition:.15s}
+    .story-card:hover{background:rgba(255,255,255,.14)}
+    .story-card.active{border-color:#d93025;background:rgba(217,48,37,.18)}
+    .story-card b{font-size:12px;display:block}
+    .story-card span{font-size:11px;opacity:.7}
+    /* pulse */
+    .pin-wrap{position:relative;width:16px;height:16px}
+    .pin-dot{width:16px;height:16px;background:#d93025;border:3px solid #fff;border-radius:50%;box-shadow:0 2px 10px rgba(0,0,0,.5);position:relative;z-index:2}
+    .pin-pulse{position:absolute;inset:0;background:rgba(217,48,37,.45);border-radius:50%;animation:pulse 2s infinite;z-index:1}
+    @keyframes pulse{0%{transform:scale(.7);opacity:1}100%{transform:scale(2.2);opacity:0}}
+    .leaflet-top.leaflet-right{margin-top:88px}
+    .leaflet-control-layers{border-radius:12px}
+    @media(max-width:720px){.topbar{flex-direction:column;align-items:flex-start;top:8px} .subbar{top:98px} .leaflet-top.leaflet-right{margin-top:108px} .legend{left:10px;right:10px;bottom:10px;max-width:none} .story{bottom:76px}}
   </style>
 </head>
 <body>
+  <div id="map"></div>
   <div class="topbar">
     <div>
       <h1>UP Red Light Areas Map</h1>
-      <p>District-centroid only • Tap red dot for source • For information only</p>
+      <p>District centroid only. Tap red dot for story. For information only.</p>
     </div>
-    <span class="badge">sahil.run</span>
+    <div class="topbar-right">
+      <button class="btn" id="btn-fullscreen">Fullscreen</button>
+      <button class="btn primary" id="btn-story">Story</button>
+    </div>
   </div>
-  <div id="map"></div>
-  <div class="legend" id="legend">
+  <div class="subbar" id="subbar">
+    <button id="btn-sat" class="active">Satellite</button>
+    <button id="btn-street">Street</button>
+    <button id="btn-heat">Heatmap</button>
+    <button id="btn-reset">UP View</button>
+  </div>
+  <div class="legend">
     <h3>Legend</h3>
-    <div><span class="dot" style="background:#d93025"></span> Verified point • NGO / Media / Court</div>
+    <div><span class="dot" style="background:#d93025"></span> Verified point</div>
     <div><span class="dot" style="background:#ff9800"></span> District with TI program</div>
-    <div style="margin-top:8px;font-size:11px;opacity:.7">Hover for name • Click for source</div>
+    <div style="margin-top:8px;font-size:11px;opacity:.65">Hover district to glow. Click dot to fly.</div>
   </div>
-  <div class="disclaimer">
-    <b>Disclaimer:</b> Map shows historically reported areas at district/area centroid level only (not precise venues). Data compiled from public NGO/media/court reports + UPSACS district-aggregated TI coverage. No encouragement of solicitation. For research/information only. To report inaccuracy: open GitHub issue.
+  <div id="drawer" class="drawer">
+    <div class="drawer-head">
+      <div style="display:flex;justify-content:space-between;align-items:start;gap:12px">
+        <div>
+          <h2 id="d-title">Select a district</h2>
+          <p id="d-sub">Click any red dot or story card.</p>
+        </div>
+        <button class="btn" id="d-close">Close</button>
+      </div>
+    </div>
+    <div class="drawer-body" id="d-body">
+      <div id="d-content" style="font-size:13px;line-height:1.6;opacity:.9">Immersive view with fly-to, pulse, and satellite hybrid labels. Use Story to auto-tour all points.</div>
+      <div class="drawer-actions" id="d-actions" style="display:none">
+        <a id="d-source" href="#" target="_blank" class="btn primary">Open source</a>
+        <a id="d-streetview" href="#" target="_blank" class="btn">Street View</a>
+        <button id="d-share" class="btn">Copy link</button>
+      </div>
+      <div style="margin-top:18px;font-size:11px;opacity:.6">District centroid only. Not precise venue.</div>
+    </div>
   </div>
+  <div id="story" class="story"></div>
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>
