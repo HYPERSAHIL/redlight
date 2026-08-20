@@ -6,34 +6,35 @@
   <title>UP Red Light Areas Map - Verified Only</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
-    html,body{height:100%;margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    html,body{height:100%;margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;background:#0a0a0a}
     #map{height:100vh;width:100vw}
-    .topbar{position:absolute;top:0;left:0;right:0;z-index:1000;background:#111;color:#fff;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .topbar{position:absolute;top:12px;left:50%;transform:translateX(-50%);z-index:1000;background:rgba(17,17,17,.92);color:#fff;padding:10px 16px;display:flex;align-items:center;justify-content:space-between;gap:16px;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.3);backdrop-filter:blur(8px);max-width:860px;width:calc(100% - 24px);box-sizing:border-box}
     .topbar h1{font-size:14px;margin:0;font-weight:600;letter-spacing:.3px}
-    .topbar p{font-size:11px;margin:2px 0 0;opacity:.75;max-width:680px}
-    .badge{font-size:10px;padding:4px 8px;border-radius:999px;background:#222;border:1px solid #333;white-space:nowrap}
-    .legend{position:absolute;bottom:16px;left:12px;z-index:1000;background:#fff;padding:10px 12px;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,.18);font-size:12px;max-width:320px}
-    .legend h3{margin:0 0 6px;font-size:12px}
-    .legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:6px}
-    .disclaimer{position:absolute;bottom:16px;right:12px;z-index:1000;background:#fff;padding:8px 10px;border-radius:8px;box-shadow:0 6px 24px rgba(0,0,0,.18);font-size:10px;max-width:360px;line-height:1.4}
-    @media(max-width:640px){.legend,.disclaimer{position:static;margin:8px} #map{height:72vh}}
+    .topbar p{font-size:11px;margin:3px 0 0;opacity:.7;max-width:640px;line-height:1.4}
+    .badge{font-size:10px;padding:5px 10px;border-radius:999px;background:#1e1e1e;border:1px solid #2a2a2a;white-space:nowrap}
+    .legend{position:absolute;bottom:20px;left:16px;z-index:1000;background:rgba(255,255,255,.96);padding:12px 14px;border-radius:12px;box-shadow:0 8px 32px rgba(0,0,0,.2);font-size:12px;max-width:300px;backdrop-filter:blur(8px)}
+    .legend h3{margin:0 0 8px;font-size:12px;letter-spacing:.2px}
+    .legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:7px;vertical-align:middle}
+    .disclaimer{position:absolute;bottom:20px;right:16px;z-index:1000;background:rgba(255,255,255,.96);padding:10px 12px;border-radius:10px;box-shadow:0 8px 32px rgba(0,0,0,.2);font-size:10.5px;max-width:340px;line-height:1.5;backdrop-filter:blur(8px)}
+    .leaflet-top.leaflet-right{margin-top:78px}
+    .leaflet-control-layers{border-radius:10px;box-shadow:0 8px 32px rgba(0,0,0,.18);font-size:13px}
+    @media(max-width:700px){.topbar{flex-direction:column;align-items:flex-start;top:8px} .leaflet-top.leaflet-right{margin-top:110px} .legend,.disclaimer{position:static;margin:10px} #map{height:70vh}}
   </style>
 </head>
 <body>
   <div class="topbar">
     <div>
-      <h1>Uttar Pradesh - Verified Red Light Areas (Option A)</h1>
-      <p>District-centroid only. No building-level pins. Sources shown on click. For information only - not a directory.</p>
+      <h1>Uttar Pradesh — Verified Areas</h1>
+      <p>District-centroid only • Tap red dot for source • For information only</p>
     </div>
-    <span class="badge">OSM + Leaflet • Cloudflare Pages • sahil.run</span>
+    <span class="badge">sahil.run</span>
   </div>
   <div id="map"></div>
   <div class="legend" id="legend">
     <h3>Legend</h3>
-    <div><span class="dot" style="background:#d93025"></span> Verified point (high) - NGO/Media/Court</div>
-    <div><span class="dot" style="background:#ff9800"></span> UP district with UPSACS TI program (aggregated)</div>
-    <div style="margin-top:6px;font-size:11px;opacity:.75">Hover for name • Click for source • Zoom/pinch enabled</div>
-    <div style="margin-top:6px"><a href="https://github.com/HYPERSAHIL/redlight" target="_blank">GitHub Source</a> • Data: /public/data/*.geojson</div>
+    <div><span class="dot" style="background:#d93025"></span> Verified point • NGO / Media / Court</div>
+    <div><span class="dot" style="background:#ff9800"></span> District with TI program</div>
+    <div style="margin-top:8px;font-size:11px;opacity:.7">Hover for name • Click for source</div>
   </div>
   <div class="disclaimer">
     <b>Disclaimer:</b> Map shows historically reported areas at district/area centroid level only (not precise venues). Data compiled from public NGO/media/court reports + UPSACS district-aggregated TI coverage. No encouragement of solicitation. For research/information only. To report inaccuracy: open GitHub issue.

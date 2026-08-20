@@ -11,15 +11,20 @@ const map = L.map('map', {
 }).fitBounds(UP_BOUNDS);
 
 const street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  attribution: '&copy; OpenStreetMap',
   maxZoom: 18
 });
-const satellite = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
-  attribution: '© Esri &mdash; Source: Esri, Maxar, Earthstar Geographics',
+const esriImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
+  attribution: '© Esri, Maxar',
   maxZoom: 18
 });
-street.addTo(map);
-L.control.layers({"Street": street, "Satellite (Esri Free)": satellite}, null, {position: 'topright', collapsed: false}).addTo(map);
+const esriLabels = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/Reference/World_Boundaries_and_Places/MapServer/tile/{z}/{y}/{x}', {
+  attribution: '© Esri',
+  maxZoom: 18
+});
+const satellite = L.layerGroup([esriImagery, esriLabels]);
+satellite.addTo(map);
+L.control.layers({"Satellite": satellite, "Street": street}, null, {position: 'topright', collapsed: true}).addTo(map);
 
 // Red pointer icon
 const redIcon = L.divIcon({
