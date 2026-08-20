@@ -1,0 +1,1360 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              81.5,
+              25.099999999999998
+            ],
+            [
+              82.19999999999999,
+              25.099999999999998
+            ],
+            [
+              82.19999999999999,
+              25.8
+            ],
+            [
+              81.5,
+              25.8
+            ],
+            [
+              81.5,
+              25.099999999999998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Prayagraj",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.63000000000001,
+              24.959999999999997
+            ],
+            [
+              83.33,
+              24.959999999999997
+            ],
+            [
+              83.33,
+              25.66
+            ],
+            [
+              82.63000000000001,
+              25.66
+            ],
+            [
+              82.63000000000001,
+              24.959999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Varanasi",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.35000000000001,
+              28.63
+            ],
+            [
+              78.05,
+              28.63
+            ],
+            [
+              78.05,
+              29.330000000000002
+            ],
+            [
+              77.35000000000001,
+              29.330000000000002
+            ],
+            [
+              77.35000000000001,
+              28.63
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Meerut",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.7,
+              27.029999999999998
+            ],
+            [
+              80.39999999999999,
+              27.029999999999998
+            ],
+            [
+              80.39999999999999,
+              27.73
+            ],
+            [
+              79.7,
+              27.73
+            ],
+            [
+              79.7,
+              27.029999999999998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Hardoi",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.59,
+              26.49
+            ],
+            [
+              81.28999999999999,
+              26.49
+            ],
+            [
+              81.28999999999999,
+              27.19
+            ],
+            [
+              80.59,
+              27.19
+            ],
+            [
+              80.59,
+              26.49
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Lucknow",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.98,
+              26.09
+            ],
+            [
+              80.67999999999999,
+              26.09
+            ],
+            [
+              80.67999999999999,
+              26.790000000000003
+            ],
+            [
+              79.98,
+              26.790000000000003
+            ],
+            [
+              79.98,
+              26.09
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Kanpur Nagar",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.43,
+              28.479999999999997
+            ],
+            [
+              79.13,
+              28.479999999999997
+            ],
+            [
+              79.13,
+              29.18
+            ],
+            [
+              78.43,
+              29.18
+            ],
+            [
+              78.43,
+              28.479999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Moradabad",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              81.58000000000001,
+              26.779999999999998
+            ],
+            [
+              82.28,
+              26.779999999999998
+            ],
+            [
+              82.28,
+              27.48
+            ],
+            [
+              81.58000000000001,
+              27.48
+            ],
+            [
+              81.58000000000001,
+              26.779999999999998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Gonda",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.73,
+              27.529999999999998
+            ],
+            [
+              78.42999999999999,
+              27.529999999999998
+            ],
+            [
+              78.42999999999999,
+              28.23
+            ],
+            [
+              77.73,
+              28.23
+            ],
+            [
+              77.73,
+              27.529999999999998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Aligarh",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.49000000000001,
+              24.86
+            ],
+            [
+              81.19,
+              24.86
+            ],
+            [
+              81.19,
+              25.560000000000002
+            ],
+            [
+              80.49000000000001,
+              25.560000000000002
+            ],
+            [
+              80.49000000000001,
+              24.86
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Chitrakoot",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.98,
+              25.13
+            ],
+            [
+              80.67999999999999,
+              25.13
+            ],
+            [
+              80.67999999999999,
+              25.830000000000002
+            ],
+            [
+              79.98,
+              25.830000000000002
+            ],
+            [
+              79.98,
+              25.13
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Banda",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.7,
+              27.68
+            ],
+            [
+              79.39999999999999,
+              27.68
+            ],
+            [
+              79.39999999999999,
+              28.380000000000003
+            ],
+            [
+              78.7,
+              28.380000000000003
+            ],
+            [
+              78.7,
+              27.68
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Budaun",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.7,
+              26.389999999999997
+            ],
+            [
+              83.39999999999999,
+              26.389999999999997
+            ],
+            [
+              83.39999999999999,
+              27.09
+            ],
+            [
+              82.7,
+              27.09
+            ],
+            [
+              82.7,
+              26.389999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Sant Kabir Nagar",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.39,
+              26.45
+            ],
+            [
+              83.08999999999999,
+              26.45
+            ],
+            [
+              83.08999999999999,
+              27.150000000000002
+            ],
+            [
+              82.39,
+              27.150000000000002
+            ],
+            [
+              82.39,
+              26.45
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Basti",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.02000000000001,
+              26.41
+            ],
+            [
+              83.72,
+              26.41
+            ],
+            [
+              83.72,
+              27.110000000000003
+            ],
+            [
+              83.02000000000001,
+              27.110000000000003
+            ],
+            [
+              83.02000000000001,
+              26.41
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Gorakhpur",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.2,
+              25.59
+            ],
+            [
+              83.89999999999999,
+              25.59
+            ],
+            [
+              83.89999999999999,
+              26.290000000000003
+            ],
+            [
+              83.2,
+              26.290000000000003
+            ],
+            [
+              83.2,
+              25.59
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Mau",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.04,
+              26.799999999999997
+            ],
+            [
+              78.74,
+              26.799999999999997
+            ],
+            [
+              78.74,
+              27.5
+            ],
+            [
+              78.04,
+              27.5
+            ],
+            [
+              78.04,
+              26.799999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Firozabad",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              81.02000000000001,
+              25.169999999999998
+            ],
+            [
+              81.72,
+              25.169999999999998
+            ],
+            [
+              81.72,
+              25.87
+            ],
+            [
+              81.02000000000001,
+              25.87
+            ],
+            [
+              81.02000000000001,
+              25.169999999999998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Kaushambi",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.07000000000001,
+              28.009999999999998
+            ],
+            [
+              79.77,
+              28.009999999999998
+            ],
+            [
+              79.77,
+              28.71
+            ],
+            [
+              79.07000000000001,
+              28.71
+            ],
+            [
+              79.07000000000001,
+              28.009999999999998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Bareilly",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              81.59,
+              25.56
+            ],
+            [
+              82.28999999999999,
+              25.56
+            ],
+            [
+              82.28999999999999,
+              26.26
+            ],
+            [
+              81.59,
+              26.26
+            ],
+            [
+              81.59,
+              25.56
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Pratapgarh",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.33000000000001,
+              25.38
+            ],
+            [
+              83.03,
+              25.38
+            ],
+            [
+              83.03,
+              26.080000000000002
+            ],
+            [
+              82.33000000000001,
+              26.080000000000002
+            ],
+            [
+              82.33000000000001,
+              25.38
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Jaunpur",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.19000000000001,
+              29.61
+            ],
+            [
+              77.89,
+              29.61
+            ],
+            [
+              77.89,
+              30.310000000000002
+            ],
+            [
+              77.19000000000001,
+              30.310000000000002
+            ],
+            [
+              77.19000000000001,
+              29.61
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Saharanpur",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.21000000000001,
+              24.79
+            ],
+            [
+              82.91,
+              24.79
+            ],
+            [
+              82.91,
+              25.490000000000002
+            ],
+            [
+              82.21000000000001,
+              25.490000000000002
+            ],
+            [
+              82.21000000000001,
+              24.79
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Mirzapur",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.35000000000001,
+              29.119999999999997
+            ],
+            [
+              78.05,
+              29.119999999999997
+            ],
+            [
+              78.05,
+              29.82
+            ],
+            [
+              77.35000000000001,
+              29.82
+            ],
+            [
+              77.35000000000001,
+              29.119999999999997
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Muzaffarnagar",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.55000000000001,
+              27.529999999999998
+            ],
+            [
+              80.25,
+              27.529999999999998
+            ],
+            [
+              80.25,
+              28.23
+            ],
+            [
+              79.55000000000001,
+              28.23
+            ],
+            [
+              79.55000000000001,
+              27.529999999999998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Shahjahanpur",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.67,
+              26.419999999999998
+            ],
+            [
+              79.36999999999999,
+              26.419999999999998
+            ],
+            [
+              79.36999999999999,
+              27.12
+            ],
+            [
+              78.67,
+              27.12
+            ],
+            [
+              78.67,
+              26.419999999999998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Etawah",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.43,
+              26.15
+            ],
+            [
+              84.13,
+              26.15
+            ],
+            [
+              84.13,
+              26.85
+            ],
+            [
+              83.43,
+              26.85
+            ],
+            [
+              83.43,
+              26.15
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Deoria",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              82.27000000000001,
+              26.08
+            ],
+            [
+              82.97,
+              26.08
+            ],
+            [
+              82.97,
+              26.78
+            ],
+            [
+              82.27000000000001,
+              26.78
+            ],
+            [
+              82.27000000000001,
+              26.08
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Ambedkar Nagar",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.15,
+              28.18
+            ],
+            [
+              77.85,
+              28.18
+            ],
+            [
+              77.85,
+              28.880000000000003
+            ],
+            [
+              77.15,
+              28.880000000000003
+            ],
+            [
+              77.15,
+              28.18
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Gautam Buddha Nagar",
+        "hasTI": true,
+        "source": "UPSACS TI reports 2022-24"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.52,
+              28.66
+            ],
+            [
+              80.11999999999999,
+              28.66
+            ],
+            [
+              80.11999999999999,
+              29.26
+            ],
+            [
+              79.52,
+              29.26
+            ],
+            [
+              79.52,
+              28.66
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Ayodhya",
+        "hasTI": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.18,
+              28.279999999999998
+            ],
+            [
+              83.78,
+              28.279999999999998
+            ],
+            [
+              83.78,
+              28.88
+            ],
+            [
+              83.18,
+              28.88
+            ],
+            [
+              83.18,
+              28.279999999999998
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Azamgarh",
+        "hasTI": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.8,
+              30.04
+            ],
+            [
+              79.39999999999999,
+              30.04
+            ],
+            [
+              79.39999999999999,
+              30.64
+            ],
+            [
+              78.8,
+              30.64
+            ],
+            [
+              78.8,
+              30.04
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Ballia",
+        "hasTI": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.94,
+              26.11
+            ],
+            [
+              78.53999999999999,
+              26.11
+            ],
+            [
+              78.53999999999999,
+              26.71
+            ],
+            [
+              77.94,
+              26.71
+            ],
+            [
+              77.94,
+              26.11
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Bahraich",
+        "hasTI": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.7,
+              25.65
+            ],
+            [
+              77.3,
+              25.65
+            ],
+            [
+              77.3,
+              26.25
+            ],
+            [
+              76.7,
+              26.25
+            ],
+            [
+              76.7,
+              25.65
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Barabanki",
+        "hasTI": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.57000000000001,
+              24.88
+            ],
+            [
+              81.17,
+              24.88
+            ],
+            [
+              81.17,
+              25.48
+            ],
+            [
+              80.57000000000001,
+              25.48
+            ],
+            [
+              80.57000000000001,
+              24.88
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Bijnor",
+        "hasTI": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              83.27,
+              27.44
+            ],
+            [
+              83.86999999999999,
+              27.44
+            ],
+            [
+              83.86999999999999,
+              28.040000000000003
+            ],
+            [
+              83.27,
+              28.040000000000003
+            ],
+            [
+              83.27,
+              27.44
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Bulandshahr",
+        "hasTI": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              77.52,
+              29.23
+            ],
+            [
+              78.11999999999999,
+              29.23
+            ],
+            [
+              78.11999999999999,
+              29.830000000000002
+            ],
+            [
+              77.52,
+              29.830000000000002
+            ],
+            [
+              77.52,
+              29.23
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Fatehpur",
+        "hasTI": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              76.73,
+              24.36
+            ],
+            [
+              77.33,
+              24.36
+            ],
+            [
+              77.33,
+              24.96
+            ],
+            [
+              76.73,
+              24.96
+            ],
+            [
+              76.73,
+              24.36
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Ghazipur",
+        "hasTI": false
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              78.03,
+              24.73
+            ],
+            [
+              78.63,
+              24.73
+            ],
+            [
+              78.63,
+              25.330000000000002
+            ],
+            [
+              78.03,
+              25.330000000000002
+            ],
+            [
+              78.03,
+              24.73
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "DISTRICT": "Unnao",
+        "hasTI": false
+      }
+    }
+  ]
+}

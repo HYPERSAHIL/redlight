@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UP Red Light Areas Map - Verified Only</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    html,body{height:100%;margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial}
+    #map{height:100vh;width:100vw}
+    .topbar{position:absolute;top:0;left:0;right:0;z-index:1000;background:#111;color:#fff;padding:10px 14px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .topbar h1{font-size:14px;margin:0;font-weight:600;letter-spacing:.3px}
+    .topbar p{font-size:11px;margin:2px 0 0;opacity:.75;max-width:680px}
+    .badge{font-size:10px;padding:4px 8px;border-radius:999px;background:#222;border:1px solid #333;white-space:nowrap}
+    .legend{position:absolute;bottom:16px;left:12px;z-index:1000;background:#fff;padding:10px 12px;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,.18);font-size:12px;max-width:320px}
+    .legend h3{margin:0 0 6px;font-size:12px}
+    .legend .dot{width:10px;height:10px;border-radius:50%;display:inline-block;margin-right:6px}
+    .disclaimer{position:absolute;bottom:16px;right:12px;z-index:1000;background:#fff;padding:8px 10px;border-radius:8px;box-shadow:0 6px 24px rgba(0,0,0,.18);font-size:10px;max-width:360px;line-height:1.4}
+    @media(max-width:640px){.legend,.disclaimer{position:static;margin:8px} #map{height:72vh}}
+  </style>
+</head>
+<body>
+  <div class="topbar">
+    <div>
+      <h1>Uttar Pradesh - Verified Red Light Areas (Option A)</h1>
+      <p>District-centroid only. No building-level pins. Sources shown on click. For information only - not a directory.</p>
+    </div>
+    <span class="badge">OSM + Leaflet • Cloudflare Pages • sahil.run</span>
+  </div>
+  <div id="map"></div>
+  <div class="legend" id="legend">
+    <h3>Legend</h3>
+    <div><span class="dot" style="background:#d93025"></span> Verified point (high) - NGO/Media/Court</div>
+    <div><span class="dot" style="background:#ff9800"></span> UP district with UPSACS TI program (aggregated)</div>
+    <div style="margin-top:6px;font-size:11px;opacity:.75">Hover for name • Click for source • Zoom/pinch enabled</div>
+    <div style="margin-top:6px"><a href="https://github.com/HYPERSAHIL/redlight" target="_blank">GitHub Source</a> • Data: /public/data/*.geojson</div>
+  </div>
+  <div class="disclaimer">
+    <b>Disclaimer:</b> Map shows historically reported areas at district/area centroid level only (not precise venues). Data compiled from public NGO/media/court reports + UPSACS district-aggregated TI coverage. No encouragement of solicitation. For research/information only. To report inaccuracy: open GitHub issue.
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

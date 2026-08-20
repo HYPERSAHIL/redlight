@@ -1,0 +1,89 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [81.8556, 25.4618]},
+      "properties": {
+        "district": "Prayagraj (Allahabad)",
+        "area_name": "Meerganj",
+        "type": "Formal district - historic",
+        "reliability": "high",
+        "source": "Guria / Freedom Firm / Allahabad HC 2016-17 / Wikipedia",
+        "source_url": "https://guriaindia.org",
+        "last_updated": "2024-05",
+        "notes": "District centroid only. 61 brothels seized (Guria). Most documented in UP. No building-level pin."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [82.9876, 25.3176]},
+      "properties": {
+        "district": "Varanasi",
+        "area_name": "Shivdaspur (ex-Dalmandi)",
+        "type": "Formal district - shifted from Dalmandi",
+        "reliability": "high",
+        "source": "Wikipedia Shivdaspur + Guria Varanasi centre",
+        "source_url": "https://en.wikipedia.org/wiki/Shivdaspur",
+        "last_updated": "2024-05",
+        "notes": "District centroid only. Dalmandi near Kashi Vishwanath closed 1970s, moved to Shivdaspur."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [77.7064, 28.9845]},
+      "properties": {
+        "district": "Meerut",
+        "area_name": "Kabadi Bazar / Kabari Bazar",
+        "type": "Formal district - old city market",
+        "reliability": "high",
+        "source": "Sage Journal 2455632720915320 + Sankalp NGO Meerut (1997)",
+        "source_url": "https://journals.sagepub.com/doi/full/10.1177/2455632720915320",
+        "last_updated": "2024-05",
+        "notes": "District centroid only. Junk market area, not specific building."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [80.0500, 27.3800]},
+      "properties": {
+        "district": "Hardoi",
+        "area_name": "Natpurwa village, Madhoganj Block",
+        "type": "Hereditary village - Nat community",
+        "reliability": "high",
+        "source": "Al Jazeera 2013 + The Hindu 2013 + Asha for Education Project 350",
+        "source_url": "https://www.aljazeera.com/features/2013/1/19/nat-purwa-where-prostitution-is-a-tradition",
+        "last_updated": "2024-05",
+        "notes": "Village centroid only. 400-year tradition, not a city brothel. Sensitive - district level only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [80.9462, 26.8467]},
+      "properties": {
+        "district": "Lucknow",
+        "area_name": "Chawal wali gali (old city) + dispersed Charbagh/Hazratganj/Chowk/Daliganj",
+        "type": "Dispersed hotspot - no single formal district",
+        "reliability": "high for Chawal wali gali, medium for dispersed",
+        "source": "SocialNews XYZ 2024 + Aazadi Foundation/UPNSW + CREATE India (UPSACS TI)",
+        "source_url": "https://www.socialnews.xyz/2024/05/06/everyone-wants-votes-but-no-one-wants-to-campaign-in-red-light-areas-of-up/",
+        "last_updated": "2024-05",
+        "notes": "District centroid only. Lucknow is dispersed per NGO - not GB Road style."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {"type": "Point", "coordinates": [80.3319, 26.4499]},
+      "properties": {
+        "district": "Kanpur Nagar",
+        "area_name": "Becon Ganj / Bada Bazaar (historic core) + Nayaganj area",
+        "type": "Historic core - now dispersed",
+        "reliability": "medium",
+        "source": "Becon Ganj Wikipedia + Freedom Firm district list + local media",
+        "source_url": "https://en.wikipedia.org/wiki/Becon_Ganj",
+        "last_updated": "2024-05",
+        "notes": "District centroid only. Becon Ganj is historic, rest is street-based hotspot reporting."
+      }
+    }
+  ]
+}
