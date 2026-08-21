@@ -57,12 +57,12 @@ document.getElementById('d-share').onclick = async ()=>{
   alert('Link copied');
 };
 
-// Controls
+// Controls - mobile first, UP View removed, heatmap default on
 document.getElementById('btn-fullscreen').onclick = ()=>{
+  if(window.innerWidth <= 860) return;
   if(document.fullscreenElement) document.exitFullscreen();
   else document.getElementById('map').requestFullscreen();
 };
-document.getElementById('btn-reset').onclick = ()=> map.flyToBounds(UP_BOUNDS, {duration:1});
 document.getElementById('btn-sat').onclick = (e)=>{
   if(!map.hasLayer(satellite)){ map.addLayer(satellite); map.removeLayer(street); }
   e.target.classList.add('active'); document.getElementById('btn-street').classList.remove('active');
@@ -71,20 +71,20 @@ document.getElementById('btn-street').onclick = (e)=>{
   if(!map.hasLayer(street)){ map.addLayer(street); map.removeLayer(satellite); }
   e.target.classList.add('active'); document.getElementById('btn-sat').classList.remove('active');
 };
-let heatOn=false, heatLayer=null;
+let heatOn=true, heatLayer=null;
+function enableHeat(){
+  if(heatLayer){ heatLayer.addTo(map); return; }
+  fetch('/data/up-points.geojson').then(r=>r.json()).then(d=>{
+    const pts = d.features.map(f=> [f.geometry.coordinates[1], f.geometry.coordinates[0], 0.9]);
+    heatLayer = L.layerGroup(pts.map(p=> L.circleMarker(p.slice(0,2), {radius:28, fillColor:'#d93025', fillOpacity:0.18, color:'#d93025', weight:1, opacity:0.25})));
+    heatLayer.addTo(map);
+  });
+}
 document.getElementById('btn-heat').onclick = (e)=>{
   heatOn=!heatOn;
   e.target.classList.toggle('active', heatOn);
-  if(heatOn){
-    if(!heatLayer){
-      fetch('/data/up-points.geojson').then(r=>r.json()).then(d=>{
-        const pts = d.features.map(f=> [f.geometry.coordinates[1], f.geometry.coordinates[0], 0.9]);
-        // simple heat via circleMarkers glow
-        heatLayer = L.layerGroup(pts.map(p=> L.circleMarker(p.slice(0,2), {radius:28, fillColor:'#d93025', fillOpacity:0.18, color:'#d93025', weight:1, opacity:0.25})));
-        heatLayer.addTo(map);
-      });
-    } else heatLayer.addTo(map);
-  } else { if(heatLayer) map.removeLayer(heatLayer); }
+  if(heatOn) enableHeat();
+  else { if(heatLayer) map.removeLayer(heatLayer); }
 };
 
 // Story auto-tour - polished: toggle hidden
@@ -106,6 +106,8 @@ let pointsData=null;
 fetch('/data/up-points.geojson').then(r=>r.json()).then(data=>{
   pointsData=data;
   storyData=data.features;
+  // enable heatmap by default
+  enableHeat();
   // build story cards
   storyEl.innerHTML='';
   data.features.forEach((f,i)=>{
