@@ -3,7 +3,13 @@
   "features": [
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [81.8556, 25.4618]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8556,
+          25.4618
+        ]
+      },
       "properties": {
         "slug": "meerganj",
         "district": "Prayagraj (Allahabad)",
@@ -20,7 +26,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [82.9876, 25.3176]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.9876,
+          25.3176
+        ]
+      },
       "properties": {
         "slug": "shivdaspur",
         "district": "Varanasi",
@@ -37,7 +49,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [77.7064, 28.9845]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7064,
+          28.9845
+        ]
+      },
       "properties": {
         "slug": "kabadi-bazar",
         "district": "Meerut",
@@ -54,7 +72,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [80.0500, 27.3800]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.05,
+          27.38
+        ]
+      },
       "properties": {
         "slug": "natpurwa",
         "district": "Hardoi",
@@ -71,7 +95,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [80.9462, 26.8467]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.9462,
+          26.8467
+        ]
+      },
       "properties": {
         "slug": "lucknow",
         "district": "Lucknow",
@@ -82,13 +112,19 @@
         "source_url": "https://www.socialnews.xyz/2024/05/06/everyone-wants-votes-but-no-one-wants-to-campaign-in-red-light-areas-of-up/",
         "last_updated": "2024-05",
         "last_verified": "2024-05 via UPNSW union reporting",
-        "story": "Lucknow has no GB Road-style集中 brothel quarter. The old city's 'Chawal wali gali' is the historic core - lanes of intergenerational sex work that politicians never campaign in. Sex workers are otherwise dispersed near Charbagh station, Chowk, Hazratganj, Daliganj, Rajajipuram and Nishatganj. In 2024 workers formed the Uttar Pradesh Network of Sex Workers (UPNSW), officially recognised in June, to unionise and fight for dignity and schemes.",
+        "story": "Lucknow has no GB Road-style\u96c6\u4e2d brothel quarter. The old city's 'Chawal wali gali' is the historic core - lanes of intergenerational sex work that politicians never campaign in. Sex workers are otherwise dispersed near Charbagh station, Chowk, Hazratganj, Daliganj, Rajajipuram and Nishatganj. In 2024 workers formed the Uttar Pradesh Network of Sex Workers (UPNSW), officially recognised in June, to unionise and fight for dignity and schemes.",
         "notes": "District centroid only. Dispersed street-based presence per UPNSW."
       }
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [80.3319, 26.4499]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3319,
+          26.4499
+        ]
+      },
       "properties": {
         "slug": "kanpur",
         "district": "Kanpur Nagar",
@@ -105,7 +141,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [81.1900, 26.9300]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.19,
+          26.93
+        ]
+      },
       "properties": {
         "slug": "safedabad",
         "district": "Barabanki",
@@ -122,7 +164,13 @@
     },
     {
       "type": "Feature",
-      "geometry": {"type": "Point", "coordinates": [78.7550, 28.8300]},
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.755,
+          28.83
+        ]
+      },
       "properties": {
         "slug": "navabpura",
         "district": "Moradabad",
@@ -135,6 +183,167 @@
         "last_verified": "2024-05 via Freedom Firm annual report",
         "story": "Listed by anti-trafficking NGO Freedom Firm as one of its Uttar Pradesh raid/intervention sites in its 2016-17 annual report. Moradabad also hosts Kartik Shikshan Sansthan's UPSACS-funded Targeted Intervention working with FSWs and IDUs across several locations of the brass city.",
         "notes": "Area centroid only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.545,
+          29.968
+        ]
+      },
+      "properties": {
+        "slug": "saharanpur-nakhasa",
+        "district": "Saharanpur",
+        "area_name": "Nakhasa Bazar / Nakkasa Market",
+        "type": "Formal market - historic",
+        "reliability": "high",
+        "source": "High Court PIL Sunil Chaudhary 2019 + Amar Ujala + Live Hindustan survey order",
+        "source_url": "https://www.livehindustan.com/uttar-pradesh/saharanpur/story-surveillance-on-radlight-area-in-saharanpur-2577127.html",
+        "last_updated": "2019-06",
+        "last_verified": "2019-06 via High Court order to SSP/DM Saharanpur",
+        "story": "Purana Shahar's main bazaar where the High Court, on advocate Sunil Chaudhary's PIL after Meerut Kabadi Bazar, ordered the district magistrate and SSP to survey and close the Nakhasa Bazar deh vyapar. The supplementary affidavit and rehabilitation officer's letter to Meerut-Saharapur mandate prove a long-standing kotha cluster in the old city.",
+        "notes": "Market centroid only. High Court-ordered closure, not specific building."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.008,
+          27.18
+        ]
+      },
+      "properties": {
+        "slug": "agra-kashmiri-bazar",
+        "district": "Agra",
+        "area_name": "Kashmiri Bazar / Basai village (22 kothas)",
+        "type": "Formal bazaar - historic core, now dispersed",
+        "reliability": "high",
+        "source": "TOI 2015 21-girl rescue Kashmiri Bazaar + Jagran/InextLive 2019 raid 32 women + Agra Bharat analysis",
+        "source_url": "https://timesofindia.indiatimes.com/india/daring-rescue-of-21-girls-from-kashmir-bazaar/articleshow/48345633.cms",
+        "last_updated": "2019-08",
+        "last_verified": "2019-08 via 32-women/11-customer police raid",
+        "story": "Agra's Mughal-era bazaar between Mal ka Bazar and Taj Ganj, where Nepali, Bedia, Bengali and Bangladeshi women worked from high balconies in 8x8 wooden cubicles. A 2015 Navi Mumbai police rescue recovered 21 girls sold for Rs2-3 lakh. In 2019 a joint raid found 32 women and 11 customers despite police records claiming closure. Now largely dispersed to hotels on Fatehabad Road and former village Basai.",
+        "notes": "Bazaar centroid only. 22 kothas historically."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.08,
+          27.88
+        ]
+      },
+      "properties": {
+        "slug": "aligarh-madar-gate",
+        "district": "Aligarh",
+        "area_name": "Madar Gate - Jeewan Gali / Sarai Kalan",
+        "type": "Formal gate-mohalla - historic",
+        "reliability": "high",
+        "source": "Live Hindustan 2023-09-02 Madar Gate + Outlook Hindi 2015 field",
+        "source_url": "https://www.livehindustan.com/uttar-pradesh/story-up-aligarh-red-light-area-madar-gate-now-business-areas-for-sex-workers-8656270.html",
+        "last_updated": "2023-09",
+        "last_verified": "2023-09 via field + historian Dr Vedvati Rathi",
+        "story": "Inside the old city's Madar Gate - built as Rangmahal for Raja Man Singh in 1804 - British-era mujra lanes Jeewan Wali Gali, Sarai Kalan and Tamoli Para remain active evenings. Historian Rathi traces its courtesan history to 1787 Sindhia era. A 2015 Outlook walk found rates Rs100-300 and 'viraasat maa se' narratives persisting alongside hardware shops.",
+        "notes": "Gate-mohalla centroid only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.39,
+          27.15
+        ]
+      },
+      "properties": {
+        "slug": "firozabad-badnaam-gali",
+        "district": "Firozabad",
+        "area_name": "Badnaam Gali - 42 houses",
+        "type": "Formal gali - historic",
+        "reliability": "high",
+        "source": "Jagran 2025-02 Firozabad brothel sealed residents migrate",
+        "source_url": "https://www.jagran.com/uttar-pradesh/firozabad-firozabad-brothel-sealed-residents-migrate-from-badnam-gali-40074460.html",
+        "last_updated": "2025-02",
+        "last_verified": "2025-02 via seal after hostage complaint",
+        "story": "42-house gali sealed in Feb 2015 after a girl's hostage complaint led to 7 houses sealed and 20 locked as residents migrated to Mumbai. With 200+ voters missing during the SIR survey, locals now petition to rename the lane.",
+        "notes": "Gali centroid only. 42 houses reported."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.58,
+          25.58
+        ]
+      },
+      "properties": {
+        "slug": "ghazipur-basuka",
+        "district": "Ghazipur",
+        "area_name": "Basuka / Basureka Tawaif village",
+        "type": "Hereditary village - Nat/Muslim + Bhumihar",
+        "reliability": "medium",
+        "source": "Bhaskar DB Original 2023 Ghazipur tawaif village",
+        "source_url": "https://www.bhaskar.com/db-original/news/uttar-pradesh-ghazipur-tawaif-village-story-131016936.html",
+        "last_updated": "2023-03",
+        "last_verified": "2023-03 via village field 50-60 houses",
+        "story": "A 15,000-population village near Ghazipur with 50-60 houses of women engaged in naach-gaana as livelihood - similar to Hardoi's Natpurwa. Mixed Nat-Muslim and Bhumihar community, termed 'meetthka gaon', with 50+ police cases linked to disputes over the practice.",
+        "notes": "Village centroid only. Community-sanctioned, not a city kotha."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.59,
+          27.57
+        ]
+      },
+      "properties": {
+        "slug": "bahraich-wazirbag",
+        "district": "Bahraich",
+        "area_name": "Wazirbag / Wazirganj Mohalla",
+        "type": "Mohalla - dispersed",
+        "reliability": "medium",
+        "source": "Bhaskar Digital 2026-05-04 + Bhaskar 2026 raid",
+        "source_url": "https://bhaskardigital.com/bahraich-prostitution-racket-busted-in-wazir/",
+        "last_updated": "2026-05",
+        "last_verified": "2026-05 via Kotwali Nagar ITPA 3/4/5/6 raid",
+        "story": "Kotwali Nagar mohalla where a house of Raghunath Prasad was raided; 3 arrested under ITPA 3/4/5/6, Rs3400 and objectionable material seized. Locals had locked the house from outside after long-running complaints.",
+        "notes": "Mohalla centroid only. Dispersed, not classic 20+ kotha cluster."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.37,
+          26.75
+        ]
+      },
+      "properties": {
+        "slug": "gorakhpur-nh28",
+        "district": "Gorakhpur",
+        "area_name": "NH-28 Madapar - Zero Point (Lucknow Bypass)",
+        "type": "Highway hotel belt - dispersed, not classic RLA",
+        "reliability": "medium-high",
+        "source": "Dynamite News Hindi 2025-07-14 + Bhaskar MLA Sarvan Nishad letter + Jagran Fly-In Hotel seal",
+        "source_url": "https://hindi.dynamitenews.com/uttar-pradesh/prostitution-racket-in-gorakhpur-red-light-area-built-on-nh-28-villagers-created-ruckus",
+        "last_updated": "2025-07",
+        "last_verified": "2025-07 via Gram Pradhan protest + MLA letter to DM/SSP",
+        "story": "Not a historic bazaar but a newly labelled 'red light area built' - a 2-dozen hotel/dhaba strip on the Lucknow bypass from Madapar to Zero Point near AIIMS. Villagers' panchayat and BJP MLA Sarvan Nishad's letter to the Commissioner allege open trafficking of minors in these hotels - leading to repeated seals like Hotel Fly-In, Krishna Inn and Sai Grand.",
+        "notes": "Highway-belt centroid only. Modern dispersed pattern, tagged as claimed red light area."
       }
     }
   ]
