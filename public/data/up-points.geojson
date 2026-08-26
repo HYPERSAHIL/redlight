@@ -345,6 +345,213 @@
         "story": "Not a historic bazaar but a newly labelled 'red light area built' - a 2-dozen hotel/dhaba strip on the Lucknow bypass from Madapar to Zero Point near AIIMS. Villagers' panchayat and BJP MLA Sarvan Nishad's letter to the Commissioner allege open trafficking of minors in these hotels - leading to repeated seals like Hotel Fly-In, Krishna Inn and Sai Grand.",
         "notes": "Highway-belt centroid only. Modern dispersed pattern, tagged as claimed red light area."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.42,
+          28.36
+        ]
+      },
+      "properties": {
+        "slug": "bareilly-satellite",
+        "district": "Bareilly",
+        "area_name": "Satellite - Bisalpur Chauraha street + BakarGanj",
+        "type": "Dispersed street + hotel - modern",
+        "reliability": "medium",
+        "source": "Live Hindustan 2018 Satellite-Bisalpur + Live Hindustan 2026 BakarGanj Rs500-1000/hr WhatsApp bust",
+        "source_url": "https://www.livehindustan.com/national/story-up-prostitution-market-is-open-every-evening-in-bareilly-know-what-is-the-matter-2297145.html",
+        "last_updated": "2026-03",
+        "last_verified": "2026-03 via BakarGanj ITPA house raid",
+        "story": "No historic kotha cluster like Meerut. Instead Bareilly's evening street trade from Satellite bus stand to Bisalpur Chauraha (kinnar/girls on buses) and WhatsApp-booked houses in BakarGanj (Rs500-1000/hr). Reflects UP's shift from bazaar kothas to dispersed street/hotel pattern.",
+        "notes": "Street-hotel centroid only. Dispersed pattern, not 50+ kotha bazaar."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.7,
+          29.47
+        ]
+      },
+      "properties": {
+        "slug": "muzaffarnagar-pachenda",
+        "district": "Muzaffarnagar",
+        "area_name": "Pachenda Road OYO / Mahavir Chowk spa",
+        "type": "Hotel/spa belt - dispersed",
+        "reliability": "medium",
+        "source": "Bhaskar + Dynamite Jan 2026 Pachenda Road 5 couples + minor caught",
+        "source_url": "https://www.bhaskar.com/local/uttar-pradesh/muzaffarnagar/news/muzaffarnagar-pachanda-road-sex-trade-raid-minors-caught-137085982.html",
+        "last_updated": "2026-01",
+        "last_verified": "2026-01 via Pachenda Road OYO raid",
+        "story": "Muzaffarnagar has no Wikipedia-listed bazaar kotha. Pattern is NH-58 and Pachenda Road OYOs (Rose Inn) and Mahavir Chowk spas raided with couples and a minor. Highway motel belt, not a historic bazaar.",
+        "notes": "Hotel-belt centroid only. Modern dispersed."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.32,
+          28.64
+        ]
+      },
+      "properties": {
+        "slug": "ghaziabad-kaushambi",
+        "district": "Ghaziabad",
+        "area_name": "Kaushambi Sarovar Portico / Vaishali Sec-4 / Kala Patthar",
+        "type": "Hotel/complex + underpass - dispersed",
+        "reliability": "medium",
+        "source": "Jagran Aug 2025/ Feb 2026 Kaushambi 11 women + Zee Aug 2025 Vaishali 23 women + TOI 2016 Kala Patthar underpass",
+        "source_url": "https://www.jagran.com/uttar-pradesh/ghaziabad-deh-vyapar-racket-busted-in-kaushambi-hotel-11-women-rescuing-in-ghaziabad-40139286.html",
+        "last_updated": "2026-02",
+        "last_verified": "2026-02 via Kaushambi hotel drug + sex raid",
+        "story": "NCR spillover, not a classic bazaar. Kaushambi Sarovar Portico Hotel (11 women + drugs), Vaishali Sec-4 commercial complex 3rd floor (23 women), and Kala Patthar underpass open-air brothel near Gaur Green City (Indrapuram). All TOI/Jagran/Zee documented.",
+        "notes": "NCR hotel/complex belt centroid only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.68,
+          27.5
+        ]
+      },
+      "properties": {
+        "slug": "mathura-yamuna",
+        "district": "Mathura",
+        "area_name": "Yamuna Expressway Raya Cut / Krishna Nagar spa",
+        "type": "Highway hotel + spa - dispersed",
+        "reliability": "medium",
+        "source": "TOI Aug 2025 spa 15 rescued + Zee Aug 2026 Yamuna Expressway 6 girls 13 youth",
+        "source_url": "https://timesofindia.indiatimes.com/city/agra/mathura-police-bust-sex-trafficking-racket-at-2-spa-centres-4-held/articleshow/123475974.cms",
+        "last_updated": "2025-08",
+        "last_verified": "2025-08 via two spa centres sealed",
+        "story": "Mathura's modern pattern mirrors Agra's dispersal: Krishna Nagar Blossom/Heaven spas in city and Yamuna Expressway Raya Cut hotels (Royal, New Sawariya Guest House) raided with 6 girls and 13 youth. Also Chhata Kotwali dhabas on highway.",
+        "notes": "Highway-spa belt centroid only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.13,
+          26.79
+        ]
+      },
+      "properties": {
+        "slug": "ayodhya-khirgali",
+        "district": "Ayodhya",
+        "area_name": "Khir Gali Rani Sati Guest House (Fatehganj)",
+        "type": "Guest-house hotspot - dispersed",
+        "reliability": "medium",
+        "source": "Jagran Apr 2026 guest-house license cancelled after 2025 raid",
+        "source_url": "https://www.jagran.com/uttar-pradesh/ayodhya-guest-house-license-cancelled-after-prostitution-bust-in-ayodhya-24056393.html",
+        "last_updated": "2026-04",
+        "last_verified": "2026-04 via license cancellation after 11-women raid 500m from chowki",
+        "story": "Guest house 500m from Fatehganj Chowki raided 19 Sep 2025, 11 women rescued, licence cancelled and premises sealed. Residents said the house had run for years. Part of Ayodhya's spa/guest-house dispersal.",
+        "notes": "Guest-house lane centroid only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.74,
+          26.78
+        ]
+      },
+      "properties": {
+        "slug": "basti-station",
+        "district": "Basti",
+        "area_name": "Purani Basti Station Road 3rd floor",
+        "type": "Station-road building - dispersed",
+        "reliability": "medium",
+        "source": "ABP Live Jun 2026 Basti 5 women 11 men + Patrika Jan 2026 14 women 4 spas",
+        "source_url": "https://www.abplive.com/states/up-uk/basti-police-have-busted-a-prostitution-racket-operating-under-spa-center-girl-and-men-arrested-ann-3144403",
+        "last_updated": "2026-06",
+        "last_verified": "2026-06 via Station Road 3rd floor AHTU raid",
+        "story": "Purani Basti's Station Road 3rd floor building (Malviya Road/Roadways axis) raided with 5 women 11 men, plus a January AHTU sweep of 4 spas netting 14 women. Also GC Palace Badharkhurd and Madhwapur toll plaza houses.",
+        "notes": "Station-road building centroid only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.95,
+          26.06
+        ]
+      },
+      "properties": {
+        "slug": "azamgarh-kaptanganj",
+        "district": "Azamgarh",
+        "area_name": "Radha Family Restaurant, Maharajganj Road Kaptanganj",
+        "type": "Restaurant/hotel hotspot - dispersed",
+        "reliability": "medium",
+        "source": "NewsTrack Dec 2025 Azamgarh 9 arrested IGRS complaint",
+        "source_url": "https://newstrack.com/uttar-pradesh/azamgarh-police-raid-radha-family-restaurant-kaptanganj-sex-racket-busted-9-arrested-565026",
+        "last_updated": "2025-12",
+        "last_verified": "2025-12 via Radha Family Restaurant IGRS-triggered raid",
+        "story": "Maharajganj Road restaurant raided after an IGRS online complaint: 5 men, 4 women, Rs1980 and condoms seized; owner Sarvesh Kumar Maurya held. Example of the restaurant-lodge dispersal replacing any single bazaar.",
+        "notes": "Restaurant centroid only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.55,
+          25.93
+        ]
+      },
+      "properties": {
+        "slug": "mau-roadways",
+        "district": "Mau",
+        "area_name": "Hotel near Roadways / Sahadatpura",
+        "type": "Bus-stand hotel - dispersed",
+        "reliability": "medium",
+        "source": "TOI May 28 2023 Mau-Jaunpur hotel clampdown 14 women 16 men",
+        "source_url": "https://timesofindia.indiatimes.com/city/varanasi/police-raid-mau-jaunpur-hotels-clamp-down-on-sex-trade/articleshow/100561862.cms",
+        "last_updated": "2023-05",
+        "last_verified": "2023-05 via repeat raid Dec 31 2022 + May 2023 same hotel",
+        "story": "Roadways/Sahadatpura-area hotels in Mau raided twice (Dec 2022 and May 2023) with 14 women 16 men. Pattern mirrors neighbouring Jaunpur and Ghazipur - small hotels near the bus stand.",
+        "notes": "Bus-stand hotel centroid only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.68,
+          25.73
+        ]
+      },
+      "properties": {
+        "slug": "jaunpur-olandganj",
+        "district": "Jaunpur",
+        "area_name": "Olandganj hotel (Dharmapur road)",
+        "type": "Hotel hotspot - dispersed",
+        "reliability": "medium",
+        "source": "TOI May 2023 same Mau-Jaunpur operation 6 women 2 men",
+        "source_url": "https://timesofindia.indiatimes.com/city/varanasi/police-raid-mau-jaunpur-hotels-clamp-down-on-sex-trade/articleshow/100561862.cms",
+        "last_updated": "2023-05",
+        "last_verified": "2023-05 via Olandganj hotel Rs500/room raid",
+        "story": "Olandganj hotel in Jaunpur city, run by a Dharmapur (Mau) owner, raided with 6 women and manager Mahesh Yadav; Rs500 per room was the rate, a woman procurer fled. Paired with the Mau raids that week.",
+        "notes": "Hotel centroid only."
+      }
     }
   ]
 }
