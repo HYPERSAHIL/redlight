@@ -552,6 +552,1179 @@
         "story": "Olandganj hotel in Jaunpur city, run by a Dharmapur (Mau) owner, raided with 6 women and manager Mahesh Yadav; Rs500 per room was the rate, a woman procurer fled. Paired with the Mau raids that week.",
         "notes": "Hotel centroid only."
       }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.329875,
+          28.8178125
+        ]
+      },
+      "properties": {
+        "slug": "amroha-generic",
+        "district": "Amroha",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.94445454545455,
+          28.718727272727275
+        ]
+      },
+      "properties": {
+        "slug": "hapur-generic",
+        "district": "Hapur",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.9725238095238,
+          28.478238095238094
+        ]
+      },
+      "properties": {
+        "slug": "pilibhit-generic",
+        "district": "Pilibhit",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.05535294117647,
+          28.37035294117647
+        ]
+      },
+      "properties": {
+        "slug": "bulandshahr-generic",
+        "district": "Bulandshahr",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.5334,
+          28.4209
+        ]
+      },
+      "properties": {
+        "slug": "gautam-buddha-nagar-generic",
+        "district": "Gautam Buddha Nagar",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.62496153846153,
+          28.117884615384618
+        ]
+      },
+      "properties": {
+        "slug": "lakhimpur-kheri-generic",
+        "district": "Lakhimpur Kheri",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.08335,
+          28.093650000000004
+        ]
+      },
+      "properties": {
+        "slug": "budaun-generic",
+        "district": "Budaun",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.84376,
+          27.9694
+        ]
+      },
+      "properties": {
+        "slug": "shahjahanpur-generic",
+        "district": "Shahjahanpur",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.85906666666666,
+          27.7572
+        ]
+      },
+      "properties": {
+        "slug": "kasganj-generic",
+        "district": "Kasganj",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.914,
+          27.673066666666667
+        ]
+      },
+      "properties": {
+        "slug": "shrawasti-generic",
+        "district": "Shrawasti",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.87261904761905,
+          27.475809523809524
+        ]
+      },
+      "properties": {
+        "slug": "sitapur-generic",
+        "district": "Sitapur",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.18299999999999,
+          27.598799999999997
+        ]
+      },
+      "properties": {
+        "slug": "hathras-generic",
+        "district": "Hathras",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.66986363636364,
+          27.526227272727272
+        ]
+      },
+      "properties": {
+        "slug": "etah-generic",
+        "district": "Etah",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.43346153846154,
+          27.449384615384613
+        ]
+      },
+      "properties": {
+        "slug": "farrukhabad-generic",
+        "district": "Farrukhabad",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.86200000000001,
+          27.254166666666666
+        ]
+      },
+      "properties": {
+        "slug": "siddharthnagar-generic",
+        "district": "Siddharthnagar",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.99464285714285,
+          27.195142857142855
+        ]
+      },
+      "properties": {
+        "slug": "mainpuri-generic",
+        "district": "Mainpuri",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.50447058823529,
+          27.17364705882353
+        ]
+      },
+      "properties": {
+        "slug": "maharajganj-generic",
+        "district": "Maharajganj",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.08057142857143,
+          27.08238095238095
+        ]
+      },
+      "properties": {
+        "slug": "gonda-generic",
+        "district": "Gonda",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.89665,
+          26.8824
+        ]
+      },
+      "properties": {
+        "slug": "kushinagar-generic",
+        "district": "Kushinagar",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.634125,
+          27.0160625
+        ]
+      },
+      "properties": {
+        "slug": "kannauj-generic",
+        "district": "Kannauj",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.02707142857142,
+          26.77264285714286
+        ]
+      },
+      "properties": {
+        "slug": "sant-kabir-nagar-generic",
+        "district": "Sant Kabir Nagar",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.493,
+          26.67525
+        ]
+      },
+      "properties": {
+        "slug": "unnao-generic",
+        "district": "Unnao",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.03533333333333,
+          26.754933333333334
+        ]
+      },
+      "properties": {
+        "slug": "etawah-generic",
+        "district": "Etawah",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.46633333333332,
+          26.663666666666664
+        ]
+      },
+      "properties": {
+        "slug": "auraiya-generic",
+        "district": "Auraiya",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.85016666666667,
+          26.458388888888887
+        ]
+      },
+      "properties": {
+        "slug": "kanpur-dehat-generic",
+        "district": "Kanpur Dehat",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.82115789473684,
+          26.40926315789474
+        ]
+      },
+      "properties": {
+        "slug": "deoria-generic",
+        "district": "Deoria",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.2611875,
+          26.2405625
+        ]
+      },
+      "properties": {
+        "slug": "sultanpur-generic",
+        "district": "Sultanpur",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.70483333333333,
+          26.42688888888889
+        ]
+      },
+      "properties": {
+        "slug": "ambedkar-nagar-generic",
+        "district": "Ambedkar Nagar",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.13766666666668,
+          26.185777777777776
+        ]
+      },
+      "properties": {
+        "slug": "rae-bareli-generic",
+        "district": "Rae Bareli",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.41095238095238,
+          26.13695238095238
+        ]
+      },
+      "properties": {
+        "slug": "jalaun-generic",
+        "district": "Jalaun",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.839,
+          25.84508
+        ]
+      },
+      "properties": {
+        "slug": "fatehpur-generic",
+        "district": "Fatehpur",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.03213636363635,
+          25.883363636363637
+        ]
+      },
+      "properties": {
+        "slug": "ballia-generic",
+        "district": "Ballia",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.94483333333332,
+          25.461666666666666
+        ]
+      },
+      "properties": {
+        "slug": "jhansi-generic",
+        "district": "Jhansi",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.51864285714285,
+          25.48025
+        ]
+      },
+      "properties": {
+        "slug": "banda-generic",
+        "district": "Banda",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.382,
+          25.506866666666667
+        ]
+      },
+      "properties": {
+        "slug": "kaushambi-generic",
+        "district": "Kaushambi",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.10018181818181,
+          25.260863636363638
+        ]
+      },
+      "properties": {
+        "slug": "chitrakoot-generic",
+        "district": "Chitrakoot",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.2391052631579,
+          25.17963157894737
+        ]
+      },
+      "properties": {
+        "slug": "chandauli-generic",
+        "district": "Chandauli",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.45211111111111,
+          25.373444444444445
+        ]
+      },
+      "properties": {
+        "slug": "bhadohi-generic",
+        "district": "Bhadohi",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.5870909090909,
+          24.978954545454545
+        ]
+      },
+      "properties": {
+        "slug": "mirzapur-generic",
+        "district": "Mirzapur",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.58773913043478,
+          24.67404347826087
+        ]
+      },
+      "properties": {
+        "slug": "lalitpur-generic",
+        "district": "Lalitpur",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.0273448275862,
+          24.481896551724137
+        ]
+      },
+      "properties": {
+        "slug": "sonbhadra-generic",
+        "district": "Sonbhadra",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.63550000000001,
+          26.308333333333334
+        ]
+      },
+      "properties": {
+        "slug": "amethi-generic",
+        "district": "Amethi",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.51615384615386,
+          28.475692307692306
+        ]
+      },
+      "properties": {
+        "slug": "sambhal-generic",
+        "district": "Sambhal",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.69023529411764,
+          25.33841176470588
+        ]
+      },
+      "properties": {
+        "slug": "mahoba-generic",
+        "district": "Mahoba",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.42838095238096,
+          29.350857142857144
+        ]
+      },
+      "properties": {
+        "slug": "bijnor-generic",
+        "district": "Bijnor",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.34341666666667,
+          29.0545
+        ]
+      },
+      "properties": {
+        "slug": "baghpat-generic",
+        "district": "Baghpat",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.1170625,
+          28.798125
+        ]
+      },
+      "properties": {
+        "slug": "rampur-generic",
+        "district": "Rampur",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.24766666666667,
+          29.50733333333333
+        ]
+      },
+      "properties": {
+        "slug": "shamli-generic",
+        "district": "Shamli",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.39277777777778,
+          27.414166666666667
+        ]
+      },
+      "properties": {
+        "slug": "balrampur-generic",
+        "district": "Balrampur",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.90934999999999,
+          25.81345
+        ]
+      },
+      "properties": {
+        "slug": "hamirpur-generic",
+        "district": "Hamirpur",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          81.8555652173913,
+          25.865695652173915
+        ]
+      },
+      "properties": {
+        "slug": "pratapgarh-generic",
+        "district": "Pratapgarh",
+        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
+        "type": "Dispersed hotel/spa - low evidence",
+        "reliability": "low",
+        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
+        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
+        "last_updated": "2026-08",
+        "last_verified": "2026-08 via systematic search - negative for historic kotha",
+        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
+        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
     }
   ]
 }

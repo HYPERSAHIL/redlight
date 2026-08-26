@@ -25,6 +25,12 @@ const redIcon = L.divIcon({
   iconSize: [16,16],
   iconAnchor: [8,8]
 });
+const lowIcon = L.divIcon({
+  className: '',
+  html: '<div class="pin-wrap" style="opacity:0.85"><div style="width:11px;height:11px;background:#ff6b5a;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 6px rgba(0,0,0,.4)"></div></div>',
+  iconSize: [11,11],
+  iconAnchor: [5,5]
+});
 
 const drawer = document.getElementById('drawer');
 const dTitle = document.getElementById('d-title');
@@ -141,7 +147,7 @@ fetch('/data/up-points.geojson').then(r=>r.json()).then(data=>{
   });
 
   L.geoJSON(data, {
-    pointToLayer: (f, latlng)=> L.marker(latlng, {icon: redIcon}),
+    pointToLayer: (f, latlng)=> L.marker(latlng, {icon: f.properties.reliability==='low' ? lowIcon : redIcon}),
     onEachFeature: (f, layer)=>{
       layer.bindTooltip(`${f.properties.district} - ${f.properties.area_name}`, {direction:'top', offset:[0,-10]});
       layer.on('click', ()=>{
