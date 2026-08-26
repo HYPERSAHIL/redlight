@@ -2,93 +2,165 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#09090b" />
   <title>UP Red Light Areas</title>
+  <link rel="manifest" href="/manifest.webmanifest" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
   <style>
+    :root{
+      --bg:#09090b; --panel:rgba(24,24,27,.92); --panel-solid:#18181b;
+      --border:rgba(255,255,255,.10); --border-strong:rgba(255,255,255,.16);
+      --text:#fafafa; --muted:#a1a1aa; --muted-2:#71717a;
+      --primary:#e11d48; --primary-fg:#fff; --accent:#f59e0b;
+      --ring:rgba(225,29,72,.45);
+      --radius:14px;
+    }
     *{box-sizing:border-box}
-    html,body{height:100%;margin:0;font-family:system-ui,Segoe UI,Roboto,Helvetica,Arial;background:#050507;color:#eee;overflow:hidden}
-    #map{height:100vh;width:100vw}
-    .topbar{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:1000;background:rgba(16,16,18,.92);color:#fff;padding:8px 10px 8px 16px;display:flex;align-items:center;gap:14px;border-radius:999px;box-shadow:0 10px 40px rgba(0,0,0,.45);backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);max-width:980px;width:calc(100% - 18px)}
-    .topbar-left{flex:1;min-width:0}
-    .topbar h1{font-size:13.5px;margin:0;font-weight:700;letter-spacing:.2px;white-space:nowrap}
-    .topbar p{font-size:11px;margin:1px 0 0;opacity:.55;line-height:1.2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-    .segment{display:flex;background:rgba(255,255,255,.08);padding:3px;border-radius:999px;border:1px solid rgba(255,255,255,.08)}
-    .segment button{border:0;background:transparent;color:#fff;padding:6px 14px;border-radius:999px;font-size:11.5px;cursor:pointer;transition:.15s}
-    .segment button.active{background:#fff;color:#111;font-weight:600}
-    .topbar-right{display:flex;gap:8px;align-items:center}
-    .btn{appearance:none;border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.08);color:#fff;padding:7px 13px;border-radius:999px;font-size:11.5px;cursor:pointer;transition:.15s;white-space:nowrap}
-    .btn:hover{background:rgba(255,255,255,.14)}
-    .btn.ghost{padding:6px 11px;font-size:11px;opacity:.9}
-    .btn.primary{background:#d93025;border-color:#d93025;font-weight:600}
-    .btn.primary:hover{background:#b9291f}
-    .icon-btn{appearance:none;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.06);color:#fff;padding:6px 11px;border-radius:999px;font-size:11px;cursor:pointer}
-    .icon-btn.active{background:#fff;color:#111;border-color:#fff}
-    .bottombar{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);z-index:900;display:flex;align-items:center;gap:10px;background:rgba(16,16,18,.78);color:#fff;padding:8px 12px;border-radius:999px;backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.08);box-shadow:0 8px 32px rgba(0,0,0,.3);font-size:11px}
+    html,body{height:100%;margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;background:var(--bg);color:var(--text);overflow:hidden}
+    #map{height:100vh;width:100vw;background:#09090b}
+    button{font-family:inherit}
+    .panel{background:var(--panel);border:1px solid var(--border);backdrop-filter:blur(16px);box-shadow:0 12px 40px rgba(0,0,0,.45);border-radius:var(--radius)}
+
+    /* Topbar */
+    .topbar{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:1000;display:flex;align-items:center;gap:12px;padding:8px 8px 8px 16px;max-width:980px;width:calc(100% - 18px)}
+    .brand{flex:1;min-width:0;display:flex;flex-direction:column}
+    .brand h1{font-size:14px;margin:0;font-weight:700;letter-spacing:.2px;white-space:nowrap}
+    .brand p{font-size:11px;margin:2px 0 0;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+    .seg{display:flex;background:rgba(255,255,255,.06);padding:3px;border-radius:999px;border:1px solid var(--border)}
+    .seg button{border:0;background:transparent;color:var(--text);padding:6px 13px;border-radius:999px;font-size:11.5px;cursor:pointer;transition:.15s}
+    .seg button.active{background:#fff;color:#111;font-weight:600}
+    .btn{appearance:none;border:1px solid var(--border-strong);background:rgba(255,255,255,.05);color:var(--text);padding:7px 13px;border-radius:999px;font-size:11.5px;cursor:pointer;transition:.15s;white-space:nowrap}
+    .btn:hover{background:rgba(255,255,255,.12)}
+    .btn.icon{padding:7px 11px;font-size:11px}
+    .btn.primary{background:var(--primary);border-color:var(--primary);font-weight:600;color:var(--primary-fg)}
+    .btn.primary:hover{background:#be123c}
+    .btn.active{background:#fff;color:#111;border-color:#fff}
+    .top-right{display:flex;gap:8px;align-items:center}
+
+    /* Search + filter floating card */
+    .searchcard{position:absolute;top:72px;left:14px;z-index:950;width:300px;max-width:calc(100vw - 28px);padding:10px;display:flex;flex-direction:column;gap:8px}
+    .search-wrap{position:relative;display:flex;align-items:center}
+    .search-wrap svg{position:absolute;left:11px;width:15px;height:15px;color:var(--muted-2);pointer-events:none}
+    .search-input{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--text);padding:9px 12px 9px 33px;border-radius:10px;font-size:13px;outline:none;transition:.15s}
+    .search-input::placeholder{color:var(--muted-2)}
+    .search-input:focus{border-color:var(--ring);box-shadow:0 0 0 3px var(--ring)}
+    .results{display:flex;flex-direction:column;max-height:240px;overflow:auto;border-top:1px solid var(--border);margin-top:2px;padding-top:6px}
+    .result{display:flex;flex-direction:column;gap:1px;padding:8px 10px;border-radius:9px;cursor:pointer;transition:.12s}
+    .result:hover,.result.active{background:rgba(255,255,255,.08)}
+    .result b{font-size:12.5px}
+    .result span{font-size:11px;color:var(--muted)}
+    .result .tag{font-size:9.5px;text-transform:uppercase;letter-spacing:.4px;padding:1px 6px;border-radius:999px;align-self:flex-start;margin-top:3px;border:1px solid var(--border)}
+    .tag.high{color:#fca5a5;background:rgba(225,29,72,.14);border-color:rgba(225,29,72,.3)}
+    .tag.medium{color:#fcd34d;background:rgba(245,158,11,.14);border-color:rgba(245,158,11,.3)}
+    .tag.low{color:#c4b5fd;background:rgba(139,92,246,.14);border-color:rgba(139,92,246,.3)}
+    .filter-row{display:flex;gap:6px}
+    .filter-row .seg{flex:1}
+    .filter-row .seg button{flex:1;padding:5px 6px;font-size:11px}
+
+    /* Bottombar legend */
+    .bottombar{position:absolute;bottom:16px;left:50%;transform:translateX(-50%);z-index:900;display:flex;align-items:center;gap:10px;padding:8px 12px;font-size:11px}
     .bottombar .dot{width:8px;height:8px;border-radius:50%;display:inline-block;margin-right:6px;vertical-align:middle}
-    .bottombar .sep{width:1px;height:14px;background:rgba(255,255,255,.15);margin:0 4px}
-    .bottombar .hint{opacity:.6}
-    .drawer{position:absolute;top:0;right:0;height:100%;width:380px;max-width:88vw;background:rgba(14,14,16,.98);backdrop-filter:blur(16px);border-left:1px solid rgba(255,255,255,.08);z-index:1100;transform:translateX(100%);transition:.28s cubic-bezier(.32,.72,0,1);box-shadow:-20px 0 60px rgba(0,0,0,.5);display:flex;flex-direction:column}
+    .bottombar .sep{width:1px;height:14px;background:var(--border-strong);margin:0 2px}
+    .bottombar .hint{color:var(--muted)}
+
+    /* Drawer */
+    .drawer{position:absolute;top:0;right:0;height:100%;width:390px;max-width:90vw;background:rgba(16,16,18,.985);backdrop-filter:blur(16px);border-left:1px solid var(--border);z-index:1100;transform:translateX(100%);transition:.28s cubic-bezier(.32,.72,0,1);box-shadow:-20px 0 60px rgba(0,0,0,.5);display:flex;flex-direction:column}
     .drawer.open{transform:translateX(0)}
-    .drawer-head{padding:18px 18px 14px;border-bottom:1px solid rgba(255,255,255,.08)}
-    .drawer-head h2{margin:0;font-size:15px}
-    .drawer-head p{margin:6px 0 0;font-size:12px;opacity:.6;line-height:1.5}
+    .drawer-head{padding:18px 18px 14px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:flex-start;gap:12px}
+    .drawer-head h2{margin:0;font-size:15px;line-height:1.3}
+    .drawer-head p{margin:7px 0 0;font-size:12px;color:var(--muted);line-height:1.5}
     .drawer-body{padding:16px 18px;overflow:auto}
     .drawer-actions{display:flex;gap:8px;margin-top:14px;flex-wrap:wrap}
-    .story{position:absolute;bottom:56px;left:50%;transform:translateX(-50%);z-index:950;display:flex;gap:8px;overflow:auto;max-width:92vw;padding:8px;background:rgba(14,14,16,.88);border-radius:14px;backdrop-filter:blur(12px);border:1px solid rgba(255,255,255,.08);box-shadow:0 12px 40px rgba(0,0,0,.4);transition:.2s}
+    .story-block{font-size:13px;line-height:1.65}
+    .story-block b{color:var(--muted);font-size:11px;letter-spacing:.4px;text-transform:uppercase;display:block;margin-bottom:5px}
+    .about-line{margin-top:16px;padding-top:12px;border-top:1px solid var(--border);font-size:11px;color:var(--muted);line-height:1.6}
+    .fresh{display:inline-block;margin-top:8px;padding:3px 9px;border-radius:999px;background:rgba(34,197,94,.16);color:#86efac;font-size:10.5px;border:1px solid rgba(34,197,94,.3)}
+
+    /* Story bar */
+    .story{position:absolute;bottom:58px;left:50%;transform:translateX(-50%);z-index:950;display:flex;gap:8px;overflow:auto;max-width:92vw;padding:8px;transition:.2s}
     .story.hidden{transform:translateX(-50%) translateY(20px);opacity:0;pointer-events:none}
     .story-card{min-width:150px;padding:10px 12px;background:rgba(255,255,255,.06);border-radius:10px;cursor:pointer;border:1px solid transparent;transition:.15s}
     .story-card:hover{background:rgba(255,255,255,.11)}
-    .story-card.active{border-color:#d93025;background:rgba(217,48,37,.18)}
+    .story-card.active{border-color:var(--primary);background:rgba(225,29,72,.16)}
     .story-card b{font-size:12px;display:block}
-    .story-card span{font-size:11px;opacity:.65}
-    .fresh{display:inline-block;margin-top:6px;padding:3px 9px;border-radius:999px;background:rgba(76,175,80,.18);color:#7bd88a;font-size:10.5px;border:1px solid rgba(76,175,80,.3)}
-    .story-block{font-size:13px;line-height:1.65;opacity:.92}
-    .story-block b{opacity:.6;font-size:11px;letter-spacing:.4px;text-transform:uppercase;display:block;margin-bottom:5px}
-    .about-line{margin-top:16px;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);font-size:11px;opacity:.55;line-height:1.6}
+    .story-card span{font-size:11px;color:var(--muted)}
+
     .pin-wrap{position:relative;width:16px;height:16px}
-    .pin-dot{width:16px;height:16px;background:#d93025;border:3px solid #fff;border-radius:50%;box-shadow:0 2px 10px rgba(0,0,0,.5);position:relative;z-index:2}
-    .pin-pulse{position:absolute;inset:0;background:rgba(217,48,37,.45);border-radius:50%;animation:pulse 2s infinite;z-index:1}
-    @keyframes pulse{0%{transform:scale(.7);opacity:1}100%{transform:scale(2.2);opacity:0}}
-    @media(max-width:860px){.topbar{flex-wrap:wrap;justify-content:center;border-radius:16px;padding:10px 12px;gap:10px} .topbar-left{flex-basis:100%;text-align:center} .topbar p{display:none} .bottombar{bottom:10px;padding:7px 10px;font-size:10.5px;max-width:92vw;gap:6px} .story{bottom:52px} #btn-fullscreen{display:none}}
-    @media(max-width:420px){.topbar{top:8px;width:calc(100% - 12px);padding:8px 10px} .segment button{padding:5px 10px;font-size:11px} .btn,.icon-btn{padding:6px 10px;font-size:11px} #map{height:100dvh} .drawer{width:100vw;max-width:100vw} .story-card{min-width:130px} .bottombar{font-size:10px}}
+    .pin-dot{width:16px;height:16px;background:var(--primary);border:3px solid #fff;border-radius:50%;box-shadow:0 2px 10px rgba(0,0,0,.5);position:relative;z-index:2}
+    .pin-pulse{position:absolute;inset:0;background:rgba(225,29,72,.45);border-radius:50%;animation:pulse 2s infinite;z-index:1}
+
+    @media(max-width:860px){
+      .topbar{flex-wrap:wrap;justify-content:center;border-radius:16px;padding:10px 12px;gap:10px}
+      .brand{flex-basis:100%;text-align:center}
+      .brand p{display:none}
+      .searchcard{top:118px}
+      .bottombar{bottom:10px;padding:7px 10px;font-size:10.5px;max-width:94vw;gap:6px}
+      .story{bottom:54px}
+    }
+    @media(max-width:480px){
+      .topbar{top:8px;width:calc(100% - 12px);padding:8px 10px}
+      .seg button,.btn{padding:6px 10px;font-size:11px}
+      .searchcard{top:108px;left:8px;width:calc(100vw - 16px)}
+      #map{height:100dvh}
+      .drawer{width:100vw;max-width:100vw}
+      .story-card{min-width:130px}
+      .bottombar{font-size:10px}
+    }
   </style>
 </head>
 <body>
   <div id="map"></div>
-  <div class="topbar">
-    <div class="topbar-left">
+
+  <div class="topbar panel">
+    <div class="brand">
       <h1>UP Red Light Areas</h1>
-      <p>District centroid only. For information only.</p>
+      <p>District &amp; area-centroid mapping · information only</p>
     </div>
-    <div class="segment" id="seg">
+    <div class="seg" id="seg">
       <button id="btn-sat" class="active">Satellite</button>
       <button id="btn-street">Street</button>
     </div>
-    <button id="btn-heat" class="icon-btn active" title="Heatmap">Heat</button>
-    <div class="topbar-right">
-      <button class="btn ghost" id="btn-fullscreen">Fullscreen</button>
+    <button id="btn-heat" class="btn icon active" title="Toggle heatmap">Heat</button>
+    <div class="top-right">
+      <button class="btn icon" id="btn-lang" title="भाषा बदलें / Switch language">EN</button>
+      <button class="btn icon" id="btn-fullscreen">Full</button>
       <button class="btn primary" id="btn-story">Story</button>
     </div>
   </div>
-  <div class="bottombar">
-    <span><span class="dot" style="background:#d93025"></span>Verified</span>
-    <span><span class="dot" style="background:#ff9800"></span>TI district</span>
-    <span class="sep"></span>
-    <span class="hint">Tap dot to fly</span>
-  </div>
-  <div id="drawer" class="drawer">
-    <div class="drawer-head">
-      <div style="display:flex;justify-content:space-between;align-items:start;gap:12px">
-        <div>
-          <h2 id="d-title">Select a district</h2>
-          <p id="d-sub">Click any red dot or story card.</p>
-        </div>
-        <button class="btn" id="d-close">Close</button>
+
+  <div class="searchcard panel">
+    <div class="search-wrap">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="search" class="search-input" type="text" placeholder="Search district or hotel…" autocomplete="off" />
+    </div>
+    <div class="filter-row">
+      <div class="seg" id="filter">
+        <button data-f="all" class="active">All</button>
+        <button data-f="verified">Verified</button>
+        <button data-f="low">Low</button>
       </div>
     </div>
+    <div class="results" id="results"></div>
+  </div>
+
+  <div class="bottombar panel">
+    <span><span class="dot" style="background:#e11d48"></span>Verified</span>
+    <span><span class="dot" style="background:#f59e0b"></span>TI district</span>
+    <span class="sep"></span>
+    <span class="hint">Tap a dot to explore</span>
+  </div>
+
+  <div id="drawer" class="drawer">
+    <div class="drawer-head">
+      <div>
+        <h2 id="d-title">Select a district</h2>
+        <p id="d-sub">Tap any red dot or story card.</p>
+      </div>
+      <button class="btn" id="d-close">Close</button>
+    </div>
     <div class="drawer-body">
-      <div id="d-content" style="font-size:13px;line-height:1.6;opacity:.9">Tap a red dot to explore. Satellite hybrid with labels is default. Map is locked to UP only.</div>
+      <div id="d-content" style="font-size:13px;line-height:1.6;color:var(--muted)">Tap a red dot to explore. Satellite hybrid with labels is default. Map is locked to Uttar Pradesh only.</div>
       <div class="drawer-actions" id="d-actions" style="display:none">
         <a id="d-source" href="#" target="_blank" class="btn primary">Open source</a>
         <a id="d-streetview" href="#" target="_blank" class="btn">Street View</a>
@@ -97,7 +169,9 @@
       <div class="about-line"><b>About this map</b><br/>District-centroid mapping of historically reported areas, compiled from NGO reports (Guria, Freedom Firm), court records, academic studies and news. TI districts = UPSACS HIV-program coverage, aggregated. No venue-level data. Report corrections via GitHub issues on HYPERSAHIL/redlight.</div>
     </div>
   </div>
-  <div id="story" class="story hidden"></div>
+
+  <div id="story" class="story panel hidden"></div>
+
   <script type="module" src="/src/main.js"></script>
 </body>
 </html>

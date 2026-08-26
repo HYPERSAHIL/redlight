@@ -1,0 +1,15 @@
+{
+  "name": "UP Red Light Areas",
+  "short_name": "UP RLA",
+  "description": "District-centroid map of historically reported red-light areas in Uttar Pradesh. Information only.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "lang": "en",
+  "categories": ["education", "reference"],
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}

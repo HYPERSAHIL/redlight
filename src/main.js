@@ -22,16 +22,27 @@ satellite.addTo(map);
 const redIcon = L.divIcon({
   className: '',
   html: '<div class="pin-wrap"><div class="pin-pulse"></div><div class="pin-dot"></div></div>',
-  iconSize: [16,16],
-  iconAnchor: [8,8]
+  iconSize: [16,16], iconAnchor: [8,8]
 });
 const lowIcon = L.divIcon({
   className: '',
-  html: '<div class="pin-wrap" style="opacity:0.85"><div style="width:11px;height:11px;background:#ff6b5a;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 6px rgba(0,0,0,.4)"></div></div>',
-  iconSize: [11,11],
-  iconAnchor: [5,5]
+  html: '<div class="pin-wrap" style="opacity:0.9"><div style="width:11px;height:11px;background:#a78bfa;border:2px solid #fff;border-radius:50%;box-shadow:0 1px 6px rgba(0,0,0,.4)"></div></div>',
+  iconSize: [11,11], iconAnchor: [5,5]
 });
 
+/* ---------- i18n ---------- */
+const HI_DISTRICT = {
+  "Amroha":"अमरोहा","Hapur":"हापुड़","Bareilly":"बरेली","Pilibhit":"पीलीभीत","Bulandshahr":"बुलंदशहर","Gautam Buddha Nagar":"गौतम बुद्ध नगर","Lakhimpur Kheri":"लखीमपुर खीरी","Budaun":"बदायूँ","Bahraich":"बहराइच","Shahjahanpur":"शाहजहाँपुर","Aligarh":"अलीगढ़","Kasganj":"कासगंज","Mathura":"मथुरा","Shrawasti":"श्रावस्ती","Sitapur":"सीतापुर","Hathras":"हाथरस","Etah":"एटा","Hardoi":"हरदोई","Farrukhabad":"फर्रुखाबाद","Firozabad":"फिरोजाबाद","Siddharthnagar":"सिद्धार्थनगर","Mainpuri":"मैनपुरी","Maharajganj":"महाराजगंज","Agra":"आगरा","Gonda":"गोंडा","Barabanki":"बाराबंकी","Kushinagar":"कुशीनगर","Kannauj":"कन्नौज","Lucknow":"लखनऊ","Basti":"बस्ती","Gorakhpur":"गोरखपुर","Sant Kabir Nagar":"संत कबीर नगर","Unnao":"उन्नाव","Etawah":"इटावा","Kanpur Nagar":"कानपुर","Auraiya":"औरैया","Ayodhya":"अयोध्या","Kanpur Dehat":"कानपुर देहात","Deoria":"देवरिया","Sultanpur":"सुल्तानपुर","Ambedkar Nagar":"अंबेडकर नगर","Rae Bareli":"रायबरेली","Jalaun":"जालौन","Azamgarh":"आज़मगढ़","Mau":"मऊ","Fatehpur":"फतेहपुर","Ballia":"बलिया","Jaunpur":"जौनपुर","Jhansi":"झाँसी","Banda":"बाँदा","Ghazipur":"ग़ाज़ीपुर","Kaushambi":"कौशाम्बी","Prayagraj":"प्रयागराज","Varanasi":"वाराणसी","Chitrakoot":"चित्रकूट","Chandauli":"चंदौली","Bhadohi":"भदोही","Mirzapur":"मिर्ज़ापुर","Lalitpur":"ललितपुर","Sonbhadra":"सोनभद्र","Amethi":"अमेठी","Ghaziabad":"ग़ाज़ियाबाद","Sambhal":"संभल","Mahoba":"महोबा","Saharanpur":"सहारनपुर","Bijnor":"बिजनौर","Muzaffarnagar":"मुज़फ्फरनगर","Baghpat":"बागपत","Meerut":"मेरठ","Moradabad":"मुरादाबाद","Rampur":"रामपुर","Shamli":"शामली","Balrampur":"बलरामपुर","Hamirpur":"हमीरपुर","Pratapgarh":"प्रतापगढ़"
+};
+const I18N = {
+  en: { title:"UP Red Light Areas", sub:"District & area-centroid mapping · information only", sat:"Satellite", street:"Street", heat:"Heat", lang:"EN", full:"Full", story:"Story", search:"Search district or hotel…", fAll:"All", fVer:"Verified", fLow:"Low", legV:"Verified", legTI:"TI district", hint:"Tap a dot to explore", dTitle:"Select a district", dSub:"Tap any red dot or story card.", dContent:"Tap a red dot to explore. Satellite hybrid with labels is default. Map is locked to Uttar Pradesh only.", about:"About this map", src:"Open source", sv:"Street View", copy:"Copy link", close:"Close", tiType:"District with TI program", relHigh:"High", relMed:"Medium", relLow:"Low", badge:"Verified" },
+  hi: { title:"यूपी रेड लाइट एरिया", sub:"ज़िला व क्षेत्र-केंद्र मानचित्र · केवल जानकारी", sat:"उपग्रह", street:"सड़क", heat:"हीट", lang:"हि", full:"पूरा", story:"कहानी", search:"ज़िला या होटल खोजें…", fAll:"सभी", fVer:"प्रमाणित", fLow:"कम", legV:"प्रमाणित", legTI:"टीआई ज़िला", hint:"देखने हेतु बिंदु दबाएँ", dTitle:"कोई ज़िला चुनें", dSub:"कोई लाल बिंदु या कार्ड चुनें।", dContent:"लाल बिंदु दबाएँ। डिफ़ॉल्ट उपग्रह + लेबल। मानचित्र केवल यूपी तक सीमित।", about:"इस मानचित्र के बारे में", src:"स्रोत खोलें", sv:"स्ट्रीट व्यू", copy:"लिंक कॉपी", close:"बंद", tiType:"टीआई कार्यक्रम वाला ज़िला", relHigh:"उच्च", relMed:"मध्यम", relLow:"कम", badge:"सत्यापित" }
+};
+let lang = 'en';
+const T = () => I18N[lang];
+const distName = d => lang === 'hi' && HI_DISTRICT[d] ? HI_DISTRICT[d] : d;
+
+/* ---------- DOM refs ---------- */
 const drawer = document.getElementById('drawer');
 const dTitle = document.getElementById('d-title');
 const dSub = document.getElementById('d-sub');
@@ -41,162 +52,233 @@ const dSource = document.getElementById('d-source');
 const dStreet = document.getElementById('d-streetview');
 const dClose = document.getElementById('d-close');
 const storyEl = document.getElementById('story');
-let currentSlug=null;
+const searchInput = document.getElementById('search');
+const resultsEl = document.getElementById('results');
+let currentSlug = null;
 
 function openDrawer(p, latlng){
   currentSlug = p.slug || null;
-  const freshBadge = p.last_verified ? `<span class="fresh">Verified ${p.last_verified}</span>` : '';
-  dTitle.textContent = `${p.district} - ${p.area_name}`;
-  dSub.innerHTML = `${p.type}<br/>Reliability <b>${p.reliability}</b> • Updated ${p.last_updated} ${freshBadge}`;
+  const t = T();
+  const relTxt = { high:t.relHigh, medium:t.relMed, low:t.relLow }[p.reliability] || p.reliability;
+  const badge = p.last_verified ? `<span class="fresh">${t.badge} ${p.last_verified}</span>` : '';
+  dTitle.textContent = `${distName(p.district)} - ${p.area_name}`;
+  dSub.innerHTML = `${p.type}<br/>${t.relMed?'':''}Reliability <b>${relTxt}</b> · Updated ${p.last_updated} ${badge}`;
   dContent.innerHTML = `
     <div class="story-block"><b>Story</b><br/>${p.story||p.notes||''}</div>
-    <div style="font-size:12px;opacity:.75;margin-top:10px">Source: <a href="${p.source_url}" target="_blank">${p.source}</a></div>
-    <div style="margin-top:10px;font-size:12px;opacity:.75"><b>Coordinates:</b> ${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)} (district centroid only)</div>`;
+    <div style="font-size:12px;color:var(--muted);margin-top:10px">Source: <a href="${p.source_url}" target="_blank" style="color:#fca5a5">${p.source}</a></div>
+    <div style="margin-top:10px;font-size:12px;color:var(--muted)"><b>Coordinates:</b> ${latlng.lat.toFixed(4)}, ${latlng.lng.toFixed(4)} (district centroid only)</div>`;
   dSource.href = p.source_url;
   dStreet.href = `https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=${latlng.lat},${latlng.lng}`;
   dActions.style.display = 'flex';
   drawer.classList.add('open');
-  [...storyEl.children].forEach(c=> c.classList.toggle('active', c.dataset.title===p.area_name));
 }
-
 function closeDrawer(){ drawer.classList.remove('open'); }
 dClose.onclick = closeDrawer;
-
-// swipe-to-close on mobile
-let touchY=null;
-drawer.addEventListener('touchstart', e=>{ touchY=e.touches[0].clientY; }, {passive:true});
+let touchY = null;
+drawer.addEventListener('touchstart', e=>{ touchY = e.touches[0].clientY; }, {passive:true});
 drawer.addEventListener('touchend', e=>{
   if(touchY===null) return;
   if(e.changedTouches[0].clientY - touchY > 80 && window.scrollY<=0) closeDrawer();
-  touchY=null;
+  touchY = null;
 }, {passive:true});
-
 document.getElementById('d-share').onclick = async ()=>{
-  const slug = currentSlug || '';
-  const url = slug ? `${location.origin}/?d=${slug}` : location.origin;
-  try{ await navigator.clipboard.writeText(url); alert('Link copied'); }
-  catch{ prompt('Copy link:', url); }
+  const url = currentSlug ? `${location.origin}/?d=${currentSlug}` : location.origin;
+  try{ await navigator.clipboard.writeText(url); alert(T().copy+' ✓'); } catch{ prompt(T().copy+':', url); }
 };
 
-// Controls - mobile first
+/* ---------- Controls ---------- */
 document.getElementById('btn-fullscreen').onclick = ()=>{
   if(window.innerWidth <= 860) return;
   if(document.fullscreenElement) document.exitFullscreen();
   else document.getElementById('map').requestFullscreen();
 };
-document.getElementById('btn-sat').onclick = (e)=>{
+document.getElementById('btn-sat').onclick = e=>{
   if(!map.hasLayer(satellite)){ map.addLayer(satellite); map.removeLayer(street); }
   e.target.classList.add('active'); document.getElementById('btn-street').classList.remove('active');
 };
-document.getElementById('btn-street').onclick = (e)=>{
+document.getElementById('btn-street').onclick = e=>{
   if(!map.hasLayer(street)){ map.addLayer(street); map.removeLayer(satellite); }
   e.target.classList.add('active'); document.getElementById('btn-sat').classList.remove('active');
 };
-let heatOn=true, heatLayer=null;
+let heatOn = true, heatLayer = null;
 function enableHeat(){
   if(heatLayer){ heatLayer.addTo(map); return; }
   fetch('/data/up-points.geojson').then(r=>r.json()).then(d=>{
-    const pts = d.features.map(f=> [f.geometry.coordinates[1], f.geometry.coordinates[0], 0.9]);
-    heatLayer = L.layerGroup(pts.map(p=> L.circleMarker(p.slice(0,2), {radius:28, fillColor:'#d93025', fillOpacity:0.18, color:'#d93025', weight:1, opacity:0.25})));
+    heatLayer = L.layerGroup(d.features.map(f=> L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {radius:26, fillColor:'#e11d48', fillOpacity:0.16, color:'#e11d48', weight:1, opacity:0.22})));
     heatLayer.addTo(map);
   });
 }
-document.getElementById('btn-heat').onclick = (e)=>{
-  heatOn=!heatOn;
-  e.target.classList.toggle('active', heatOn);
-  if(heatOn) enableHeat();
-  else { if(heatLayer) map.removeLayer(heatLayer); }
+document.getElementById('btn-heat').onclick = e=>{
+  heatOn = !heatOn; e.target.classList.toggle('active', heatOn);
+  if(heatOn) enableHeat(); else if(heatLayer) map.removeLayer(heatLayer);
 };
 
-// Story auto-tour
-let storyIdx=-1, storyData=[], bySlug={};
+/* ---------- Story tour ---------- */
+let storyIdx = -1, storyData = [], bySlug = {}, pointsLayer = null, pointEntries = [];
 document.getElementById('btn-story').onclick = ()=>{
   storyEl.classList.toggle('hidden');
-  if(storyEl.classList.contains('hidden')) return;
-  if(!storyData.length) return;
-  storyIdx=(storyIdx+1)%storyData.length;
-  focusFeature(storyData[storyIdx]);
+  if(storyEl.classList.contains('hidden') || !storyData.length) return;
+  storyIdx = (storyIdx+1)%storyData.length; focusFeature(storyData[storyIdx]);
 };
-
 function focusFeature(f){
-  const ll=L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]);
+  const ll = L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]);
   map.flyTo(ll, 9, {duration:1.2});
   openDrawer(f.properties, ll);
   history.replaceState(null,'',`?d=${f.properties.slug}`);
-  [...storyEl.children].forEach(c=>c.classList.toggle('active', c.dataset.title===f.properties.area_name));
+  [...storyEl.children].forEach(c=> c.classList.toggle('active', c.dataset.title===f.properties.area_name));
 }
 
-let districtsLayer=null;
+/* ---------- Visibility: filter + search ---------- */
+let filterMode = 'all', searchTerm = '';
+function visible(p){
+  const t = T();
+  if(filterMode === 'verified' && !(p.reliability==='high'||p.reliability==='medium')) return false;
+  if(filterMode === 'low' && p.reliability!=='low') return false;
+  if(searchTerm){
+    const hay = `${p.district} ${p.area_name} ${p.type}`.toLowerCase();
+    if(!hay.includes(searchTerm)) return false;
+  }
+  return true;
+}
+function applyVisibility(){
+  if(!pointsLayer) return;
+  pointEntries.forEach(({feature, marker})=>{
+    if(visible(feature.properties)){ if(!pointsLayer.hasLayer(marker)) pointsLayer.addLayer(marker); }
+    else { if(pointsLayer.hasLayer(marker)) pointsLayer.removeLayer(marker); }
+  });
+}
+document.getElementById('filter').addEventListener('click', e=>{
+  const b = e.target.closest('button'); if(!b) return;
+  filterMode = b.dataset.f;
+  [...e.currentTarget.children].forEach(x=> x.classList.toggle('active', x===b));
+  applyVisibility();
+});
 
+/* ---------- Search ---------- */
+function renderResults(){
+  const term = searchTerm;
+  resultsEl.innerHTML = '';
+  if(!term) return;
+  const matches = storyData.filter(f=>visible(f.properties));
+  if(!matches.length){ resultsEl.innerHTML = `<div style="padding:10px;color:var(--muted);font-size:12px">No matches.</div>`; return; }
+  matches.slice(0,40).forEach(f=>{
+    const p = f.properties;
+    const el = document.createElement('div');
+    el.className = 'result';
+    el.innerHTML = `<b>${distName(p.district)}</b><span>${p.area_name}</span><span class="tag ${p.reliability}">${p.reliability}</span>`;
+    el.onclick = ()=>{ focusFeature(f); searchInput.blur(); };
+    resultsEl.appendChild(el);
+  });
+}
+searchInput.addEventListener('input', ()=>{
+  searchTerm = searchInput.value.trim().toLowerCase();
+  applyVisibility(); renderResults();
+});
+
+/* ---------- Language toggle ---------- */
+function applyLang(){
+  const t = T();
+  document.documentElement.lang = lang;
+  document.querySelector('.brand h1').textContent = t.title;
+  document.querySelector('.brand p').textContent = t.sub;
+  document.getElementById('btn-sat').textContent = t.sat;
+  document.getElementById('btn-street').textContent = t.street;
+  document.getElementById('btn-heat').textContent = t.heat;
+  document.getElementById('btn-lang').textContent = t.lang;
+  document.getElementById('btn-fullscreen').textContent = t.full;
+  document.getElementById('btn-story').textContent = t.story;
+  searchInput.placeholder = t.search;
+  document.querySelector('#filter button[data-f="all"]').textContent = t.fAll;
+  document.querySelector('#filter button[data-f="verified"]').textContent = t.fVer;
+  document.querySelector('#filter button[data-f="low"]').textContent = t.fLow;
+  document.querySelector('.bottombar').innerHTML = `<span><span class="dot" style="background:#e11d48"></span>${t.legV}</span><span><span class="dot" style="background:#f59e0b"></span>${t.legTI}</span><span class="sep"></span><span class="hint">${t.hint}</span>`;
+  document.getElementById('d-close').textContent = t.close;
+  document.getElementById('d-source').textContent = t.src;
+  document.getElementById('d-streetview').textContent = t.sv;
+  document.getElementById('d-share').textContent = t.copy;
+  document.querySelector('.about-line').innerHTML = `<b>${t.about}</b><br/>District-centroid mapping of historically reported areas, compiled from NGO reports (Guria, Freedom Firm), court records, academic studies and news. TI districts = UPSACS HIV-program coverage, aggregated. No venue-level data. Report corrections via GitHub issues on HYPERSAHIL/redlight.`;
+  if(!drawer.classList.contains('open')){
+    dTitle.textContent = t.dTitle; dSub.textContent = t.dSub; dContent.textContent = t.dContent;
+  }
+  // refresh tooltips/labels for visible markers
+  pointEntries.forEach(({feature, marker})=>{
+    marker.getTooltip()?.setContent(`${distName(feature.properties.district)} - ${feature.properties.area_name}`);
+  });
+  if(districtsLayer){
+    districtsLayer.eachLayer(l=>{
+      const p = l.feature.properties;
+      l.getTooltip()?.setContent(`${distName(p.DISTRICT)} ${p.hasTI?'('+t.legTI+')':''}`);
+    });
+  }
+  renderResults();
+}
+document.getElementById('btn-lang').onclick = ()=>{ lang = lang==='en'?'hi':'en'; applyLang(); };
+
+/* ---------- Load points ---------- */
 fetch('/data/up-points.geojson').then(r=>r.json()).then(data=>{
-  storyData=data.features;
-  bySlug=Object.fromEntries(data.features.map(f=>[f.properties.slug,f]));
-  storyEl.innerHTML='';
+  storyData = data.features;
+  bySlug = Object.fromEntries(data.features.map(f=>[f.properties.slug, f]));
+  pointsLayer = L.layerGroup().addTo(map);
+  pointEntries = data.features.map(f=>{
+    const marker = L.marker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {icon: f.properties.reliability==='low' ? lowIcon : redIcon});
+    marker.bindTooltip(`${distName(f.properties.district)} - ${f.properties.area_name}`, {direction:'top', offset:[0,-10]});
+    marker.on('click', ()=>{
+      const ll = marker.getLatLng();
+      map.flyTo(ll, 9, {duration:1.2});
+      openDrawer(f.properties, ll);
+      history.replaceState(null,'',`?d=${f.properties.slug}`);
+    });
+    pointsLayer.addLayer(marker);
+    return { feature: f, marker };
+  });
+
+  storyEl.innerHTML = '';
   data.features.forEach((f,i)=>{
-    const card=document.createElement('div');
-    card.className='story-card';
-    card.dataset.title=f.properties.area_name;
-    card.innerHTML=`<b>${f.properties.district}</b><span>${f.properties.area_name}</span>`;
-    card.onclick=()=>{
-      storyIdx=i;
-      focusFeature(f);
-      document.querySelectorAll('.story-card').forEach(c=>c.classList.remove('active'));
-      card.classList.add('active');
-    };
+    const card = document.createElement('div');
+    card.className = 'story-card';
+    card.dataset.title = f.properties.area_name;
+    card.innerHTML = `<b>${distName(f.properties.district)}</b><span>${f.properties.area_name}</span>`;
+    card.onclick = ()=>{ storyIdx = i; focusFeature(f); document.querySelectorAll('.story-card').forEach(c=>c.classList.remove('active')); card.classList.add('active'); };
     storyEl.appendChild(card);
   });
 
-  L.geoJSON(data, {
-    pointToLayer: (f, latlng)=> L.marker(latlng, {icon: f.properties.reliability==='low' ? lowIcon : redIcon}),
-    onEachFeature: (f, layer)=>{
-      layer.bindTooltip(`${f.properties.district} - ${f.properties.area_name}`, {direction:'top', offset:[0,-10]});
-      layer.on('click', ()=>{
-        // mobile-first: open directly, no tooltip step
-        const ll=layer.getLatLng();
-        map.flyTo(ll, 9, {duration:1.2});
-        openDrawer(f.properties, ll);
-        history.replaceState(null,'',`?d=${f.properties.slug}`);
-      });
-    }
-  }).addTo(map);
-
-  // deep link ?d=slug
-  const params=new URLSearchParams(location.search);
-  const slug=params.get('d');
+  const params = new URLSearchParams(location.search);
+  const slug = params.get('d');
   if(slug && bySlug[slug]){
-    const f=bySlug[slug];
+    const f = bySlug[slug];
     setTimeout(()=>{
-      const ll=L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]);
-      map.setView(ll, 9);
-      openDrawer(f.properties, ll);
-      const idx=storyData.indexOf(f);
-      if(idx>=0){ storyIdx=idx; const cards=[...storyEl.children]; cards.forEach((c,i)=>c.classList.toggle('active', i===idx)); }
+      const ll = L.latLng(f.geometry.coordinates[1], f.geometry.coordinates[0]);
+      map.setView(ll, 9); openDrawer(f.properties, ll);
+      const idx = storyData.indexOf(f);
+      if(idx>=0){ storyIdx = idx; [...storyEl.children].forEach((c,i)=> c.classList.toggle('active', i===idx)); }
     }, 400);
   }
 });
 
+/* ---------- Districts layer ---------- */
+let districtsLayer = null;
 fetch('/data/up-districts.geojson').then(r=>r.json()).then(data=>{
-  districtsLayer=L.geoJSON(data, {
-    style: f=> ({
-      color: f.properties.hasTI ? '#ff9800' : '#666',
-      weight: f.properties.hasTI ? 1.4 : 0.6,
-      fillColor: f.properties.hasTI ? '#ff9800' : '#222',
-      fillOpacity: f.properties.hasTI ? 0.14 : 0.03
-    }),
+  districtsLayer = L.geoJSON(data, {
+    style: f=> ({ color: f.properties.hasTI ? '#f59e0b' : '#666', weight: f.properties.hasTI ? 1.4 : 0.6, fillColor: f.properties.hasTI ? '#f59e0b' : '#222', fillOpacity: f.properties.hasTI ? 0.14 : 0.03 }),
     onEachFeature: (f, layer)=>{
-      const p=f.properties;
-      layer.bindTooltip(`${p.DISTRICT} ${p.hasTI?'(TI district)':''}`, {sticky:true});
+      const p = f.properties; const t = T();
+      layer.bindTooltip(`${distName(p.DISTRICT)} ${p.hasTI?'('+t.legTI+')':''}`, {sticky:true});
       layer.on('mouseover', ()=> layer.setStyle({fillOpacity: p.hasTI?0.32:0.12, weight:2}));
       layer.on('mouseout', ()=> districtsLayer.resetStyle(layer));
       if(p.hasTI){
-        layer.on('click', (e)=>{
-          const c=layer.getBounds().getCenter();
-          openDrawer({district:p.DISTRICT, area_name:'TI district', type:'District with TI program', reliability:'medium', source:'UPSACS TI reports', source_url:'https://upsacs.up.gov.in', last_updated:'2024', last_verified:'', story:'This district has a UPSACS-funded Targeted Intervention program working with female sex workers and other high-risk groups. Coverage is aggregated for HIV prevention planning - it does not mark any venue.'}, c);
-          map.flyTo(c, 8, {duration:1});
-          L.DomEvent.stop(e);
+        layer.on('click', e=>{
+          const c = layer.getBounds().getCenter();
+          openDrawer({district:p.DISTRICT, area_name:t.legTI, type:t.tiType, reliability:'medium', source:'UPSACS TI reports', source_url:'https://upsacs.up.gov.in', last_updated:'2024', last_verified:'', story:'This district has a UPSACS-funded Targeted Intervention program working with female sex workers and other high-risk groups. Coverage is aggregated for HIV prevention planning — it does not mark any venue.'}, c);
+          map.flyTo(c, 8, {duration:1}); L.DomEvent.stop(e);
         });
       }
     }
   }).addTo(map);
   districtsLayer.bringToBack();
 });
+
+/* ---------- PWA ---------- */
+if('serviceWorker' in navigator){
+  window.addEventListener('load', ()=> navigator.serviceWorker.register('/sw.js').catch(()=>{}));
+}
+applyLang();

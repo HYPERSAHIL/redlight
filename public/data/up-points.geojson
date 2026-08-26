@@ -107,7 +107,7 @@
         "district": "Lucknow",
         "area_name": "Chawal wali gali + dispersed hotspots",
         "type": "Dispersed hotspot - no single formal district",
-        "reliability": "high for Chawal wali gali, medium for dispersed",
+        "reliability": "high",
         "source": "SocialNews XYZ 2024 + Aazadi Foundation/UPNSW + CREATE India (UPSACS TI)",
         "source_url": "https://www.socialnews.xyz/2024/05/06/everyone-wants-votes-but-no-one-wants-to-campaign-in-red-light-areas-of-up/",
         "last_updated": "2024-05",
@@ -337,7 +337,7 @@
         "district": "Gorakhpur",
         "area_name": "NH-28 Madapar - Zero Point (Lucknow Bypass)",
         "type": "Highway hotel belt - dispersed, not classic RLA",
-        "reliability": "medium-high",
+        "reliability": "medium",
         "source": "Dynamite News Hindi 2025-07-14 + Bhaskar MLA Sarvan Nishad letter + Jagran Fly-In Hotel seal",
         "source_url": "https://hindi.dynamitenews.com/uttar-pradesh/prostitution-racket-in-gorakhpur-red-light-area-built-on-nh-28-villagers-created-ruckus",
         "last_updated": "2025-07",
@@ -558,52 +558,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          78.329875,
-          28.8178125
-        ]
-      },
-      "properties": {
-        "slug": "amroha-generic",
-        "district": "Amroha",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.94445454545455,
-          28.718727272727275
-        ]
-      },
-      "properties": {
-        "slug": "hapur-generic",
-        "district": "Hapur",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           79.9725238095238,
           28.478238095238094
         ]
@@ -611,52 +565,6 @@
       "properties": {
         "slug": "pilibhit-generic",
         "district": "Pilibhit",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          78.05535294117647,
-          28.37035294117647
-        ]
-      },
-      "properties": {
-        "slug": "bulandshahr-generic",
-        "district": "Bulandshahr",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.5334,
-          28.4209
-        ]
-      },
-      "properties": {
-        "slug": "gautam-buddha-nagar-generic",
-        "district": "Gautam Buddha Nagar",
         "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
         "type": "Dispersed hotel/spa - low evidence",
         "reliability": "low",
@@ -742,29 +650,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          78.85906666666666,
-          27.7572
-        ]
-      },
-      "properties": {
-        "slug": "kasganj-generic",
-        "district": "Kasganj",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           81.914,
           27.673066666666667
         ]
@@ -834,29 +719,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          78.66986363636364,
-          27.526227272727272
-        ]
-      },
-      "properties": {
-        "slug": "etah-generic",
-        "district": "Etah",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           79.43346153846154,
           27.449384615384613
         ]
@@ -887,29 +749,6 @@
       "properties": {
         "slug": "siddharthnagar-generic",
         "district": "Siddharthnagar",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          78.99464285714285,
-          27.195142857142855
-        ]
-      },
-      "properties": {
-        "slug": "mainpuri-generic",
-        "district": "Mainpuri",
         "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
         "type": "Dispersed hotel/spa - low evidence",
         "reliability": "low",
@@ -972,29 +811,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          83.89665,
-          26.8824
-        ]
-      },
-      "properties": {
-        "slug": "kushinagar-generic",
-        "district": "Kushinagar",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           79.634125,
           27.0160625
         ]
@@ -1018,29 +834,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          83.02707142857142,
-          26.77264285714286
-        ]
-      },
-      "properties": {
-        "slug": "sant-kabir-nagar-generic",
-        "district": "Sant Kabir Nagar",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           80.493,
           26.67525
         ]
@@ -1048,29 +841,6 @@
       "properties": {
         "slug": "unnao-generic",
         "district": "Unnao",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          79.03533333333333,
-          26.754933333333334
-        ]
-      },
-      "properties": {
-        "slug": "etawah-generic",
-        "district": "Etawah",
         "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
         "type": "Dispersed hotel/spa - low evidence",
         "reliability": "low",
@@ -1117,29 +887,6 @@
       "properties": {
         "slug": "kanpur-dehat-generic",
         "district": "Kanpur Dehat",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          83.82115789473684,
-          26.40926315789474
-        ]
-      },
-      "properties": {
-        "slug": "deoria-generic",
-        "district": "Deoria",
         "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
         "type": "Dispersed hotel/spa - low evidence",
         "reliability": "low",
@@ -1232,29 +979,6 @@
       "properties": {
         "slug": "jalaun-generic",
         "district": "Jalaun",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          80.839,
-          25.84508
-        ]
-      },
-      "properties": {
-        "slug": "fatehpur-generic",
-        "district": "Fatehpur",
         "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
         "type": "Dispersed hotel/spa - low evidence",
         "reliability": "low",
@@ -1478,29 +1202,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          83.0273448275862,
-          24.481896551724137
-        ]
-      },
-      "properties": {
-        "slug": "sonbhadra-generic",
-        "district": "Sonbhadra",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           81.63550000000001,
           26.308333333333334
         ]
@@ -1524,29 +1225,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          78.51615384615386,
-          28.475692307692306
-        ]
-      },
-      "properties": {
-        "slug": "sambhal-generic",
-        "district": "Sambhal",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           79.69023529411764,
           25.33841176470588
         ]
@@ -1554,29 +1232,6 @@
       "properties": {
         "slug": "mahoba-generic",
         "district": "Mahoba",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          78.42838095238096,
-          29.350857142857144
-        ]
-      },
-      "properties": {
-        "slug": "bijnor-generic",
-        "district": "Bijnor",
         "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
         "type": "Dispersed hotel/spa - low evidence",
         "reliability": "low",
@@ -1623,29 +1278,6 @@
       "properties": {
         "slug": "rampur-generic",
         "district": "Rampur",
-        "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
-        "type": "Dispersed hotel/spa - low evidence",
-        "reliability": "low",
-        "source": "Generic OYO/hotel/spa raid pattern - systematic Hindi+English search found no historic bazaar, no PIL, no NGO record",
-        "source_url": "https://hi.wikipedia.org/wiki/%E0%A4%B0%E0%A5%87%E0%A4%A1_%E0%A4%B2%E0%A4%BE%E0%A4%87%E0%A4%9F_%E0%A4%8F%E0%A4%B0%E0%A4%BF%E0%A4%AF%E0%A4%BE",
-        "last_updated": "2026-08",
-        "last_verified": "2026-08 via systematic search - negative for historic kotha",
-        "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
-        "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
-      }
-    },
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          77.24766666666667,
-          29.50733333333333
-        ]
-      },
-      "properties": {
-        "slug": "shamli-generic",
-        "district": "Shamli",
         "area_name": "Hotels / spas near highway / bus stand (generic pattern)",
         "type": "Dispersed hotel/spa - low evidence",
         "reliability": "low",
@@ -1724,6 +1356,719 @@
         "last_verified": "2026-08 via systematic search - negative for historic kotha",
         "story": "Systematic search across Hindi and English news, High Court PILs, NGO reports and Wikipedia for this district returned no historic kotha bazaar or hereditary village. The only pattern in recent years is scattered hotel/spa OYO raids that local news sometimes labels as 'red light area' - the same dispersed pattern seen across UP after classic bazaars declined. This point is mapped as low-evidence generic hotel/spa belt at district centroid to show that dispersal, not a verified bazaar.",
         "notes": "District centroid only. Low evidence - generic pattern, not a historic bazaar. Hide via filter if you want verified only."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.5,
+          28.9
+        ]
+      },
+      "properties": {
+        "slug": "amroha-unique-guest-house",
+        "district": "Amroha",
+        "area_name": "Unique Guest House - Shahpur Kala, Rahra Road, Hasanpur",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Patrika + Bhaskar 2024-07-17 SDM Sunita Singh 8 couples sealed",
+        "source_url": "https://www.patrika.com/amroha-news/raids-in-amroha-hotels-18848812",
+        "last_updated": "884",
+        "last_verified": "Patrika + Bhaskar 2024-07-17 SDM Sunita Singh 8 couples sealed",
+        "story": "Hasanpur's Rahra Road guest house raided by SDM-led team - 8 couples found in 8 rooms, premises sealed.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.65,
+          28.82
+        ]
+      },
+      "properties": {
+        "slug": "amroha-guest-house",
+        "district": "Amroha",
+        "area_name": "Guest House - Kanth Road near Lalu Nangla Chowki (unnamed)",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "medium",
+        "source": "News24 Hindi 2025-01-25 audio leak Rs1000/2hr",
+        "source_url": "https://hindi.news24online.com/state/up-uk/uttar-pradesh-amroha-deh-vyapar-racket-guest-house-busted-police-investigation/1041243/",
+        "last_updated": "041",
+        "last_verified": "News24 Hindi 2025-01-25 audio leak Rs1000/2hr",
+        "story": "Kanth Road guest house near Lalu Nangla Chowki exposed via leaked audio offering room for Rs1000/2hr - Dehat Thana FIR.",
+        "notes": "Specific hotel/spa raid - granular point (partially anonymized in news)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.78,
+          28.73
+        ]
+      },
+      "properties": {
+        "slug": "hapur-green-oyo-hotel",
+        "district": "Hapur",
+        "area_name": "Green OYO Hotel - Uparida, NH-09, Babugarh",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Jagran 2024-04-20 9 boys+9 girls printer/register seized",
+        "source_url": "https://www.jagran.com/uttar-pradesh/hapur-city-deh-vyapar-racket-busted-in-hapur-9-young-men-and-women-caught-from-hotel-23701498.html",
+        "last_updated": "98.",
+        "last_verified": "Jagran 2024-04-20 9 boys+9 girls printer/register seized",
+        "story": "Babugarh NH-09 Green OYO raided after viral video - 9 boys and 9 girls caught, printer and register seized.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.85,
+          28.4
+        ]
+      },
+      "properties": {
+        "slug": "bulandshahr-atithi-residency",
+        "district": "Bulandshahr",
+        "area_name": "Atithi Residency - Khurja Road, NH, Kotwali Dehat",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "IBC24 + Latestly 2026-02-07 sealed college girls",
+        "source_url": "https://www.ibc24.in/uttar-pradesh/bulandshahr/sex-racket-in-hotel-3461002.html",
+        "last_updated": "02.",
+        "last_verified": "IBC24 + Latestly 2026-02-07 sealed college girls",
+        "story": "NH Atithi Residency sealed for sex racket involving college students - Kotwali Dehat police.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.86,
+          28.41
+        ]
+      },
+      "properties": {
+        "slug": "bulandshahr-mmr-mall-spa-centre",
+        "district": "Bulandshahr",
+        "area_name": "MMR Mall Spa Centre - Kotwali",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "NDTV 2021-02-09 SP Santosh Kumar 3 women+2 men",
+        "source_url": "https://www.ndtv.com/cities/prostitution-racket-busted-at-spa-parlour-in-uttar-pradeshs-bulandshahr-5-arrested-police-2366163",
+        "last_updated": "236",
+        "last_verified": "NDTV 2021-02-09 SP Santosh Kumar 3 women+2 men",
+        "story": "MMR Mall spa centre raided - 3 women and 2 men held, 2 escaped.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.35,
+          28.71
+        ]
+      },
+      "properties": {
+        "slug": "ghaziabad-hotel-green-valley",
+        "district": "Ghaziabad",
+        "area_name": "Hotel Green Valley - Shahpur Road, Duhai",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Jagran 2024-12-20 2 girls rescued 4 fled",
+        "source_url": "https://www.jagran.com/uttar-pradesh/ghaziabad-ncr-raid-on-hotel-on-shahpur-road-in-duhai-on-information-of-prostitution-two-youths-caught-two-girls-rescued-this-is-how-case-was-exposed-23852185.html",
+        "last_updated": "85.",
+        "last_verified": "Jagran 2024-12-20 2 girls rescued 4 fled",
+        "story": "Duhai Shahpur Road Green Valley hotel - 2 girls rescued, 4 fled, owner Shubham of Masuri held.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.42,
+          28.7
+        ]
+      },
+      "properties": {
+        "slug": "ghaziabad-koyo-hotel",
+        "district": "Ghaziabad",
+        "area_name": "Koyo Hotel - Delhi-Meerut Road, Khindora",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Jagran 2024-11-12 4 women manager Shivam Kumar",
+        "source_url": "https://www.jagran.com/uttar-pradesh/ghaziabad-ncr-prostitution-racket-busted-at-koyo-hotel-in-ghaziabad-modinagar-four-girls-recovered-23829781.html",
+        "last_updated": "81.",
+        "last_verified": "Jagran 2024-11-12 4 women manager Shivam Kumar",
+        "story": "Modinagar Koyo Hotel on Delhi-Meerut Road - 4 women recovered, manager Shivam Kumar held, no Aadhaar check.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.38,
+          28.64
+        ]
+      },
+      "properties": {
+        "slug": "ghaziabad-body-shine-diamond-spa",
+        "district": "Ghaziabad",
+        "area_name": "Body Shine Diamond Spa - Niti Khand, Indirapuram",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Jagran 2024-02-05 11 girls+6 men",
+        "source_url": "https://www.jagran.com/uttar-pradesh/ghaziabad-ncr-ghaziabad-police-busted-deh-vyapar-running-11-girls-caught-in-spa-centers-of-indiripuram-in-ghaziabad-23645730.html",
+        "last_updated": "30.",
+        "last_verified": "Jagran 2024-02-05 11 girls+6 men",
+        "story": "Indirapuram spa belt: Body Shine Diamond, D Golden, Ocean Spa raided together - 11 girls and 6 men with blackmail videos.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.1,
+          27.9
+        ]
+      },
+      "properties": {
+        "slug": "aligarh-skyway-hotel",
+        "district": "Aligarh",
+        "area_name": "Skyway Hotel - Sarsaul Chowraha + Meraki Hotel GT Road",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Jagran 2026-02-28 15 arrested interstate",
+        "source_url": "https://www.jagran.com/uttar-pradesh/aligarh-city-deh-vyapar-interstate-racket-busted-15-arrested-including-seven-women-40107203.html",
+        "last_updated": "03.",
+        "last_verified": "Jagran 2026-02-28 15 arrested interstate",
+        "story": "Interstate racket busted at Skyway and Meraki hotels - 15 held including 7 women from Delhi/Jharkhand via Friendship App.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.05,
+          27.82
+        ]
+      },
+      "properties": {
+        "slug": "aligarh-hotel-galaxy-inn",
+        "district": "Aligarh",
+        "area_name": "Hotel Galaxy Inn - Khaireshwar Highway, Ghabhana",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "medium",
+        "source": "Bhaskar 2026-08-07 6 men 2210\u20b9",
+        "source_url": "https://www.bhaskar.com/local/uttar-pradesh/aligarh/koil/news/aligarh-highway-hotel-raid-sex-racket-police-arrest-138659967.html",
+        "last_updated": "67.",
+        "last_verified": "Bhaskar 2026-08-07 6 men 2210\u20b9",
+        "story": "Ghabhana Highway Galaxy Inn - 6 men detained, diary and condoms seized.",
+        "notes": "Specific hotel/spa raid - granular point (partially anonymized in news)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.4,
+          28.59
+        ]
+      },
+      "properties": {
+        "slug": "gautam-buddha-nagar-allora-thai-spa",
+        "district": "Gautam Buddha Nagar",
+        "area_name": "Allora Thai Spa - Baraula, Pillar 044, Sec 49",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "AVS Post 2024-05-20 FIR 206/2024 + HC quash 2025",
+        "source_url": "https://avspost.com/spa-center-in-sector-49-policearrest-two-women-and-two-accused-for-involvement-in-prostitution/",
+        "last_updated": "tut",
+        "last_verified": "AVS Post 2024-05-20 FIR 206/2024 + HC quash 2025",
+        "story": "Noida Sector 49 Allora Thai Spa - 2 women, 2 accused, FIR under 370 + ITPA, later quashed for customer.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.3,
+          26.46
+        ]
+      },
+      "properties": {
+        "slug": "kanpur-nagar-goodluck---coco-palm---palm",
+        "district": "Kanpur Nagar",
+        "area_name": "Goodluck / Coco Palm / Palm Tree Spa - Nazirabad",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Jagran 2024-02-24 Addl DCP Ankita Sharma 13 women+7 men",
+        "source_url": "https://www.jagran.com/uttar-pradesh/kanpur-city-deh-vyapar-racke-was-being-done-under-guise-of-spa-center-eyes-of-police-bowed-down-in-shame-after-seeing-the-intimate-of-young-men-and-women-23397539.html",
+        "last_updated": "39.",
+        "last_verified": "Jagran 2024-02-24 Addl DCP Ankita Sharma 13 women+7 men",
+        "story": "Nazirabad Sardar Aya Singh Complex spas - 13 women incl pregnant manager, lecturer Piyush Malvi among held.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.32,
+          26.44
+        ]
+      },
+      "properties": {
+        "slug": "kanpur-nagar-pink-salon-spa",
+        "district": "Kanpur Nagar",
+        "area_name": "Pink Salon Spa - Govind Nagar",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Jagran 2024-11-18 Pink Salon Ankit Shalu",
+        "source_url": "https://www.jagran.com/uttar-pradesh/kanpur-city-deh-vyapar-was-going-on-under-the-cover-of-spa-centre-police-raided-23832846.html",
+        "last_updated": "46.",
+        "last_verified": "Jagran 2024-11-18 Pink Salon Ankit Shalu",
+        "story": "Govind Nagar Pink Salon near Gandhi Smarak - couple Ankit Sonkar and wife Shalu ran it, 3 girls seized.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.02,
+          27.23
+        ]
+      },
+      "properties": {
+        "slug": "mainpuri-shivam-hotel-&-restaurant",
+        "district": "Mainpuri",
+        "area_name": "Shivam Hotel & Restaurant - Power House Road",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Samar 2024-05-05 3 couples",
+        "source_url": "https://samarneetinews.com/in-mainpuri-raid-on-hotel-girls-boys-found-in-objectionable-condition/",
+        "last_updated": "dit",
+        "last_verified": "Samar 2024-05-05 3 couples",
+        "story": "Kotwali Power House Road Shivam Hotel - 3 couples in 3 rooms, confessed economic compulsion.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.66,
+          27.64
+        ]
+      },
+      "properties": {
+        "slug": "etah-new-classic-hotel",
+        "district": "Etah",
+        "area_name": "New Classic Hotel - Kasganj Road Overbridge",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Patrika 2026-04-12 ITPA 3/4 manager Manvir",
+        "source_url": "https://www.patrika.com/etah-news/police-raid-hotel-exposes-major-prostitution-racket-in-etah-up-crime-20495038",
+        "last_updated": "049",
+        "last_verified": "Patrika 2026-04-12 ITPA 3/4 manager Manvir",
+        "story": "Kotwali Dehat New Classic Hotel near overbridge - manager Manvir held ITPA, online transfer to owner, CCTV probe.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.64,
+          27.81
+        ]
+      },
+      "properties": {
+        "slug": "kasganj-khushi-hotel",
+        "district": "Kasganj",
+        "area_name": "Khushi Hotel - Katarpur Chowki, Sadar Kotwali",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Jagran 2026-08-25 5 women+4 men manager Abhishek",
+        "source_url": "https://www.jagran.com/uttar-pradesh/kasganj-sp-ankita-sharma-take-action-on-sub-inspector-dhanpal-singh-in-misinformation-after-girls-and-boys-caught-in-khushi-hotel-deh-vyapar-23860246.html",
+        "last_updated": "46.",
+        "last_verified": "Jagran 2026-08-25 5 women+4 men manager Abhishek",
+        "story": "Katarpur Chowki Khushi Hotel - 5 women 4 men + manager Abhishek Mishra, SI Dhanpal action for misinformation.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          79.02,
+          26.77
+        ]
+      },
+      "properties": {
+        "slug": "etawah-hotel-raj-palace",
+        "district": "Etawah",
+        "area_name": "Hotel Raj Palace - Highway, Kotwali",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Bhaskar 2026-03-02 2 girls Kolkata/WB 5 men diary 700\u20b9",
+        "source_url": "https://www.bhaskar.com/local/uttar-pradesh/etawah/news/police-raid-hotel-raj-palace-etawah-prostitution-arrests-137340991.html",
+        "last_updated": "91.",
+        "last_verified": "Bhaskar 2026-03-02 2 girls Kolkata/WB 5 men diary 700\u20b9",
+        "story": "Highway Raj Palace - 2 Kolkata girls, 5 men, diary with Rs700 rates, one jumper fractured leg.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.7,
+          25.35
+        ]
+      },
+      "properties": {
+        "slug": "varanasi-anshika-guest-house",
+        "district": "Varanasi",
+        "area_name": "Anshika Guest House - Babatpur, Phoolpur",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Bhada Mirror 2025-08-07 4 girls 5 men QR frozen",
+        "source_url": "https://bhadainimirror.com/crime/prostitution-anshika-guest-house-manager-and-owner-sent-to/cid17211060.htm",
+        "last_updated": "060",
+        "last_verified": "Bhada Mirror 2025-08-07 4 girls 5 men QR frozen",
+        "story": "Phoolpur Babatpur Anshika Guest House - 4 girls (Patna/Azamgarh/Varanasi) +5 men, QR codes frozen, 8 months running.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          82.99,
+          25.28
+        ]
+      },
+      "properties": {
+        "slug": "varanasi-relax-spa",
+        "district": "Varanasi",
+        "area_name": "Relax Spa - Gandhinagar Sundarpur + Soul Glamours",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Live Hindustan 2025-08-05 8 girls 5 men",
+        "source_url": "https://www.livehindustan.com/uttar-pradesh/varanasi/story-police-raid-in-varanasi-busts-prostitution-ring-at-spa-centers-201754354470433.html",
+        "last_updated": "33.",
+        "last_verified": "Live Hindustan 2025-08-05 8 girls 5 men",
+        "story": "Sundarpur Relax Spa and Glamours studio - 8 girls from Varanasi/Chandauli/Bihar/Mirzapur +5 men.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.88,
+          26.73
+        ]
+      },
+      "properties": {
+        "slug": "kushinagar-pearl-hotel-+-utsav-marriage-",
+        "district": "Kushinagar",
+        "area_name": "Pearl Hotel + Utsav Marriage Lawn",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Live Hindustan 2025-07-26 10 girls 6 men",
+        "source_url": "https://www.livehindustan.com/uttar-pradesh/raid-on-two-hotels-kushinagar-police-was-embarrassed-as-soon-room-was-opened-16-arrested-including-10-girls-201753549431606.html",
+        "last_updated": "06.",
+        "last_verified": "Live Hindustan 2025-07-26 10 girls 6 men",
+        "story": "Pearl Hotel and Utsav lawn raided - 10 girls from various cities +6 men, lookout for police.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.6,
+          26.45
+        ]
+      },
+      "properties": {
+        "slug": "deoria-shivansh---blue-heaven-moon-oyo",
+        "district": "Deoria",
+        "area_name": "Shivansh / Blue Heaven Moon OYO - Baitalpur",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Jagran 2026-01-27 7 couples 1500/2hr",
+        "source_url": "https://www.jagran.com/uttar-pradesh/deoria-deoria-police-raid-hotel-spa-centers-26-detained-for-immoral-acts-40122518.html",
+        "last_updated": "18.",
+        "last_verified": "Jagran 2026-01-27 7 couples 1500/2hr",
+        "story": "Baitalpur Gorakhpur-Deoria Road Shivansh/Blue Heaven OYO - 7 couples, Rs1500/2-3hr, online booking.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.9,
+          26.5
+        ]
+      },
+      "properties": {
+        "slug": "deoria-relax-spa-salon",
+        "district": "Deoria",
+        "area_name": "Relax Spa Salon - Rudrpur More",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Patrika 2026-04-09 12 persons 7 girls rescued",
+        "source_url": "https://www.patrika.com/deoria-news/a-series-of-raids-on-spa-centers-in-deoria-young-men-and-women-found-in-suspicious-circumstances-causing-panic-in-the-city-20488078",
+        "last_updated": "048",
+        "last_verified": "Patrika 2026-04-09 12 persons 7 girls rescued",
+        "story": "Rudrpur More Relax Spa Salon - 12 persons, 7 girls rescued, one spa locked.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.6,
+          25.93
+        ]
+      },
+      "properties": {
+        "slug": "fatehpur-rudra-hotel-oyo",
+        "district": "Fatehpur",
+        "area_name": "Rudra Hotel OYO - Khajuha Road, Bindki",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Dainik Bhaskar UP 2026-05-13 5 women 4 men",
+        "source_url": "https://dainikbhaskarup.com/sex-racket-operating-in-oyo-hotel-busted-5-women-and-4-men-apprehended-during-raid-led-by-co-crime/",
+        "last_updated": "-cr",
+        "last_verified": "Dainik Bhaskar UP 2026-05-13 5 women 4 men",
+        "story": "Bindki Khajuha Road Rudra OYO - 5 women incl broker from Kanpur +4 men, operator Vikram Bhadoria.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.06,
+          24.68
+        ]
+      },
+      "properties": {
+        "slug": "sonbhadra-shriram-palace-hotel",
+        "district": "Sonbhadra",
+        "area_name": "Shriram Palace Hotel - Robertsganj + Patel Guest House",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Bhaskar 2025-08-25 4 caught incl 2 women",
+        "source_url": "https://www.bhaskar.com/local/uttar-pradesh/sonbhadra/news/prostitution-exposed-in-two-hotels-of-sonbhadra-135759957.html",
+        "last_updated": "57.",
+        "last_verified": "Bhaskar 2025-08-25 4 caught incl 2 women",
+        "story": "Robertsganj twin raid - Shriram Palace + Patel Guest House - 4 caught, FIR on 5 owners/managers.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          77.31,
+          29.45
+        ]
+      },
+      "properties": {
+        "slug": "shamli-hotel-kanika-complex,-verma-marke",
+        "district": "Shamli",
+        "area_name": "Hotel Kanika Complex, Verma Market - Vipin Bansal",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Janta Se Rishta 2026-08-13 7 arrested 3435\u20b9",
+        "source_url": "https://jantaserishta.com/local/uttar-pradesh/illegal-activities-were-being-conducted-at-the-hotel-seven-people-were-arrested-during-a-raid-4827592",
+        "last_updated": "482",
+        "last_verified": "Janta Se Rishta 2026-08-13 7 arrested 3435\u20b9",
+        "story": "Verma Market Kanika Complex - 7 held with registers, QR machines, 3 fitted cabins.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.05,
+          26.78
+        ]
+      },
+      "properties": {
+        "slug": "sant-kabir-nagar-romania-spa",
+        "district": "Sant Kabir Nagar",
+        "area_name": "Romania Spa - Nedula Chauraha, Khalilabad",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Newstrack + Bhaskar 2024-10-25 12+ persons",
+        "source_url": "https://newstrack.com/uttar-pradesh/sant-kabir-nagar/sant-kabir-nagar-ki-taza-khabar-police-raided-romania-massage-center-475419",
+        "last_updated": "-47",
+        "last_verified": "Newstrack + Bhaskar 2024-10-25 12+ persons",
+        "story": "Khalilabad Romania Spa - dozen girls, 17 total across Romania + Heaven Spa, GST number displayed.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.07,
+          26.75
+        ]
+      },
+      "properties": {
+        "slug": "sant-kabir-nagar-heaven-spa",
+        "district": "Sant Kabir Nagar",
+        "area_name": "Heaven Spa - Madiya, Khalilabad",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Amar Ujala 2024-10-28 17 arrested",
+        "source_url": "https://www.amarujala.com/uttar-pradesh/sant-kabir-nagar/stir-due-to-raidtwo-other-spa-centers-also-locked-employees-missing-khalilabad-news-c-209-1-skn1001-122955-2024-10-28",
+        "last_updated": "4-1",
+        "last_verified": "Amar Ujala 2024-10-28 17 arrested",
+        "story": "Madiya Heaven Spa paired with Romania - DVR seized, 5 operators absconding.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.58,
+          28.58
+        ]
+      },
+      "properties": {
+        "slug": "sambhal-hotel-behind-chaudhary-sarai-cho",
+        "district": "Sambhal",
+        "area_name": "Hotel behind Chaudhary Sarai Chowki - 9 rooms",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Live Hindustan 2025-06-18 5 couples register/DVR",
+        "source_url": "https://www.livehindustan.com/uttar-pradesh/sambhal/story-sex-racket-exposed-in-city-hotel-raids-conducted-by-magistrate-201750284764834.html",
+        "last_updated": "34.",
+        "last_verified": "Live Hindustan 2025-06-18 5 couples register/DVR",
+        "story": "Behind Chaudhary Sarai Chowki 9-room unregistered hotel - 5 couples, running 7 months, woman with child.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.4,
+          28.7
+        ]
+      },
+      "properties": {
+        "slug": "sambhal-koyo-friends-guest-house",
+        "district": "Sambhal",
+        "area_name": "Koyo Friends Guest House - Jungle Atta, Baniyather",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Amar Ujala 2025-07-28 2 women 2 men ITPA",
+        "source_url": "https://www.amarujala.com/uttar-pradesh/sambhal/four-people-including-hotel-operator-and-two-women-arrested-for-prostitution-sambhal-news-c-204-1-chn1003-121803-2025-07-28",
+        "last_updated": "5-0",
+        "last_verified": "Amar Ujala 2025-07-28 2 women 2 men ITPA",
+        "story": "Atta Jungle Koyo Friends Guest House - 2 women (Moradabad/Budaun) +2 men held ITPA.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          78.33,
+          29.62
+        ]
+      },
+      "properties": {
+        "slug": "bijnor-spa-center,-station-road,-najibab",
+        "district": "Bijnor",
+        "area_name": "Spa Center, Station Road, Najibabad",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "ABP Live 2022-05-06 9 boys 5 girls",
+        "source_url": "https://www.abplive.com/states/up-uk/bijnor-police-raid-on-spa-center-9-boys-and-5-girls-were-caught-in-suspicious-condition-ann-2117553",
+        "last_updated": "211",
+        "last_verified": "ABP Live 2022-05-06 9 boys 5 girls",
+        "story": "Najibabad Station Road spa - 9 boys 5 girls, long-running.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.38,
+          26.85
+        ]
+      },
+      "properties": {
+        "slug": "gorakhpur-sai-grand-hotel",
+        "district": "Gorakhpur",
+        "area_name": "Sai Grand Hotel - Malhanpar, Bansgaon + Krishna Inn",
+        "type": "Hotel/spa - granular raid",
+        "reliability": "high",
+        "source": "Live Hindustan 2025-07-26",
+        "source_url": "https://www.livehindustan.com/uttar-pradesh/raid-on-two-hotels-kushinagar-police-was-embarrassed-as-soon-room-was-opened-16-arrested-including-10-girls-201753549431606.html",
+        "last_updated": "06.",
+        "last_verified": "Live Hindustan 2025-07-26",
+        "story": "Malhanpar Sai Grand extra - part of same Gorakhpur belt pattern.",
+        "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
       }
     }
   ]
