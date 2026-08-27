@@ -107,7 +107,7 @@ document.getElementById('btn-street').onclick = e=>{
   if(!map.hasLayer(street)){ map.addLayer(street); map.removeLayer(satellite); }
   e.target.classList.add('active'); document.getElementById('btn-sat').classList.remove('active');
 };
-let heatOn = true, heatLayer = null;
+let heatLayer = null;
 function enableHeat(){
   if(heatLayer){ heatLayer.addTo(map); return; }
   fetch('/data/up-points.geojson').then(r=>r.json()).then(d=>{
@@ -115,10 +115,8 @@ function enableHeat(){
     heatLayer.addTo(map);
   });
 }
-document.getElementById('btn-heat').onclick = e=>{
-  heatOn = !heatOn; e.target.classList.toggle('active', heatOn);
-  if(heatOn) enableHeat(); else if(heatLayer) map.removeLayer(heatLayer);
-};
+// Heat stays ON permanently — no toggle (user request). Enabled at init.
+enableHeat();
 
 /* ---------- Story tour ---------- */
 let storyIdx = -1, storyData = [], bySlug = {}, pointsLayer = null, pointEntries = [];
@@ -162,6 +160,16 @@ document.getElementById('filter').addEventListener('click', e=>{
 });
 
 /* ---------- Search ---------- */
+// Mobile: search starts collapsed to free map space
+const searchCard = document.querySelector('.searchcard');
+const searchToggle = document.getElementById('search-toggle');
+if(searchToggle){
+  if(window.innerWidth <= 480) searchCard.classList.add('collapsed');
+  searchToggle.addEventListener('click', ()=>{
+    const c = searchCard.classList.toggle('collapsed');
+    searchToggle.setAttribute('aria-expanded', String(!c));
+  });
+}
 function renderResults(){
   const term = searchTerm;
   resultsEl.innerHTML = '';
@@ -190,7 +198,6 @@ function applyLang(){
   document.querySelector('.brand p').textContent = t.sub;
   document.getElementById('btn-sat').textContent = t.sat;
   document.getElementById('btn-street').textContent = t.street;
-  document.getElementById('btn-heat').textContent = t.heat;
   document.getElementById('btn-lang').textContent = t.lang;
   document.getElementById('btn-fullscreen').textContent = t.full;
   document.getElementById('btn-story').textContent = t.story;
