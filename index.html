@@ -21,6 +21,14 @@
     #map{height:100vh;width:100vw;background:#09090b}
     button{font-family:inherit}
     .panel{background:var(--panel);border:1px solid var(--border);backdrop-filter:blur(16px);box-shadow:0 12px 40px rgba(0,0,0,.45);border-radius:var(--radius)}
+    /* Best zoom component — shadcn ButtonGroup vertical + Astryx a11y · left-top corner */
+    .zoom{position:absolute;left:14px;top:14px;z-index:950;display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--border);backdrop-filter:blur(16px);border-radius:12px;overflow:hidden;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+    .zoom button{width:36px;height:36px;display:grid;place-items:center;background:transparent;border:0;color:var(--text);cursor:pointer;transition:.15s}
+    .zoom button:hover{background:rgba(255,255,255,.08)}
+    .zoom button:active{background:rgba(255,255,255,.12)}
+    .zoom button:disabled{opacity:.35;cursor:not-allowed}
+    .zoom button:focus-visible{outline:none;box-shadow:inset 0 0 0 2px var(--ring)}
+    .zoom .sep{height:1px;background:var(--border);flex-shrink:0}
 
     /* Topbar */
     .topbar{position:absolute;top:14px;left:50%;transform:translateX(-50%);z-index:1000;display:flex;align-items:center;gap:12px;padding:8px 8px 8px 16px;max-width:980px;width:calc(100% - 18px)}
@@ -95,6 +103,7 @@
       .brand{flex-basis:100%;text-align:center}
       .brand p{display:none}
       .searchcard{top:118px}
+      .zoom{left:10px;top:118px}
       .bottombar{bottom:10px;padding:7px 10px;font-size:10.5px;max-width:94vw;gap:6px}
       .story{bottom:54px}
     }
@@ -102,6 +111,8 @@
       .topbar{top:8px;width:calc(100% - 12px);padding:8px 10px}
       .seg button,.btn{padding:6px 10px;font-size:11px}
       .searchcard{top:108px;left:8px;width:calc(100vw - 16px)}
+      .zoom{left:8px;top:108px}
+      .zoom button{width:40px;height:40px}
       #map{height:100dvh}
       .drawer{width:100vw;max-width:100vw}
       .story-card{min-width:130px}
@@ -111,6 +122,12 @@
 </head>
 <body>
   <div id="map"></div>
+  <!-- Zoom — vertical ButtonGroup ( + / − ) left-top: best for one-thumb, a11y, dark panel -->
+  <div class="zoom" role="group" aria-label="Zoom">
+    <button id="z-in" type="button" aria-label="Zoom in">＋</button>
+    <div class="sep" aria-hidden="true"></div>
+    <button id="z-out" type="button" aria-label="Zoom out">−</button>
+  </div>
 
   <div class="topbar panel">
     <div class="brand">

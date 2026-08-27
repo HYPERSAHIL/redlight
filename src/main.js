@@ -3,6 +3,7 @@ import 'leaflet/dist/leaflet.css';
 
 const UP_BOUNDS = [[23.6, 77.2], [30.8, 84.7]];
 const map = L.map('map', {
+  zoomControl: false,
   zoomSnap: 0.5,
   maxBounds: UP_BOUNDS,
   maxBoundsViscosity: 1.0,
@@ -12,6 +13,12 @@ const map = L.map('map', {
 }).fitBounds(UP_BOUNDS);
 map.setMinZoom(map.getBoundsZoom(UP_BOUNDS));
 map.on('drag', () => map.panInsideBounds(UP_BOUNDS, { animate: false }));
+// Best zoom component wiring — left-top vertical ButtonGroup
+const zIn = document.getElementById('z-in'), zOut = document.getElementById('z-out');
+function syncZoom(){ const z=map.getZoom(); const min=map.getMinZoom(), max=map.getMaxZoom(); if(zIn) zIn.disabled = z>=max; if(zOut) zOut.disabled = z<=min; }
+zIn?.addEventListener('click', ()=> map.zoomIn(1,{animate:true}));
+zOut?.addEventListener('click', ()=> map.zoomOut(1,{animate:true}));
+map.on('zoomend', syncZoom); map.whenReady(syncZoom);
 
 const street = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { attribution: '&copy; OpenStreetMap', maxZoom: 18 });
 const esriImagery = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', { attribution: '© Esri, Maxar', maxZoom: 18 });
