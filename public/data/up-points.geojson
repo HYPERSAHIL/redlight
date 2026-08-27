@@ -112,7 +112,7 @@
         "source_url": "https://www.socialnews.xyz/2024/05/06/everyone-wants-votes-but-no-one-wants-to-campaign-in-red-light-areas-of-up/",
         "last_updated": "2024-05",
         "last_verified": "2024-05 via UPNSW union reporting",
-        "story": "Lucknow has no GB Road-style\u96c6\u4e2d brothel quarter. The old city's 'Chawal wali gali' is the historic core - lanes of intergenerational sex work that politicians never campaign in. Sex workers are otherwise dispersed near Charbagh station, Chowk, Hazratganj, Daliganj, Rajajipuram and Nishatganj. In 2024 workers formed the Uttar Pradesh Network of Sex Workers (UPNSW), officially recognised in June, to unionise and fight for dignity and schemes.",
+        "story": "Lucknow has no GB Road-style集中 brothel quarter. The old city's 'Chawal wali gali' is the historic core - lanes of intergenerational sex work that politicians never campaign in. Sex workers are otherwise dispersed near Charbagh station, Chowk, Hazratganj, Daliganj, Rajajipuram and Nishatganj. In 2024 workers formed the Uttar Pradesh Network of Sex Workers (UPNSW), officially recognised in June, to unionise and fight for dignity and schemes.",
         "notes": "District centroid only. Dispersed street-based presence per UPNSW."
       }
     },
@@ -1580,10 +1580,10 @@
         "area_name": "Hotel Galaxy Inn - Khaireshwar Highway, Ghabhana",
         "type": "Hotel/spa - granular raid",
         "reliability": "medium",
-        "source": "Bhaskar 2026-08-07 6 men 2210\u20b9",
+        "source": "Bhaskar 2026-08-07 6 men 2210₹",
         "source_url": "https://www.bhaskar.com/local/uttar-pradesh/aligarh/koil/news/aligarh-highway-hotel-raid-sex-racket-police-arrest-138659967.html",
         "last_updated": "67.",
-        "last_verified": "Bhaskar 2026-08-07 6 men 2210\u20b9",
+        "last_verified": "Bhaskar 2026-08-07 6 men 2210₹",
         "story": "Ghabhana Highway Galaxy Inn - 6 men detained, diary and condoms seized.",
         "notes": "Specific hotel/spa raid - granular point (partially anonymized in news)."
       }
@@ -1741,10 +1741,10 @@
         "area_name": "Hotel Raj Palace - Highway, Kotwali",
         "type": "Hotel/spa - granular raid",
         "reliability": "high",
-        "source": "Bhaskar 2026-03-02 2 girls Kolkata/WB 5 men diary 700\u20b9",
+        "source": "Bhaskar 2026-03-02 2 girls Kolkata/WB 5 men diary 700₹",
         "source_url": "https://www.bhaskar.com/local/uttar-pradesh/etawah/news/police-raid-hotel-raj-palace-etawah-prostitution-arrests-137340991.html",
         "last_updated": "91.",
-        "last_verified": "Bhaskar 2026-03-02 2 girls Kolkata/WB 5 men diary 700\u20b9",
+        "last_verified": "Bhaskar 2026-03-02 2 girls Kolkata/WB 5 men diary 700₹",
         "story": "Highway Raj Palace - 2 Kolkata girls, 5 men, diary with Rs700 rates, one jumper fractured leg.",
         "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
       }
@@ -1925,10 +1925,10 @@
         "area_name": "Hotel Kanika Complex, Verma Market - Vipin Bansal",
         "type": "Hotel/spa - granular raid",
         "reliability": "high",
-        "source": "Janta Se Rishta 2026-08-13 7 arrested 3435\u20b9",
+        "source": "Janta Se Rishta 2026-08-13 7 arrested 3435₹",
         "source_url": "https://jantaserishta.com/local/uttar-pradesh/illegal-activities-were-being-conducted-at-the-hotel-seven-people-were-arrested-during-a-raid-4827592",
         "last_updated": "482",
-        "last_verified": "Janta Se Rishta 2026-08-13 7 arrested 3435\u20b9",
+        "last_verified": "Janta Se Rishta 2026-08-13 7 arrested 3435₹",
         "story": "Verma Market Kanika Complex - 7 held with registers, QR machines, 3 fitted cabins.",
         "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
       }
@@ -2069,6 +2069,75 @@
         "last_verified": "Live Hindustan 2025-07-26",
         "story": "Malhanpar Sai Grand extra - part of same Gorakhpur belt pattern.",
         "notes": "Specific hotel/spa raid - granular point. Replaces generic centroid."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.77,
+          25.7
+        ]
+      },
+      "properties": {
+        "slug": "ghazipur-shri-radhe-kathwa",
+        "district": "Ghazipur",
+        "area_name": "Shri Radhe Hotel & Family Rest. - Kathwa Mod, Nonhara (Borsia-Bhagipur)",
+        "type": "Hotel - granular raid",
+        "reliability": "high",
+        "source": "Bhaskar + Amar Ujala 2026-03-10/11 ITPA FIR - cabin hotel 1000-2000/hr manager Pradeep Rai",
+        "source_url": "https://www.bhaskar.com/local/uttar-pradesh/ghazipur/news/ghazipur-hotel-sealed-suspicious-activities-objectionable-items-recovered-137404366.html",
+        "last_updated": "2026-03",
+        "last_verified": "Bhaskar + Amar Ujala 2026-03-10/11 ITPA FIR - cabin hotel 1000-2000/hr manager Pradeep Rai",
+        "story": "Nonhara Kathwa Mod's Shri Radhe Hotel & Family Restaurant raided by ASP Rural Atul Sonkar + Naib Tehsildar Vijaykant Pandey joint team - small cabin rooms with curtains, beds disheveled, objectionable items recovered, entry register confirmed 1000-2000/hr hourly rooms, case under Immoral Traffic Prevention Act against manager Pradeep Rai (Donpah, Bhavarkol) + staff Sukhendar Das, Naseem Khan, Sahgir Ansari, premises sealed.",
+        "notes": "Granular Ghazipur hotel raid - distinct from Basuka tawaif village."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.57,
+          25.43
+        ]
+      },
+      "properties": {
+        "slug": "ghazipur-sonu-hotel-badesar",
+        "district": "Ghazipur",
+        "area_name": "Sonu Hotel & Cafe - Badesar Gaon, Zamania",
+        "type": "Hotel/Cafe - granular raid",
+        "reliability": "high",
+        "source": "Jagran + Amar Ujala VIDEO 2024-09-10 SDM Abhishek Kumar 7 couples 5 rooms sealed",
+        "source_url": "https://www.amarujala.com/video/uttar-pradesh/ghazipur/video-sdm-raided-a-private-hotel-and-cafe-in-ghazipur",
+        "last_updated": "2026-03",
+        "last_verified": "Jagran + Amar Ujala VIDEO 2024-09-10 SDM Abhishek Kumar 7 couples 5 rooms sealed",
+        "story": "Zamania Badesar village Sonu Hotel & Cafe raided by SDM Abhishek Kumar, CO Anup Singh, Kotwal Ashesh Nath Singh - 7 couples found across 5 rooms, some hidden in bathrooms, objectionable items in dustbins/bathrooms, basement bikes, 5 rooms + main gate sealed, couples handed to guardians after inquiry. Operator Govind Kumar claimed registered and 18+ entry only.",
+        "notes": "Granular Ghazipur hotel raid - distinct from Basuka tawaif village."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.578,
+          25.585
+        ]
+      },
+      "properties": {
+        "slug": "ghazipur-sv-hotel-amghat",
+        "district": "Ghazipur",
+        "area_name": "SV Hotel & Restaurant - Amghat, near Mahila Degree College, Sadar",
+        "type": "Hotel - granular raid (cabin)",
+        "reliability": "medium",
+        "source": "Amar Ujala + Ghazipur Reporter 2026-02-28/03-01 SP City Rakesh Mishra cabins without ID",
+        "source_url": "https://www.amarujala.com/uttar-pradesh/ghazipur/police-raid-hotel-objectionable-items-found-sealed-ghazipur-news-c-313-1-svns1007-148127-2026-03-01",
+        "last_updated": "2026-03",
+        "last_verified": "Amar Ujala + Ghazipur Reporter 2026-02-28/03-01 SP City Rakesh Mishra cabins without ID",
+        "story": "Sadar Amghat's SV Hotel & Restaurant near Mahila Degree College raided by SDM Sadar + CO City + SP City Rakesh Mishra team after tip of cabins given to couples without ID for heavy charge. Search found couples exiting cabins, objectionable items + registers + unauthorized documents seized, FIR against operator Vishal Pandey + associates, premises temporarily sealed.",
+        "notes": "Granular Ghazipur hotel raid - distinct from Basuka tawaif village."
       }
     }
   ]
