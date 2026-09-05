@@ -267,18 +267,24 @@ function applyLang(){
 }
 document.getElementById('btn-lang').onclick = ()=>{ lang = lang==='en'?'hi':'en'; LS.set('redlight_lang', lang); applyLang(); };
 
-/* ---------- Boot loader ---------- */
+/* ---------- Boot loader (intentional: min display time) ---------- */
+const BOOT_MIN_MS = 2200;
+const bootStart = Date.now();
 let bootPending = 2;
-function bootReady(){
-  if(bootPending <= 0) return;
-  if(--bootPending > 0) return;
+function hideBoot(){
   const el = document.getElementById('boot-loader');
   if(!el) return;
   el.classList.add('done');
-  setTimeout(()=> el.remove(), 450);
+  setTimeout(()=> el.remove(), 500);
+}
+function bootReady(){
+  if(bootPending <= 0) return;
+  if(--bootPending > 0) return;
+  const wait = Math.max(0, BOOT_MIN_MS - (Date.now() - bootStart));
+  setTimeout(hideBoot, wait);
 }
 // never trap the user on a failed fetch
-setTimeout(()=> document.getElementById('boot-loader')?.classList.add('done'), 9000);
+setTimeout(hideBoot, 9000);
 
 /* ---------- Load points ---------- */
 fetch('/data/up-points.geojson').then(r=>r.json()).then(data=>{
