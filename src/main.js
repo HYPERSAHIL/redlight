@@ -267,6 +267,19 @@ function applyLang(){
 }
 document.getElementById('btn-lang').onclick = ()=>{ lang = lang==='en'?'hi':'en'; LS.set('redlight_lang', lang); applyLang(); };
 
+/* ---------- Boot loader ---------- */
+let bootPending = 2;
+function bootReady(){
+  if(bootPending <= 0) return;
+  if(--bootPending > 0) return;
+  const el = document.getElementById('boot-loader');
+  if(!el) return;
+  el.classList.add('done');
+  setTimeout(()=> el.remove(), 450);
+}
+// never trap the user on a failed fetch
+setTimeout(()=> document.getElementById('boot-loader')?.classList.add('done'), 9000);
+
 /* ---------- Load points ---------- */
 fetch('/data/up-points.geojson').then(r=>r.json()).then(data=>{
   storyData = data.features;
@@ -307,6 +320,7 @@ fetch('/data/up-points.geojson').then(r=>r.json()).then(data=>{
     }, 400);
   }
   map.whenReady(updateMarkerFade);
+  bootReady();
 });
 
 /* ---------- Districts layer + A–Z list ---------- */
@@ -331,6 +345,7 @@ fetch('/data/up-districts.geojson').then(r=>r.json()).then(data=>{
   }).addTo(map);
   districtsLayer.bringToBack();
   buildDistList();
+  bootReady();
 });
 
 function buildDistList(){

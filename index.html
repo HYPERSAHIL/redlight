@@ -126,6 +126,22 @@
     .pin-dot{width:16px;height:16px;background:var(--primary);border:3px solid #fff;border-radius:50%;box-shadow:0 2px 10px rgba(0,0,0,.5);position:relative;z-index:2}
     .pin-pulse{position:absolute;inset:0;background:rgba(225,29,72,.45);border-radius:50%;animation:pulse 2s infinite;z-index:1}
 
+    /* Boot loader — From Uiverse.io by satyamchaudharydev (splendid-husky-54), scoped to #boot-loader */
+    #boot-loader{position:fixed;inset:0;z-index:2000;display:flex;flex-direction:column;gap:22px;align-items:center;justify-content:center;background:var(--bg);transition:opacity .35s ease}
+    #boot-loader.done{opacity:0;pointer-events:none}
+    #boot-loader .spinner{position:relative;width:125px;height:60px;display:block;margin:0}
+    #boot-loader .spinner span{position:absolute;top:50%;left:var(--left);width:35px;height:7px;background:#fff;animation:dominos 1s ease infinite;box-shadow:2px 2px 3px 0px black}
+    #boot-loader .spinner span:nth-child(1){--left:80px;animation-delay:0.125s}
+    #boot-loader .spinner span:nth-child(2){--left:70px;animation-delay:0.3s}
+    #boot-loader .spinner span:nth-child(3){left:60px;animation-delay:0.425s}
+    #boot-loader .spinner span:nth-child(4){animation-delay:0.54s;left:50px}
+    #boot-loader .spinner span:nth-child(5){animation-delay:0.665s;left:40px}
+    #boot-loader .spinner span:nth-child(6){animation-delay:0.79s;left:30px}
+    #boot-loader .spinner span:nth-child(7){animation-delay:0.915s;left:20px}
+    #boot-loader .spinner span:nth-child(8){left:10px}
+    @keyframes dominos{50%{opacity:0.7}75%{-webkit-transform:rotate(90deg);transform:rotate(90deg)}80%{opacity:1}}
+    #boot-loader p{margin:0;font-size:12px;color:var(--muted);letter-spacing:.3px}
+
     @media(max-width:860px){
       .topbar{flex-wrap:wrap;justify-content:center;border-radius:16px;padding:10px 12px;gap:8px}
       .brand{flex-basis:100%;text-align:center}
@@ -164,6 +180,14 @@
 </head>
 <body>
   <div id="map"></div>
+
+  <!-- Boot loader — From Uiverse.io by satyamchaudharydev -->
+  <div id="boot-loader" role="status" aria-label="Loading map">
+    <div class="spinner" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+    <p>Loading map…</p>
+  </div>
 
   <div class="topbar panel">
     <div class="brand">
