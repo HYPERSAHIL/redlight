@@ -44,12 +44,14 @@
     .seg{display:flex;background:rgba(255,255,255,.06);padding:3px;border-radius:999px;border:1px solid var(--border)}
     .seg button{border:0;background:transparent;color:var(--text);padding:6px 13px;border-radius:999px;font-size:11.5px;cursor:pointer;transition:.15s}
     .seg button.active{background:#fff;color:#111;font-weight:600}
-    .btn{appearance:none;border:1px solid var(--border-strong);background:rgba(255,255,255,.05);color:var(--text);padding:7px 13px;border-radius:999px;font-size:11.5px;cursor:pointer;transition:.15s;white-space:nowrap}
-    .btn:hover{background:rgba(255,255,255,.12)}
+    /* U7 buttons — From Uiverse.io by niat786 (perfect-warthog-57), rose */
+    .btn{appearance:none;border:none;color:#fff;background-image:linear-gradient(30deg,#9f1239,#fb7185);background-size:100% auto;font-family:inherit;padding:7px 13px;border-radius:999px;font-size:11.5px;font-weight:600;cursor:pointer;transition:.15s;white-space:nowrap}
+    .btn:hover{background-position:right center;background-size:200% auto;animation:pulse512 1.5s infinite}
+    .btn:focus-visible{outline:none;box-shadow:0 0 0 2px var(--background),0 0 0 4px var(--ring)}
     .btn.icon{padding:7px 11px;font-size:11px}
-    .btn.primary{background:var(--primary);border-color:var(--primary);font-weight:600;color:var(--primary-fg)}
-    .btn.primary:hover{background:#be123c}
-    .btn.active{background:#fff;color:#111;border-color:#fff}
+    .btn.primary{background-image:linear-gradient(30deg,#9f1239,#e11d48)}
+    .btn.active{background:#fff;background-image:none;color:#111}
+    @keyframes pulse512{0%{box-shadow:0 0 0 0 rgba(225,29,72,.4)}70%{box-shadow:0 0 0 10px rgba(225,29,72,0)}100%{box-shadow:0 0 0 0 rgba(225,29,72,0)}}
     .top-right{display:flex;gap:8px;align-items:center}
 
     /* Search + filter floating card — now inside left-col */
