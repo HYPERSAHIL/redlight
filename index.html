@@ -50,27 +50,7 @@
     .btn.primary{background:var(--primary);border-color:var(--primary);font-weight:600;color:var(--primary-fg)}
     .btn.primary:hover{background:#be123c}
     .btn.active{background:#fff;color:#111;border-color:#fff}
-    /* U4 story button — From Uiverse.io by kleenpulse (dangerous-horse-41), rose */
-    #btn-story.btn-grad{--border-color:linear-gradient(-45deg,#fb7185,#e11d48,#7f1d2e);--border-width:.14em;--curve-size:.5em;--blur:20px;--bg:#1c0509;--color:#ffe4e6;color:var(--color);position:relative;isolation:isolate;display:inline-grid;place-content:center;padding:.55em 1.3em;font-size:11.5px;font-weight:600;border:0;white-space:nowrap;cursor:pointer;box-shadow:6px 6px 14px rgba(0,0,0,.6);clip-path:polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%);transition:color 250ms}
-    #btn-story.btn-grad::after,#btn-story.btn-grad::before{content:'';position:absolute;inset:0}
-    #btn-story.btn-grad::before{background:var(--border-color);background-size:300% 300%;animation:move-bg7234 5s ease infinite;z-index:-2}
-    @keyframes move-bg7234{0%{background-position:31% 0%}50%{background-position:70% 100%}100%{background-position:31% 0%}}
-    #btn-story.btn-grad::after{background:var(--bg);z-index:-1;clip-path:polygon(var(--border-width) calc(var(--curve-size) + var(--border-width) * .5),calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),calc(100% - var(--border-width)) var(--border-width),calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),var(--border-width) calc(100% - var(--border-width)));transition:clip-path 500ms}
-    #btn-story.btn-grad:where(:hover,:focus)::after{clip-path:polygon(calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),calc(100% - var(--border-width)) var(--border-width),calc(100% - var(--border-width)) var(--border-width),calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));transition:200ms}
-    #btn-story.btn-grad:where(:hover,:focus){color:#fff}
     .top-right{display:flex;gap:8px;align-items:center}
-    /* U2 layer flip — From Uiverse.io by r7chardgh (dry-rabbit-69), dark + rose */
-    #seg-switch .switch{font-size:12px;position:relative;display:inline-block;width:6.5em;height:2.6em}
-    #seg-switch .switch .cb{opacity:0;width:0;height:0;position:absolute}
-    #seg-switch .toggle{position:absolute;cursor:pointer;width:100%;height:100%;background-color:#27272a;border:1px solid var(--border);border-radius:.4em;transition:.4s;text-transform:uppercase;font-weight:700;overflow:hidden}
-    #seg-switch .toggle > .left{position:absolute;display:flex;width:50%;height:88%;background-color:#3f3f46;color:#fafafa;left:0;bottom:0;align-items:center;justify-content:center;transform-origin:right;transform:rotateX(10deg);transform-style:preserve-3d;transition:all 150ms;font-size:11px}
-    #seg-switch .left::before{position:absolute;content:"";width:100%;height:100%;background-color:#52525b;transform-origin:center left;transform:rotateY(90deg)}
-    #seg-switch .left::after{position:absolute;content:"";width:100%;height:100%;background-color:#27272a;transform-origin:center bottom;transform:rotateX(90deg)}
-    #seg-switch .toggle > .right{position:absolute;display:flex;width:50%;height:88%;background-color:#27272a;color:#71717a;right:1px;bottom:0;align-items:center;justify-content:center;transform-origin:left;transform:rotateX(10deg) rotateY(-45deg);transform-style:preserve-3d;transition:all 150ms;font-size:11px}
-    #seg-switch .right::before{position:absolute;content:"";width:100%;height:100%;background-color:#3f3f46;transform-origin:center right;transform:rotateY(-90deg)}
-    #seg-switch .right::after{position:absolute;content:"";width:100%;height:100%;background-color:#18181b;transform-origin:center bottom;transform:rotateX(90deg)}
-    #seg-switch .switch input:checked + .toggle > .left{transform:rotateX(10deg) rotateY(45deg);color:#71717a;background-color:#27272a}
-    #seg-switch .switch input:checked + .toggle > .right{transform:rotateX(10deg) rotateY(0deg);color:#fb7185;background-color:#3f3f46}
 
     /* Search + filter floating card — now inside left-col */
     .searchcard{width:100%;padding:10px;display:flex;flex-direction:column;gap:8px}
@@ -78,25 +58,11 @@
     .search-head .chev{margin-left:auto;transition:transform .2s}
     .searchcard.collapsed .chev{transform:rotate(-90deg)}
     .search-body{display:flex;flex-direction:column;gap:8px}
-    /* U1 search — From Uiverse.io by satyamchaudharydev (slippery-parrot-22), dark + rose */
-    .searchcard .sform{--sbg:rgba(255,255,255,.05);--spad:33px;--srot:80deg;--srose:#fb7185;--sh:40px;background:var(--sbg);position:relative;border-radius:10px;border:1px solid var(--border);transition:.15s}
-    .searchcard .sform:focus-within{border-color:var(--ring);box-shadow:0 0 0 3px var(--ring)}
-    .searchcard .sform label{display:flex;align-items:center;width:100%;height:var(--sh)}
-    .searchcard .sform input{width:100%;padding-inline-start:var(--spad);outline:none;background:none;border:0;color:var(--text);font-size:13px}
-    .searchcard .sform input::placeholder{color:var(--muted-2)}
-    .searchcard .sform svg{color:var(--muted);transition:0.3s cubic-bezier(.4,0,.2,1);position:absolute;height:15px}
-    .searchcard .sicon{position:absolute;left:11px;transition:0.3s cubic-bezier(.4,0,.2,1);display:flex;justify-content:center;align-items:center}
-    .searchcard .swap-off{transform:rotate(-80deg);opacity:0;visibility:hidden}
-    .searchcard .sclose{background:none;border:none;right:8px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;color:var(--muted);padding:0.1em;width:22px;height:22px;border-radius:50%;transition:0.3s;opacity:0;transform:scale(0);visibility:hidden;cursor:pointer;position:absolute}
-    .searchcard .sclose:hover{color:var(--srose)}
-    .searchcard .sclose svg{position:static;height:12px;width:12px;fill:currentColor}
-    .searchcard .sform input:focus ~ .sicon{transform:rotate(var(--srot)) scale(1.3)}
-    .searchcard .sform input:focus ~ .sicon .swap-off{opacity:1;transform:rotate(-80deg);visibility:visible;color:var(--srose)}
-    .searchcard .sform input:focus ~ .sicon .swap-on{opacity:0;visibility:visible}
-    .searchcard .sform input:valid ~ .sicon{transform:scale(1.3) rotate(var(--srot))}
-    .searchcard .sform input:valid ~ .sicon .swap-off{opacity:1;visibility:visible;color:var(--srose)}
-    .searchcard .sform input:valid ~ .sicon .swap-on{opacity:0;visibility:visible}
-    .searchcard .sform input:valid ~ .sclose{opacity:1;visibility:visible;transform:scale(1);transition:0s}
+    .search-wrap{position:relative;display:flex;align-items:center}
+    .search-wrap svg{position:absolute;left:11px;width:15px;height:15px;color:var(--muted-2);pointer-events:none}
+    .search-input{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--text);padding:9px 12px 9px 33px;border-radius:10px;font-size:13px;outline:none;transition:.15s}
+    .search-input::placeholder{color:var(--muted-2)}
+    .search-input:focus{border-color:var(--ring);box-shadow:0 0 0 3px var(--ring)}
     .results{display:flex;flex-direction:column;max-height:240px;overflow:auto;border-top:1px solid var(--border);margin-top:2px;padding-top:6px;overscroll-behavior:contain}
     .results:empty{display:none;border:0;margin:0;padding:0}
     .result{display:flex;flex-direction:column;gap:1px;padding:8px 10px;border-radius:9px;cursor:pointer;transition:.12s}
@@ -107,22 +73,9 @@
     .tag.high{color:#fca5a5;background:rgba(225,29,72,.14);border-color:rgba(225,29,72,.3)}
     .tag.medium{color:#fcd34d;background:rgba(245,158,11,.14);border-color:rgba(245,158,11,.3)}
     .tag.low{color:#c4b5fd;background:rgba(139,92,246,.14);border-color:rgba(139,92,246,.3)}
-    /* U3 filter checkboxes — From Uiverse.io by Shoh2008 (bad-emu-73), rose */
-    .filter-row{display:flex;gap:4px;flex-wrap:wrap}
-    #filter .checkbox-wrapper-4 *{box-sizing:border-box;color:var(--text)}
-    #filter .checkbox-wrapper-4 .cbx{-webkit-user-select:none;user-select:none;cursor:pointer;padding:6px 8px;border-radius:8px;overflow:hidden;transition:all 0.2s ease;display:inline-block}
-    #filter .checkbox-wrapper-4 .cbx:hover{background:rgba(225,29,72,0.08)}
-    #filter .checkbox-wrapper-4 .cbx span{float:left;vertical-align:middle;transform:translate3d(0,0,0);font-size:12px}
-    #filter .checkbox-wrapper-4 .cbx span:first-child{position:relative;width:18px;height:18px;border-radius:5px;transform:scale(1);border:1px solid var(--border-strong);transition:all 0.2s ease;background:rgba(255,255,255,.04)}
-    #filter .checkbox-wrapper-4 .cbx span:first-child svg{position:absolute;top:3px;left:2px;fill:none;stroke:#fff;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:16px;stroke-dashoffset:16px;transition:all 0.3s ease;transition-delay:0.1s;transform:translate3d(0,0,0)}
-    #filter .checkbox-wrapper-4 .cbx span:last-child{padding-left:8px;line-height:18px}
-    #filter .checkbox-wrapper-4 .cbx:hover span:first-child{border-color:var(--primary)}
-    #filter .checkbox-wrapper-4 .inp-cbx{position:absolute;visibility:hidden}
-    #filter .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child{background:var(--primary);border-color:var(--primary);animation:wave-4 0.4s ease}
-    #filter .checkbox-wrapper-4 .inp-cbx:checked + .cbx span:first-child svg{stroke-dashoffset:0}
-    #filter .checkbox-wrapper-4 .inline-svg{position:absolute;width:0;height:0;pointer-events:none;user-select:none}
-    #filter .checkbox-wrapper-4 .cbx:focus-visible{outline:none;box-shadow:0 0 0 2px var(--background),0 0 0 4px var(--ring)}
-    @keyframes wave-4{50%{transform:scale(0.9)}}
+    .filter-row{display:flex;gap:6px}
+    .filter-row .seg{flex:1}
+    .filter-row .seg button{flex:1;padding:5px 6px;font-size:11px}
     .stats{font-size:11px;color:var(--muted);padding:0 2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
     .toast{position:absolute;bottom:110px;left:50%;transform:translateX(-50%) translateY(10px);z-index:1200;background:var(--panel-solid);border:1px solid var(--border-strong);color:var(--text);padding:9px 16px;border-radius:999px;font-size:12.5px;opacity:0;pointer-events:none;transition:.25s;white-space:nowrap;max-width:92vw;overflow:hidden;text-overflow:ellipsis}
     .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
@@ -173,12 +126,6 @@
 
     .leaflet-control-attribution{font-size:10px!important;background:rgba(16,16,18,.72)!important;color:#a1a1aa!important;padding:2px 6px!important;border-radius:6px!important;margin:6px!important;border:1px solid var(--border)}
     .leaflet-control-attribution a{color:#fca5a5!important}
-    /* U5 tooltips — From Uiverse.io by elijahgummer (brown-moose-94), theme vars */
-    .leaflet-tooltip{--tt-bg:#18181b;background:var(--tt-bg)!important;color:#fafafa!important;border:1px solid rgba(225,29,72,.45)!important;border-radius:8px!important;box-shadow:0 8px 24px rgba(0,0,0,.5)!important;font-size:12px!important;padding:6px 10px!important}
-    .leaflet-tooltip-top:before{border-top-color:rgba(225,29,72,.45)!important}
-    .leaflet-tooltip-bottom:before{border-bottom-color:rgba(225,29,72,.45)!important}
-    .leaflet-tooltip-left:before{border-left-color:rgba(225,29,72,.45)!important}
-    .leaflet-tooltip-right:before{border-right-color:rgba(225,29,72,.45)!important}
     .pin-wrap{position:relative;width:16px;height:16px}
     .pin-dot{width:16px;height:16px;background:var(--primary);border:3px solid #fff;border-radius:50%;box-shadow:0 2px 10px rgba(0,0,0,.5);position:relative;z-index:2}
     .pin-pulse{position:absolute;inset:0;background:rgba(225,29,72,.45);border-radius:50%;animation:pulse 2s infinite;z-index:1}
@@ -228,7 +175,7 @@
       .brand{flex-basis:100%;text-align:center}
       .brand p{display:none}
       .brand h1{font-size:15px}
-      .seg,#seg-switch{order:2}
+      .seg{order:2}
       .top-right{order:3}
       .top-right .btn{font-size:12px;padding:9px 12px}
       .left-col{left:10px;top:132px;width:300px}
@@ -242,8 +189,8 @@
       .top-right .btn.icon{padding:9px 12px;font-size:12px;min-height:36px}
       .left-col{left:8px;top:132px;width:calc(100vw - 16px);gap:10px}
       .zoom button{width:42px;height:42px;font-size:18px}
-      .searchcard .sform{--sh:46px}
-      .searchcard .sform input{font-size:16px}
+      .search-input{padding:12px 12px 12px 36px;font-size:16px;border-radius:12px}
+      .search-input::placeholder{font-size:14px}
       .search-head{display:flex}
       .searchcard.collapsed .search-body{display:none}
       #search-toggle{font-size:14px;padding:0 2px;min-height:36px}
@@ -275,20 +222,15 @@
       <h1>UP Red Light Areas</h1>
       <p>District &amp; area-centroid mapping · information only</p>
     </div>
-    <div id="seg-switch">
-      <label class="switch" title="Satellite / Street">
-        <input type="checkbox" class="cb" id="layer-toggle">
-        <span class="toggle">
-          <span class="left" id="sat-lab">Sat</span>
-          <span class="right" id="st-lab">St</span>
-        </span>
-      </label>
+    <div class="seg" id="seg">
+      <button id="btn-sat" class="active">Satellite</button>
+      <button id="btn-street">Street</button>
     </div>
     <div class="top-right">
       <button class="btn icon" id="btn-lang" title="भाषा बदलें / Switch language">EN</button>
       <button class="btn icon" id="btn-list" title="District list">List</button>
       <button class="btn icon" id="btn-fullscreen">Full</button>
-      <button class="btn-grad" id="btn-story">Story</button>
+      <button class="btn primary" id="btn-story">Story</button>
     </div>
   </div>
 
@@ -306,28 +248,16 @@
         <span class="chev" aria-hidden="true">▾</span>
       </button>
       <div class="search-body" id="search-body">
-        <form class="sform" id="search-form" role="search">
-          <label for="search">
-            <input id="search" class="search-input" type="text" required autocomplete="off" placeholder="Search district or hotel…" />
-            <div class="sicon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="swap-on"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"/></svg>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="swap-off"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"/></svg>
-            </div>
-            <button type="reset" class="sclose" id="search-clear" aria-label="Clear search">
-              <svg viewBox="0 0 20 20"><path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"/></svg>
-            </button>
-          </label>
-        </form>
-        <div class="filter-row" id="filter">
-          <div class="checkbox-wrapper-4">
-            <input class="inp-cbx" id="f-verified" type="checkbox" checked>
-            <label class="cbx" for="f-verified" tabindex="0"><span><svg width="12px" height="10px"><use href="#check-rose"/></svg></span><span id="f-verified-lab">Verified</span></label>
+        <div class="search-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+          <input id="search" class="search-input" type="text" placeholder="Search district or hotel…" autocomplete="off" />
+        </div>
+        <div class="filter-row">
+          <div class="seg" id="filter">
+            <button data-f="all" class="active">All</button>
+            <button data-f="verified">Verified</button>
+            <button data-f="low">Low</button>
           </div>
-          <div class="checkbox-wrapper-4">
-            <input class="inp-cbx" id="f-low" type="checkbox" checked>
-            <label class="cbx" for="f-low" tabindex="0"><span><svg width="12px" height="10px"><use href="#check-rose"/></svg></span><span id="f-low-lab">Low</span></label>
-          </div>
-          <svg class="inline-svg" aria-hidden="true"><symbol id="check-rose" viewBox="0 0 12 10"><polyline points="1.5 6 4.5 9 10.5 1"/></symbol></svg>
         </div>
         <div class="results" id="results"></div>
       </div>

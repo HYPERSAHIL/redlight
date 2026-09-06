@@ -37,28 +37,15 @@ const LS = {
   set(k, v){ try{ localStorage.setItem(k, v); }catch{} }
 };
 let lang = LS.get('redlight_lang', 'en');
-let showVerified = true, showLow = true;
-(function(){
-  const old = LS.get('redlight_filter', null);
-  if(old !== null){
-    showVerified = old !== 'low';
-    showLow = old !== 'verified';
-    try{ localStorage.removeItem('redlight_filter'); }catch{}
-  } else {
-    showVerified = LS.get('redlight_filter_v', '1') === '1';
-    showLow = LS.get('redlight_filter_l', '1') === '1';
-  }
-  LS.set('redlight_filter_v', showVerified ? '1' : '0');
-  LS.set('redlight_filter_l', showLow ? '1' : '0');
-})();
+let filterMode = LS.get('redlight_filter', 'all');
 
 /* ---------- i18n ---------- */
 const HI_DISTRICT = {
   "Amroha":"अमरोहा","Hapur":"हापुड़","Bareilly":"बरेली","Pilibhit":"पीलीभीत","Bulandshahr":"बुलंदशहर","Gautam Buddha Nagar":"गौतम बुद्ध नगर","Lakhimpur Kheri":"लखीमपुर खीरी","Budaun":"बदायूँ","Bahraich":"बहराइच","Shahjahanpur":"शाहजहाँपुर","Aligarh":"अलीगढ़","Kasganj":"कासगंज","Mathura":"मथुरा","Shrawasti":"श्रावस्ती","Sitapur":"सीतापुर","Hathras":"हाथरस","Etah":"एटा","Hardoi":"हरदोई","Farrukhabad":"फर्रुखाबाद","Firozabad":"फिरोजाबाद","Siddharthnagar":"सिद्धार्थनगर","Mainpuri":"मैनपुरी","Maharajganj":"महाराजगंज","Agra":"आगरा","Gonda":"गोंडा","Barabanki":"बाराबंकी","Kushinagar":"कुशीनगर","Kannauj":"कन्नौज","Lucknow":"लखनऊ","Basti":"बस्ती","Gorakhpur":"गोरखपुर","Sant Kabir Nagar":"संत कबीर नगर","Unnao":"उन्नाव","Etawah":"इटावा","Kanpur Nagar":"कानपुर","Auraiya":"औरैया","Ayodhya":"अयोध्या","Kanpur Dehat":"कानपुर देहात","Deoria":"देवरिया","Sultanpur":"सुल्तानपुर","Ambedkar Nagar":"अंबेडकर नगर","Rae Bareli":"रायबरेली","Jalaun":"जालौन","Azamgarh":"आज़मगढ़","Mau":"मऊ","Fatehpur":"फतेहपुर","Ballia":"बलिया","Jaunpur":"जौनपुर","Jhansi":"झाँसी","Banda":"बाँदा","Ghazipur":"ग़ाज़ीपुर","Kaushambi":"कौशाम्बी","Prayagraj":"प्रयागराज","Varanasi":"वाराणसी","Chitrakoot":"चित्रकूट","Chandauli":"चंदौली","Bhadohi":"भदोही","Mirzapur":"मिर्ज़ापुर","Lalitpur":"ललितपुर","Sonbhadra":"सोनभद्र","Amethi":"अमेठी","Ghaziabad":"ग़ाज़ियाबाद","Sambhal":"संभल","Mahoba":"महोबा","Saharanpur":"सहारनपुर","Bijnor":"बिजनौर","Muzaffarnagar":"मुज़फ्फरनगर","Baghpat":"बागपत","Meerut":"मेरठ","Moradabad":"मुरादाबाद","Rampur":"रामपुर","Shamli":"शामली","Balrampur":"बलरामपुर","Hamirpur":"हमीरपुर","Pratapgarh":"प्रतापगढ़"
 };
 const I18N = {
-  en: { title:"UP Red Light Areas", sub:"District & area-centroid mapping · information only", sat:"Satellite", street:"Street", satS:"Sat", stS:"St", lang:"EN", full:"Full", story:"Story", list:"List", search:"Search district or hotel…", fAll:"All", fVer:"Verified", fLow:"Low", legV:"Verified", legTI:"TI district", hint:"Tap a dot to explore", dTitle:"Select a district", dSub:"Tap any red dot or story card.", dContent:"Tap a red dot to explore. Satellite hybrid with labels is default. Map is locked to Uttar Pradesh only.", about:"About this map", src:"Open source", sv:"Street View", copy:"Copy link", close:"Close", tiType:"District with TI program", relHigh:"High", relMed:"Medium", relLow:"Low", badge:"Verified", introTitle:"Explore<br>the map", introOk:"OK", introStepsM:["Pinch to zoom the map","Tap a red dot for its story","Open List for all 75 districts"], introStepsD:["Scroll to zoom · drag to pan","Click a red dot for its story","Search or open List for districts"], legL:"Low evidence", stats:"{s} sites · {d} districts · {t} TI" },
-  hi: { title:"यूपी रेड लाइट एरिया", sub:"ज़िला व क्षेत्र-केंद्र मानचित्र · केवल जानकारी", sat:"उपग्रह", street:"सड़क", satS:"उप", stS:"स", lang:"हि", full:"पूरा", story:"कहानी", list:"सूची", search:"ज़िला या होटल खोजें…", fAll:"सभी", fVer:"प्रमाणित", fLow:"कम", legV:"प्रमाणित", legTI:"टीआई ज़िला", hint:"देखने हेतु बिंदु दबाएँ", dTitle:"कोई ज़िला चुनें", dSub:"कोई लाल बिंदु या कार्ड चुनें।", dContent:"लाल बिंदु दबाएँ। डिफ़ॉल्ट उपग्रह + लेबल। मानचित्र केवल यूपी तक सीमित।", about:"इस मानचित्र के बारे में", src:"स्रोत खोलें", sv:"स्ट्रीट व्यू", copy:"लिंक कॉपी", close:"बंद", tiType:"टीआई कार्यक्रम वाला ज़िला", relHigh:"उच्च", relMed:"मध्यम", relLow:"कम", badge:"सत्यापित", introTitle:"मानचित्र<br>देखें", introOk:"ठीक है", introStepsM:["ज़ूम के लिए पिंच करें","कहानी हेतु लाल बिंदु दबाएँ","सभी 75 ज़िलों हेतु सूची खोलें"], introStepsD:["ज़ूम हेतु स्क्रॉल · घुमाने हेतु ड्रैग","कहानी हेतु लाल बिंदु दबाएँ","खोजें या सूची खोलें"], legL:"कम साक्ष्य", stats:"{s} स्थल · {d} ज़िले · {t} टीआई" }
+  en: { title:"UP Red Light Areas", sub:"District & area-centroid mapping · information only", sat:"Satellite", street:"Street", lang:"EN", full:"Full", story:"Story", list:"List", search:"Search district or hotel…", fAll:"All", fVer:"Verified", fLow:"Low", legV:"Verified", legTI:"TI district", hint:"Tap a dot to explore", dTitle:"Select a district", dSub:"Tap any red dot or story card.", dContent:"Tap a red dot to explore. Satellite hybrid with labels is default. Map is locked to Uttar Pradesh only.", about:"About this map", src:"Open source", sv:"Street View", copy:"Copy link", close:"Close", tiType:"District with TI program", relHigh:"High", relMed:"Medium", relLow:"Low", badge:"Verified", introTitle:"Explore<br>the map", introOk:"OK", introStepsM:["Pinch to zoom the map","Tap a red dot for its story","Open List for all 75 districts"], introStepsD:["Scroll to zoom · drag to pan","Click a red dot for its story","Search or open List for districts"], legL:"Low evidence", stats:"{s} sites · {d} districts · {t} TI" },
+  hi: { title:"यूपी रेड लाइट एरिया", sub:"ज़िला व क्षेत्र-केंद्र मानचित्र · केवल जानकारी", sat:"उपग्रह", street:"सड़क", lang:"हि", full:"पूरा", story:"कहानी", list:"सूची", search:"ज़िला या होटल खोजें…", fAll:"सभी", fVer:"प्रमाणित", fLow:"कम", legV:"प्रमाणित", legTI:"टीआई ज़िला", hint:"देखने हेतु बिंदु दबाएँ", dTitle:"कोई ज़िला चुनें", dSub:"कोई लाल बिंदु या कार्ड चुनें।", dContent:"लाल बिंदु दबाएँ। डिफ़ॉल्ट उपग्रह + लेबल। मानचित्र केवल यूपी तक सीमित।", about:"इस मानचित्र के बारे में", src:"स्रोत खोलें", sv:"स्ट्रीट व्यू", copy:"लिंक कॉपी", close:"बंद", tiType:"टीआई कार्यक्रम वाला ज़िला", relHigh:"उच्च", relMed:"मध्यम", relLow:"कम", badge:"सत्यापित", introTitle:"मानचित्र<br>देखें", introOk:"ठीक है", introStepsM:["ज़ूम के लिए पिंच करें","कहानी हेतु लाल बिंदु दबाएँ","सभी 75 ज़िलों हेतु सूची खोलें"], introStepsD:["ज़ूम हेतु स्क्रॉल · घुमाने हेतु ड्रैग","कहानी हेतु लाल बिंदु दबाएँ","खोजें या सूची खोलें"], legL:"कम साक्ष्य", stats:"{s} स्थल · {d} ज़िले · {t} टीआई" }
 };
 const T = () => I18N[lang];
 const distName = d => lang === 'hi' && HI_DISTRICT[d] ? HI_DISTRICT[d] : d;
@@ -134,10 +121,14 @@ document.getElementById('btn-fullscreen').onclick = ()=>{
   if(document.fullscreenElement) document.exitFullscreen();
   else document.getElementById('map').requestFullscreen();
 };
-document.getElementById('layer-toggle').addEventListener('change', e=>{
-  if(e.target.checked){ if(!map.hasLayer(street)){ map.addLayer(street); map.removeLayer(satellite); } }
-  else{ if(!map.hasLayer(satellite)){ map.addLayer(satellite); map.removeLayer(street); } }
-});
+document.getElementById('btn-sat').onclick = e=>{
+  if(!map.hasLayer(satellite)){ map.addLayer(satellite); map.removeLayer(street); }
+  e.target.classList.add('active'); document.getElementById('btn-street').classList.remove('active');
+};
+document.getElementById('btn-street').onclick = e=>{
+  if(!map.hasLayer(street)){ map.addLayer(street); map.removeLayer(satellite); }
+  e.target.classList.add('active'); document.getElementById('btn-sat').classList.remove('active');
+};
 
 /* ---------- Heat: always on, built from loaded points (single fetch) ---------- */
 let heatLayer = null;
@@ -202,8 +193,8 @@ stNext.onclick = ()=>{ pauseStory(); storyStep(1); };
 /* ---------- Visibility: filter + search ---------- */
 let searchTerm = '';
 function visible(p){
-  if(p.reliability === 'low'){ if(!showLow) return false; }
-  else if(!showVerified) return false;
+  if(filterMode === 'verified' && !(p.reliability==='high'||p.reliability==='medium')) return false;
+  if(filterMode === 'low' && p.reliability!=='low') return false;
   if(searchTerm){
     const hay = `${p.district} ${HI_DISTRICT[p.district]||''} ${p.area_name} ${p.type} ${p.story||''} ${p.source||''}`.toLowerCase();
     if(!hay.includes(searchTerm)) return false;
@@ -217,20 +208,12 @@ function applyVisibility(){
     else { if(pointsLayer.hasLayer(marker)) pointsLayer.removeLayer(marker); }
   });
 }
-function syncFilterUI(){
-  document.getElementById('f-verified').checked = showVerified;
-  document.getElementById('f-low').checked = showLow;
-}
-function persistFilter(){
-  LS.set('redlight_filter_v', showVerified ? '1' : '0');
-  LS.set('redlight_filter_l', showLow ? '1' : '0');
-}
-document.getElementById('f-verified').addEventListener('change', e=>{ showVerified = e.target.checked; persistFilter(); applyVisibility(); });
-document.getElementById('f-low').addEventListener('change', e=>{ showLow = e.target.checked; persistFilter(); applyVisibility(); });
-document.querySelectorAll('#filter .cbx').forEach(l=>{
-  l.addEventListener('keydown', e=>{
-    if(e.key === ' ' || e.key === 'Enter'){ e.preventDefault(); document.getElementById(l.htmlFor).click(); }
-  });
+document.getElementById('filter').addEventListener('click', e=>{
+  const b = e.target.closest('button'); if(!b) return;
+  filterMode = b.dataset.f;
+  [...e.currentTarget.children].forEach(x=> x.classList.toggle('active', x===b));
+  LS.set('redlight_filter', filterMode);
+  applyVisibility();
 });
 
 let statSites = 0, statDist = 0, statTI = 0;
@@ -260,12 +243,6 @@ searchInput.addEventListener('input', ()=>{
   searchTerm = searchInput.value.trim().toLowerCase();
   applyVisibility(); renderResults();
 });
-document.getElementById('search-form').addEventListener('submit', e=>{ e.preventDefault(); searchInput.blur(); });
-document.getElementById('search-clear').addEventListener('click', ()=>{
-  searchInput.value = '';
-  searchInput.dispatchEvent(new Event('input'));
-  searchInput.focus();
-});
 
 /* ---------- Language toggle (persisted) ---------- */
 function applyLang(){
@@ -273,15 +250,16 @@ function applyLang(){
   document.documentElement.lang = lang;
   document.querySelector('.brand h1').textContent = t.title;
   document.querySelector('.brand p').textContent = t.sub;
-  document.getElementById('sat-lab').textContent = t.satS;
-  document.getElementById('st-lab').textContent = t.stS;
+  document.getElementById('btn-sat').textContent = t.sat;
+  document.getElementById('btn-street').textContent = t.street;
   document.getElementById('btn-lang').textContent = t.lang;
   document.getElementById('btn-list').textContent = t.list;
   document.getElementById('btn-fullscreen').textContent = t.full;
   document.getElementById('btn-story').textContent = t.story;
   searchInput.placeholder = t.search;
-  document.getElementById('f-verified-lab').textContent = t.fVer;
-  document.getElementById('f-low-lab').textContent = t.fLow;
+  document.querySelector('#filter button[data-f="all"]').textContent = t.fAll;
+  document.querySelector('#filter button[data-f="verified"]').textContent = t.fVer;
+  document.querySelector('#filter button[data-f="low"]').textContent = t.fLow;
   document.querySelector('.bottombar').innerHTML = `<span><span class="dot" style="background:#e11d48"></span>${t.legV}</span><span><span class="dot" style="background:#a78bfa"></span>${t.legL}</span><span><span class="dot" style="background:#f59e0b"></span>${t.legTI}</span><span class="sep"></span><span class="hint">${t.hint}</span>`;
   document.getElementById('d-close').textContent = t.close;
   document.getElementById('d-source').textContent = t.src;
@@ -454,8 +432,8 @@ if('serviceWorker' in navigator){
 }
 
 /* ---------- init ---------- */
-// restore persisted filter checkbox state
-syncFilterUI();
+// restore persisted filter active state
+[...document.querySelectorAll('#filter button')].forEach(b=> b.classList.toggle('active', b.dataset.f===filterMode));
 applyLang();
 syncZoom();
 updateMarkerFade();
