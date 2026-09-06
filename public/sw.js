@@ -1,4 +1,4 @@
-const CACHE = 'up-rla-v1';
+const CACHE = 'up-rla-v2';
 const CORE = [
   '/', '/index.html', '/manifest.webmanifest', '/icon.svg',
   '/data/up-points.geojson', '/data/up-districts.geojson'

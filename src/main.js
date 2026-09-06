@@ -44,8 +44,8 @@ const HI_DISTRICT = {
   "Amroha":"अमरोहा","Hapur":"हापुड़","Bareilly":"बरेली","Pilibhit":"पीलीभीत","Bulandshahr":"बुलंदशहर","Gautam Buddha Nagar":"गौतम बुद्ध नगर","Lakhimpur Kheri":"लखीमपुर खीरी","Budaun":"बदायूँ","Bahraich":"बहराइच","Shahjahanpur":"शाहजहाँपुर","Aligarh":"अलीगढ़","Kasganj":"कासगंज","Mathura":"मथुरा","Shrawasti":"श्रावस्ती","Sitapur":"सीतापुर","Hathras":"हाथरस","Etah":"एटा","Hardoi":"हरदोई","Farrukhabad":"फर्रुखाबाद","Firozabad":"फिरोजाबाद","Siddharthnagar":"सिद्धार्थनगर","Mainpuri":"मैनपुरी","Maharajganj":"महाराजगंज","Agra":"आगरा","Gonda":"गोंडा","Barabanki":"बाराबंकी","Kushinagar":"कुशीनगर","Kannauj":"कन्नौज","Lucknow":"लखनऊ","Basti":"बस्ती","Gorakhpur":"गोरखपुर","Sant Kabir Nagar":"संत कबीर नगर","Unnao":"उन्नाव","Etawah":"इटावा","Kanpur Nagar":"कानपुर","Auraiya":"औरैया","Ayodhya":"अयोध्या","Kanpur Dehat":"कानपुर देहात","Deoria":"देवरिया","Sultanpur":"सुल्तानपुर","Ambedkar Nagar":"अंबेडकर नगर","Rae Bareli":"रायबरेली","Jalaun":"जालौन","Azamgarh":"आज़मगढ़","Mau":"मऊ","Fatehpur":"फतेहपुर","Ballia":"बलिया","Jaunpur":"जौनपुर","Jhansi":"झाँसी","Banda":"बाँदा","Ghazipur":"ग़ाज़ीपुर","Kaushambi":"कौशाम्बी","Prayagraj":"प्रयागराज","Varanasi":"वाराणसी","Chitrakoot":"चित्रकूट","Chandauli":"चंदौली","Bhadohi":"भदोही","Mirzapur":"मिर्ज़ापुर","Lalitpur":"ललितपुर","Sonbhadra":"सोनभद्र","Amethi":"अमेठी","Ghaziabad":"ग़ाज़ियाबाद","Sambhal":"संभल","Mahoba":"महोबा","Saharanpur":"सहारनपुर","Bijnor":"बिजनौर","Muzaffarnagar":"मुज़फ्फरनगर","Baghpat":"बागपत","Meerut":"मेरठ","Moradabad":"मुरादाबाद","Rampur":"रामपुर","Shamli":"शामली","Balrampur":"बलरामपुर","Hamirpur":"हमीरपुर","Pratapgarh":"प्रतापगढ़"
 };
 const I18N = {
-  en: { title:"UP Red Light Areas", sub:"District & area-centroid mapping · information only", sat:"Satellite", street:"Street", lang:"EN", full:"Full", story:"Story", list:"List", search:"Search district or hotel…", fAll:"All", fVer:"Verified", fLow:"Low", legV:"Verified", legTI:"TI district", hint:"Tap a dot to explore", dTitle:"Select a district", dSub:"Tap any red dot or story card.", dContent:"Tap a red dot to explore. Satellite hybrid with labels is default. Map is locked to Uttar Pradesh only.", about:"About this map", src:"Open source", sv:"Street View", copy:"Copy link", close:"Close", tiType:"District with TI program", relHigh:"High", relMed:"Medium", relLow:"Low", badge:"Verified", introTitle:"Explore<br>the map", introOk:"OK", introStepsM:["Pinch to zoom the map","Tap a red dot for its story","Open List for all 75 districts"], introStepsD:["Scroll to zoom · drag to pan","Click a red dot for its story","Search or open List for districts"] },
-  hi: { title:"यूपी रेड लाइट एरिया", sub:"ज़िला व क्षेत्र-केंद्र मानचित्र · केवल जानकारी", sat:"उपग्रह", street:"सड़क", lang:"हि", full:"पूरा", story:"कहानी", list:"सूची", search:"ज़िला या होटल खोजें…", fAll:"सभी", fVer:"प्रमाणित", fLow:"कम", legV:"प्रमाणित", legTI:"टीआई ज़िला", hint:"देखने हेतु बिंदु दबाएँ", dTitle:"कोई ज़िला चुनें", dSub:"कोई लाल बिंदु या कार्ड चुनें।", dContent:"लाल बिंदु दबाएँ। डिफ़ॉल्ट उपग्रह + लेबल। मानचित्र केवल यूपी तक सीमित।", about:"इस मानचित्र के बारे में", src:"स्रोत खोलें", sv:"स्ट्रीट व्यू", copy:"लिंक कॉपी", close:"बंद", tiType:"टीआई कार्यक्रम वाला ज़िला", relHigh:"उच्च", relMed:"मध्यम", relLow:"कम", badge:"सत्यापित", introTitle:"मानचित्र<br>देखें", introOk:"ठीक है", introStepsM:["ज़ूम के लिए पिंच करें","कहानी हेतु लाल बिंदु दबाएँ","सभी 75 ज़िलों हेतु सूची खोलें"], introStepsD:["ज़ूम हेतु स्क्रॉल · घुमाने हेतु ड्रैग","कहानी हेतु लाल बिंदु दबाएँ","खोजें या सूची खोलें"] }
+  en: { title:"UP Red Light Areas", sub:"District & area-centroid mapping · information only", sat:"Satellite", street:"Street", lang:"EN", full:"Full", story:"Story", list:"List", search:"Search district or hotel…", fAll:"All", fVer:"Verified", fLow:"Low", legV:"Verified", legTI:"TI district", hint:"Tap a dot to explore", dTitle:"Select a district", dSub:"Tap any red dot or story card.", dContent:"Tap a red dot to explore. Satellite hybrid with labels is default. Map is locked to Uttar Pradesh only.", about:"About this map", src:"Open source", sv:"Street View", copy:"Copy link", close:"Close", tiType:"District with TI program", relHigh:"High", relMed:"Medium", relLow:"Low", badge:"Verified", introTitle:"Explore<br>the map", introOk:"OK", introStepsM:["Pinch to zoom the map","Tap a red dot for its story","Open List for all 75 districts"], introStepsD:["Scroll to zoom · drag to pan","Click a red dot for its story","Search or open List for districts"], legL:"Low evidence", stats:"{s} sites · {d} districts · {t} TI" },
+  hi: { title:"यूपी रेड लाइट एरिया", sub:"ज़िला व क्षेत्र-केंद्र मानचित्र · केवल जानकारी", sat:"उपग्रह", street:"सड़क", lang:"हि", full:"पूरा", story:"कहानी", list:"सूची", search:"ज़िला या होटल खोजें…", fAll:"सभी", fVer:"प्रमाणित", fLow:"कम", legV:"प्रमाणित", legTI:"टीआई ज़िला", hint:"देखने हेतु बिंदु दबाएँ", dTitle:"कोई ज़िला चुनें", dSub:"कोई लाल बिंदु या कार्ड चुनें।", dContent:"लाल बिंदु दबाएँ। डिफ़ॉल्ट उपग्रह + लेबल। मानचित्र केवल यूपी तक सीमित।", about:"इस मानचित्र के बारे में", src:"स्रोत खोलें", sv:"स्ट्रीट व्यू", copy:"लिंक कॉपी", close:"बंद", tiType:"टीआई कार्यक्रम वाला ज़िला", relHigh:"उच्च", relMed:"मध्यम", relLow:"कम", badge:"सत्यापित", introTitle:"मानचित्र<br>देखें", introOk:"ठीक है", introStepsM:["ज़ूम के लिए पिंच करें","कहानी हेतु लाल बिंदु दबाएँ","सभी 75 ज़िलों हेतु सूची खोलें"], introStepsD:["ज़ूम हेतु स्क्रॉल · घुमाने हेतु ड्रैग","कहानी हेतु लाल बिंदु दबाएँ","खोजें या सूची खोलें"], legL:"कम साक्ष्य", stats:"{s} स्थल · {d} ज़िले · {t} टीआई" }
 };
 const T = () => I18N[lang];
 const distName = d => lang === 'hi' && HI_DISTRICT[d] ? HI_DISTRICT[d] : d;
@@ -89,6 +89,20 @@ function openDrawer(p, latlng){
 }
 function closeDrawer(){ drawer.classList.remove('open'); }
 dClose.onclick = closeDrawer;
+document.addEventListener('keydown', e=>{
+  if(e.key !== 'Escape') return;
+  if(distlistEl.classList.contains('open')) closeDistList();
+  else if(drawer.classList.contains('open')) closeDrawer();
+  else if(!storyEl.classList.contains('hidden')){ storyEl.classList.add('hidden'); pauseStory(); }
+});
+function toast(msg){
+  const el = document.getElementById('toast');
+  if(!el) return;
+  el.textContent = msg;
+  el.classList.add('show');
+  clearTimeout(el._t);
+  el._t = setTimeout(()=> el.classList.remove('show'), 2200);
+}
 let touchY = null;
 drawer.addEventListener('touchstart', e=>{ touchY = e.touches[0].clientY; }, {passive:true});
 drawer.addEventListener('touchend', e=>{
@@ -98,7 +112,7 @@ drawer.addEventListener('touchend', e=>{
 }, {passive:true});
 document.getElementById('d-share').onclick = async ()=>{
   const url = currentSlug ? `${location.origin}/?d=${currentSlug}` : location.origin;
-  try{ await navigator.clipboard.writeText(url); alert(T().copy+' ✓'); } catch{ prompt(T().copy+':', url); }
+  try{ await navigator.clipboard.writeText(url); toast(T().copy+' ✓'); } catch{ prompt(T().copy+':', url); }
 };
 
 /* ---------- Controls ---------- */
@@ -116,16 +130,13 @@ document.getElementById('btn-street').onclick = e=>{
   e.target.classList.add('active'); document.getElementById('btn-sat').classList.remove('active');
 };
 
-/* ---------- Heat: always on ---------- */
+/* ---------- Heat: always on, built from loaded points (single fetch) ---------- */
 let heatLayer = null;
-function enableHeat(){
-  if(heatLayer){ heatLayer.addTo(map); return; }
-  fetch('/data/up-points.geojson').then(r=>r.json()).then(d=>{
-    heatLayer = L.layerGroup(d.features.map(f=> L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {radius:26, fillColor:'#e11d48', fillOpacity:0.16, color:'#e11d48', weight:1, opacity:0.22})));
-    heatLayer.addTo(map);
-  });
+function buildHeat(features){
+  if(heatLayer) map.removeLayer(heatLayer);
+  heatLayer = L.layerGroup(features.map(f=> L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {radius:26, fillColor:'#e11d48', fillOpacity:0.16, color:'#e11d48', weight:1, opacity:0.22})));
+  heatLayer.addTo(map);
 }
-enableHeat();
 
 /* ---------- Zoom (left-top vertical) ---------- */
 const zIn = document.getElementById('z-in'), zOut = document.getElementById('z-out');
@@ -185,7 +196,7 @@ function visible(p){
   if(filterMode === 'verified' && !(p.reliability==='high'||p.reliability==='medium')) return false;
   if(filterMode === 'low' && p.reliability!=='low') return false;
   if(searchTerm){
-    const hay = `${p.district} ${p.area_name} ${p.type}`.toLowerCase();
+    const hay = `${p.district} ${HI_DISTRICT[p.district]||''} ${p.area_name} ${p.type} ${p.story||''} ${p.source||''}`.toLowerCase();
     if(!hay.includes(searchTerm)) return false;
   }
   return true;
@@ -204,6 +215,13 @@ document.getElementById('filter').addEventListener('click', e=>{
   LS.set('redlight_filter', filterMode);
   applyVisibility();
 });
+
+let statSites = 0, statDist = 0, statTI = 0;
+function updateStats(){
+  const el = document.getElementById('stats');
+  if(!el) return;
+  el.textContent = T().stats.replace('{s}', statSites).replace('{d}', statDist).replace('{t}', statTI);
+}
 
 /* ---------- Search ---------- */
 function renderResults(){
@@ -242,12 +260,12 @@ function applyLang(){
   document.querySelector('#filter button[data-f="all"]').textContent = t.fAll;
   document.querySelector('#filter button[data-f="verified"]').textContent = t.fVer;
   document.querySelector('#filter button[data-f="low"]').textContent = t.fLow;
-  document.querySelector('.bottombar').innerHTML = `<span><span class="dot" style="background:#e11d48"></span>${t.legV}</span><span><span class="dot" style="background:#f59e0b"></span>${t.legTI}</span><span class="sep"></span><span class="hint">${t.hint}</span>`;
+  document.querySelector('.bottombar').innerHTML = `<span><span class="dot" style="background:#e11d48"></span>${t.legV}</span><span><span class="dot" style="background:#a78bfa"></span>${t.legL}</span><span><span class="dot" style="background:#f59e0b"></span>${t.legTI}</span><span class="sep"></span><span class="hint">${t.hint}</span>`;
   document.getElementById('d-close').textContent = t.close;
   document.getElementById('d-source').textContent = t.src;
   document.getElementById('d-streetview').textContent = t.sv;
   document.getElementById('d-share').textContent = t.copy;
-  document.querySelector('.about-line').innerHTML = `<b>${t.about}</b><br/>District-centroid mapping of historically reported areas, compiled from NGO reports (Guria, Freedom Firm), court records, academic studies and news. TI districts = UPSACS HIV-program coverage, aggregated. No venue-level data. Report corrections via GitHub issues on HYPERSAHIL/redlight.`;
+  document.querySelector('.about-line').innerHTML = `<b>${t.about}</b><br/>District-centroid mapping of historically reported areas, compiled from NGO reports (Guria, Freedom Firm), court records, academic studies and news. TI districts = UPSACS HIV-program coverage, aggregated. No venue-level data. Report corrections via <a href="https://github.com/HYPERSAHIL/redlight/issues" target="_blank" style="color:#fca5a5">GitHub issues</a>.`;
   document.querySelector('.distlist-head .sub').textContent = 'All 75 · A–Z · tap to fly';
   if(!drawer.classList.contains('open')){
     dTitle.textContent = t.dTitle; dSub.textContent = t.dSub; dContent.textContent = t.dContent;
@@ -264,6 +282,7 @@ function applyLang(){
   }
   renderResults();
   updateStoryCount();
+  updateStats();
   if(document.getElementById('intro')?.classList.contains('show')) renderIntro();
 }
 document.getElementById('btn-lang').onclick = ()=>{ lang = lang==='en'?'hi':'en'; LS.set('redlight_lang', lang); applyLang(); };
@@ -323,6 +342,8 @@ fetch('/data/up-points.geojson').then(r=>r.json()).then(data=>{
     pointsLayer.addLayer(marker);
     return { feature: f, marker };
   });
+  buildHeat(data.features);
+  statSites = storyData.length; updateStats();
 
   storyCards.innerHTML = '';
   data.features.forEach((f,i)=>{
@@ -367,10 +388,16 @@ fetch('/data/up-districts.geojson').then(r=>r.json()).then(data=>{
           map.flyTo(center, 8, {duration:1}); L.DomEvent.stop(e);
         });
       }
+      else{
+        layer.on('click', ()=>{ map.flyTo(center, 8, {duration:1}); });
+      }
     }
   }).addTo(map);
   districtsLayer.bringToBack();
   buildDistList();
+  statDist = districtList.length;
+  statTI = districtList.filter(d=>d.hasTI).length;
+  updateStats();
   bootReady();
 });
 
