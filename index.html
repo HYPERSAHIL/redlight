@@ -50,6 +50,14 @@
     .btn.primary{background:var(--primary);border-color:var(--primary);font-weight:600;color:var(--primary-fg)}
     .btn.primary:hover{background:#be123c}
     .btn.active{background:#fff;color:#111;border-color:#fff}
+    /* U4 story button — From Uiverse.io by kleenpulse (dangerous-horse-41), rose */
+    #btn-story.btn-grad{--border-color:linear-gradient(-45deg,#fb7185,#e11d48,#7f1d2e);--border-width:.14em;--curve-size:.5em;--blur:20px;--bg:#1c0509;--color:#ffe4e6;color:var(--color);position:relative;isolation:isolate;display:inline-grid;place-content:center;padding:.55em 1.3em;font-size:11.5px;font-weight:600;border:0;white-space:nowrap;cursor:pointer;box-shadow:6px 6px 14px rgba(0,0,0,.6);clip-path:polygon(0% var(--curve-size),var(--curve-size) 0,100% 0,100% calc(100% - var(--curve-size)),calc(100% - var(--curve-size)) 100%,0 100%);transition:color 250ms}
+    #btn-story.btn-grad::after,#btn-story.btn-grad::before{content:'';position:absolute;inset:0}
+    #btn-story.btn-grad::before{background:var(--border-color);background-size:300% 300%;animation:move-bg7234 5s ease infinite;z-index:-2}
+    @keyframes move-bg7234{0%{background-position:31% 0%}50%{background-position:70% 100%}100%{background-position:31% 0%}}
+    #btn-story.btn-grad::after{background:var(--bg);z-index:-1;clip-path:polygon(var(--border-width) calc(var(--curve-size) + var(--border-width) * .5),calc(var(--curve-size) + var(--border-width) * .5) var(--border-width),calc(100% - var(--border-width)) var(--border-width),calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),var(--border-width) calc(100% - var(--border-width)));transition:clip-path 500ms}
+    #btn-story.btn-grad:where(:hover,:focus)::after{clip-path:polygon(calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)),calc(100% - var(--border-width)) var(--border-width),calc(100% - var(--border-width)) var(--border-width),calc(100% - var(--border-width)) calc(100% - calc(var(--curve-size) + var(--border-width) * .5)),calc(100% - calc(var(--curve-size) + var(--border-width) * .5)) calc(100% - var(--border-width)),calc(100% - calc(var(--curve-size) + var(--border-width) * 0.5)) calc(100% - var(--border-width)));transition:200ms}
+    #btn-story.btn-grad:where(:hover,:focus){color:#fff}
     .top-right{display:flex;gap:8px;align-items:center}
     /* U2 layer flip — From Uiverse.io by r7chardgh (dry-rabbit-69), dark + rose */
     #seg-switch .switch{font-size:12px;position:relative;display:inline-block;width:6.5em;height:2.6em}
@@ -274,7 +282,7 @@
       <button class="btn icon" id="btn-lang" title="भाषा बदलें / Switch language">EN</button>
       <button class="btn icon" id="btn-list" title="District list">List</button>
       <button class="btn icon" id="btn-fullscreen">Full</button>
-      <button class="btn primary" id="btn-story">Story</button>
+      <button class="btn-grad" id="btn-story">Story</button>
     </div>
   </div>
 
