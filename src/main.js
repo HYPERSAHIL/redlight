@@ -243,6 +243,12 @@ searchInput.addEventListener('input', ()=>{
   searchTerm = searchInput.value.trim().toLowerCase();
   applyVisibility(); renderResults();
 });
+document.getElementById('search-form').addEventListener('submit', e=>{ e.preventDefault(); searchInput.blur(); });
+document.getElementById('search-clear').addEventListener('click', ()=>{
+  searchInput.value = '';
+  searchInput.dispatchEvent(new Event('input'));
+  searchInput.focus();
+});
 
 /* ---------- Language toggle (persisted) ---------- */
 function applyLang(){

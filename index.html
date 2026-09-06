@@ -58,11 +58,25 @@
     .search-head .chev{margin-left:auto;transition:transform .2s}
     .searchcard.collapsed .chev{transform:rotate(-90deg)}
     .search-body{display:flex;flex-direction:column;gap:8px}
-    .search-wrap{position:relative;display:flex;align-items:center}
-    .search-wrap svg{position:absolute;left:11px;width:15px;height:15px;color:var(--muted-2);pointer-events:none}
-    .search-input{width:100%;background:rgba(255,255,255,.05);border:1px solid var(--border);color:var(--text);padding:9px 12px 9px 33px;border-radius:10px;font-size:13px;outline:none;transition:.15s}
-    .search-input::placeholder{color:var(--muted-2)}
-    .search-input:focus{border-color:var(--ring);box-shadow:0 0 0 3px var(--ring)}
+    /* U1 search — From Uiverse.io by satyamchaudharydev (slippery-parrot-22), dark + rose */
+    .searchcard .sform{--sbg:rgba(255,255,255,.05);--spad:33px;--srot:80deg;--srose:#fb7185;--sh:40px;background:var(--sbg);position:relative;border-radius:10px;border:1px solid var(--border);transition:.15s}
+    .searchcard .sform:focus-within{border-color:var(--ring);box-shadow:0 0 0 3px var(--ring)}
+    .searchcard .sform label{display:flex;align-items:center;width:100%;height:var(--sh)}
+    .searchcard .sform input{width:100%;padding-inline-start:var(--spad);outline:none;background:none;border:0;color:var(--text);font-size:13px}
+    .searchcard .sform input::placeholder{color:var(--muted-2)}
+    .searchcard .sform svg{color:var(--muted);transition:0.3s cubic-bezier(.4,0,.2,1);position:absolute;height:15px}
+    .searchcard .sicon{position:absolute;left:11px;transition:0.3s cubic-bezier(.4,0,.2,1);display:flex;justify-content:center;align-items:center}
+    .searchcard .swap-off{transform:rotate(-80deg);opacity:0;visibility:hidden}
+    .searchcard .sclose{background:none;border:none;right:8px;box-sizing:border-box;display:flex;align-items:center;justify-content:center;color:var(--muted);padding:0.1em;width:22px;height:22px;border-radius:50%;transition:0.3s;opacity:0;transform:scale(0);visibility:hidden;cursor:pointer;position:absolute}
+    .searchcard .sclose:hover{color:var(--srose)}
+    .searchcard .sclose svg{position:static;height:12px;width:12px;fill:currentColor}
+    .searchcard .sform input:focus ~ .sicon{transform:rotate(var(--srot)) scale(1.3)}
+    .searchcard .sform input:focus ~ .sicon .swap-off{opacity:1;transform:rotate(-80deg);visibility:visible;color:var(--srose)}
+    .searchcard .sform input:focus ~ .sicon .swap-on{opacity:0;visibility:visible}
+    .searchcard .sform input:valid ~ .sicon{transform:scale(1.3) rotate(var(--srot))}
+    .searchcard .sform input:valid ~ .sicon .swap-off{opacity:1;visibility:visible;color:var(--srose)}
+    .searchcard .sform input:valid ~ .sicon .swap-on{opacity:0;visibility:visible}
+    .searchcard .sform input:valid ~ .sclose{opacity:1;visibility:visible;transform:scale(1);transition:0s}
     .results{display:flex;flex-direction:column;max-height:240px;overflow:auto;border-top:1px solid var(--border);margin-top:2px;padding-top:6px;overscroll-behavior:contain}
     .results:empty{display:none;border:0;margin:0;padding:0}
     .result{display:flex;flex-direction:column;gap:1px;padding:8px 10px;border-radius:9px;cursor:pointer;transition:.12s}
@@ -189,8 +203,8 @@
       .top-right .btn.icon{padding:9px 12px;font-size:12px;min-height:36px}
       .left-col{left:8px;top:132px;width:calc(100vw - 16px);gap:10px}
       .zoom button{width:42px;height:42px;font-size:18px}
-      .search-input{padding:12px 12px 12px 36px;font-size:16px;border-radius:12px}
-      .search-input::placeholder{font-size:14px}
+      .searchcard .sform{--sh:46px}
+      .searchcard .sform input{font-size:16px}
       .search-head{display:flex}
       .searchcard.collapsed .search-body{display:none}
       #search-toggle{font-size:14px;padding:0 2px;min-height:36px}
@@ -248,10 +262,18 @@
         <span class="chev" aria-hidden="true">▾</span>
       </button>
       <div class="search-body" id="search-body">
-        <div class="search-wrap">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
-          <input id="search" class="search-input" type="text" placeholder="Search district or hotel…" autocomplete="off" />
-        </div>
+        <form class="sform" id="search-form" role="search">
+          <label for="search">
+            <input id="search" class="search-input" type="text" required autocomplete="off" placeholder="Search district or hotel…" />
+            <div class="sicon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="swap-on"><path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" stroke-linejoin="round" stroke-linecap="round"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="swap-off"><path d="M10 19l-7-7m0 0l7-7m-7 7h18" stroke-linejoin="round" stroke-linecap="round"/></svg>
+            </div>
+            <button type="reset" class="sclose" id="search-clear" aria-label="Clear search">
+              <svg viewBox="0 0 20 20"><path clip-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" fill-rule="evenodd"/></svg>
+            </button>
+          </label>
+        </form>
         <div class="filter-row">
           <div class="seg" id="filter">
             <button data-f="all" class="active">All</button>
