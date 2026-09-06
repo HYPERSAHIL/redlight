@@ -37,7 +37,20 @@ const LS = {
   set(k, v){ try{ localStorage.setItem(k, v); }catch{} }
 };
 let lang = LS.get('redlight_lang', 'en');
-let filterMode = LS.get('redlight_filter', 'all');
+let showVerified = true, showLow = true;
+(function(){
+  const old = LS.get('redlight_filter', null);
+  if(old !== null){
+    showVerified = old !== 'low';
+    showLow = old !== 'verified';
+    try{ localStorage.removeItem('redlight_filter'); }catch{}
+  } else {
+    showVerified = LS.get('redlight_filter_v', '1') === '1';
+    showLow = LS.get('redlight_filter_l', '1') === '1';
+  }
+  LS.set('redlight_filter_v', showVerified ? '1' : '0');
+  LS.set('redlight_filter_l', showLow ? '1' : '0');
+})();
 
 /* ---------- i18n ---------- */
 const HI_DISTRICT = {
@@ -189,8 +202,8 @@ stNext.onclick = ()=>{ pauseStory(); storyStep(1); };
 /* ---------- Visibility: filter + search ---------- */
 let searchTerm = '';
 function visible(p){
-  if(filterMode === 'verified' && !(p.reliability==='high'||p.reliability==='medium')) return false;
-  if(filterMode === 'low' && p.reliability!=='low') return false;
+  if(p.reliability === 'low'){ if(!showLow) return false; }
+  else if(!showVerified) return false;
   if(searchTerm){
     const hay = `${p.district} ${HI_DISTRICT[p.district]||''} ${p.area_name} ${p.type} ${p.story||''} ${p.source||''}`.toLowerCase();
     if(!hay.includes(searchTerm)) return false;
@@ -204,12 +217,20 @@ function applyVisibility(){
     else { if(pointsLayer.hasLayer(marker)) pointsLayer.removeLayer(marker); }
   });
 }
-document.getElementById('filter').addEventListener('click', e=>{
-  const b = e.target.closest('button'); if(!b) return;
-  filterMode = b.dataset.f;
-  [...e.currentTarget.children].forEach(x=> x.classList.toggle('active', x===b));
-  LS.set('redlight_filter', filterMode);
-  applyVisibility();
+function syncFilterUI(){
+  document.getElementById('f-verified').checked = showVerified;
+  document.getElementById('f-low').checked = showLow;
+}
+function persistFilter(){
+  LS.set('redlight_filter_v', showVerified ? '1' : '0');
+  LS.set('redlight_filter_l', showLow ? '1' : '0');
+}
+document.getElementById('f-verified').addEventListener('change', e=>{ showVerified = e.target.checked; persistFilter(); applyVisibility(); });
+document.getElementById('f-low').addEventListener('change', e=>{ showLow = e.target.checked; persistFilter(); applyVisibility(); });
+document.querySelectorAll('#filter .cbx').forEach(l=>{
+  l.addEventListener('keydown', e=>{
+    if(e.key === ' ' || e.key === 'Enter'){ e.preventDefault(); document.getElementById(l.htmlFor).click(); }
+  });
 });
 
 let statSites = 0, statDist = 0, statTI = 0;
@@ -259,9 +280,8 @@ function applyLang(){
   document.getElementById('btn-fullscreen').textContent = t.full;
   document.getElementById('btn-story').textContent = t.story;
   searchInput.placeholder = t.search;
-  document.querySelector('#filter button[data-f="all"]').textContent = t.fAll;
-  document.querySelector('#filter button[data-f="verified"]').textContent = t.fVer;
-  document.querySelector('#filter button[data-f="low"]').textContent = t.fLow;
+  document.getElementById('f-verified-lab').textContent = t.fVer;
+  document.getElementById('f-low-lab').textContent = t.fLow;
   document.querySelector('.bottombar').innerHTML = `<span><span class="dot" style="background:#e11d48"></span>${t.legV}</span><span><span class="dot" style="background:#a78bfa"></span>${t.legL}</span><span><span class="dot" style="background:#f59e0b"></span>${t.legTI}</span><span class="sep"></span><span class="hint">${t.hint}</span>`;
   document.getElementById('d-close').textContent = t.close;
   document.getElementById('d-source').textContent = t.src;
@@ -434,8 +454,8 @@ if('serviceWorker' in navigator){
 }
 
 /* ---------- init ---------- */
-// restore persisted filter active state
-[...document.querySelectorAll('#filter button')].forEach(b=> b.classList.toggle('active', b.dataset.f===filterMode));
+// restore persisted filter checkbox state
+syncFilterUI();
 applyLang();
 syncZoom();
 updateMarkerFade();
