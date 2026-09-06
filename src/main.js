@@ -208,12 +208,16 @@ function applyVisibility(){
     else { if(pointsLayer.hasLayer(marker)) pointsLayer.removeLayer(marker); }
   });
 }
-document.getElementById('filter').addEventListener('click', e=>{
-  const b = e.target.closest('button'); if(!b) return;
-  filterMode = b.dataset.f;
-  [...e.currentTarget.children].forEach(x=> x.classList.toggle('active', x===b));
+const GX_TAB_MODE = { 'gx-tab-all':'all', 'gx-tab-ver':'verified', 'gx-tab-low':'low' };
+document.querySelectorAll('input[name="gxtab"]').forEach(r=> r.addEventListener('change', ()=>{
+  filterMode = GX_TAB_MODE[r.id] || 'all';
   LS.set('redlight_filter', filterMode);
-  applyVisibility();
+  applyVisibility(); renderResults();
+}));
+document.getElementById('search-clear').addEventListener('click', ()=>{
+  searchInput.value = '';
+  searchInput.dispatchEvent(new Event('input'));
+  searchInput.focus();
 });
 
 let statSites = 0, statDist = 0, statTI = 0;
@@ -229,12 +233,12 @@ function renderResults(){
   resultsEl.innerHTML = '';
   if(!term) return;
   const matches = storyData.filter(f=>visible(f.properties));
-  if(!matches.length){ resultsEl.innerHTML = `<div style="padding:10px;color:var(--muted);font-size:12px">No matches.</div>`; return; }
-  matches.slice(0,40).forEach(f=>{
+  if(!matches.length){ resultsEl.innerHTML = `<a><div style="padding:4px 6px">No matches.</div></a>`; return; }
+  matches.slice(0,40).forEach((f,n)=>{
     const p = f.properties;
-    const el = document.createElement('div');
-    el.className = 'result';
-    el.innerHTML = `<b>${distName(p.district)}</b><span>${p.area_name}</span><span class="tag ${p.reliability}">${p.reliability}</span>`;
+    const el = document.createElement('a');
+    el.style.setProperty('--i', n+1);
+    el.innerHTML = `<div><b>${distName(p.district)}</b></div><div>${p.area_name}</div><span class="tag ${p.reliability}">${p.reliability}</span>`;
     el.onclick = ()=>{ focusFeature(f); searchInput.blur(); };
     resultsEl.appendChild(el);
   });
@@ -257,9 +261,10 @@ function applyLang(){
   document.getElementById('btn-fullscreen').textContent = t.full;
   document.getElementById('btn-story').textContent = t.story;
   searchInput.placeholder = t.search;
-  document.querySelector('#filter button[data-f="all"]').textContent = t.fAll;
-  document.querySelector('#filter button[data-f="verified"]').textContent = t.fVer;
-  document.querySelector('#filter button[data-f="low"]').textContent = t.fLow;
+  [['gx-lab-all','fAll'],['gx-lab-ver','fVer'],['gx-lab-low','fLow']].forEach(([id,k])=>{
+    const lab = document.getElementById(id);
+    if(lab){ lab.querySelector('span').textContent = t[k]; lab.dataset.label = t[k]; }
+  });
   document.querySelector('.bottombar').innerHTML = `<span><span class="dot" style="background:#e11d48"></span>${t.legV}</span><span><span class="dot" style="background:#a78bfa"></span>${t.legL}</span><span><span class="dot" style="background:#f59e0b"></span>${t.legTI}</span><span class="sep"></span><span class="hint">${t.hint}</span>`;
   document.getElementById('d-close').textContent = t.close;
   document.getElementById('d-source').textContent = t.src;
@@ -432,8 +437,8 @@ if('serviceWorker' in navigator){
 }
 
 /* ---------- init ---------- */
-// restore persisted filter active state
-[...document.querySelectorAll('#filter button')].forEach(b=> b.classList.toggle('active', b.dataset.f===filterMode));
+// restore persisted filter tab state
+[...document.querySelectorAll('input[name="gxtab"]')].forEach(r=>{ r.checked = (GX_TAB_MODE[r.id] === filterMode); });
 applyLang();
 syncZoom();
 updateMarkerFade();
