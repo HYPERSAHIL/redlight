@@ -262,7 +262,7 @@ searchInput.addEventListener('input', ()=>{
 function applyLang(){
   const t = T();
   document.documentElement.lang = lang;
-  document.querySelector('.brand h1').textContent = t.title;
+  document.querySelector('.brand h1').innerHTML = `<span class="wordmark-dot" aria-hidden="true"></span>${t.title}`;
   document.querySelector('.brand p').textContent = t.sub;
   document.getElementById('btn-sat').textContent = t.sat;
   document.getElementById('btn-street').textContent = t.street;
