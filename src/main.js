@@ -366,6 +366,7 @@ fetch('/data/up-points.geojson').then(r=>r.json()).then(data=>{
   data.features.forEach((f,i)=>{
     const card = document.createElement('div');
     card.className = 'story-card';
+    card.style.setProperty('--i', i);
     card.dataset.title = f.properties.area_name;
     card.innerHTML = `<b>${distName(f.properties.district)}</b><span>${f.properties.area_name}</span>`;
     card.onclick = ()=>{ pauseStory(); storyIdx = i; focusFeature(f); };
@@ -423,9 +424,10 @@ function buildDistList(){
   const t = T();
   const sorted = [...districtList].sort((a,b)=> distName(a.name).localeCompare(distName(b.name)));
   distlistBody.innerHTML = '';
-  sorted.forEach(d=>{
+  sorted.forEach((d,idx)=>{
     const item = document.createElement('div');
     item.className = 'dist-item';
+    item.style.setProperty('--i', idx);
     item.innerHTML = `<span>${distName(d.name)}</span>${d.hasTI?`<span class="ti">${t.legTI}</span>`:''}`;
     item.onclick = ()=>{
       map.flyTo(d.center, 8, {duration:1.1});
